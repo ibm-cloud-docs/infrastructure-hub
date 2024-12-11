@@ -1,7 +1,7 @@
 {
   "version": 2,
   "title": "Infrastructure",
-  "introduction": "As many organizations move to a cloud environment, either on-premises or hosted in data centers, the IT operations administrator's (IT ops admin) role is being redefined. The scope and complexity of this change increases significantly based on the type of environment that your organization wants to deploy.",
+  "introduction": "Learn more about provisioning compute, network, and storage resources in IBM Cloud.",
   "product_page": "https://www.ibm.com/cloud/infrastructure",
   "console_page": "/infrastructure/overview",
   "section_topics": {
@@ -48,4 +48,3 @@
     "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/is_instance"
   }
 }
-

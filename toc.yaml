@@ -1,0 +1,119 @@
+---
+toc:
+  properties:
+    subcollection: infrastructure-hub
+    href: /docs/infrastructure-hub
+    path: infrastructure-hub
+    audience: solution
+    category: solution_docs
+    content-type: solution
+    description: Provision your compute, network, and storage resources on IBM Cloud
+    label: Infrastructure
+#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group.
+  entries:
+  - navgroup:
+      id: overview
+      topics:
+       - getting-started.md
+       - link:
+           label: What is IBM Cloud Infrastructure as a Service?
+           href: https://www.ibm.com/cloud/infrastructure
+       - link:
+           label: What is VPC?
+           href: https://www.ibm.com/cloud/vpc
+       - compare-infra.md
+       - topicgroup:
+           label: Related links
+           links:
+           - link:
+               label: Service and infrastructure availability
+               href: /overview/overview-services_region
+           - link:
+               label: Getting started with IAM tutorial
+               href: /account/account-iamoverview
+  - navgroup:
+      id: architecture
+      topics:
+      - include: ../deployable-reference-architectures/terraform-ibm-landing-zone/deploy-arch-ibm-slz-vpc-standard.md
+        navtitle: VPC landing zone
+  - navgroup:
+      id: plan
+      topics:
+      - planning-iaas.md        
+  - navgroup:
+      id: howto
+      topics:
+      - topicgroup:
+          label: Building your infrastructure
+          topics:
+          - compute-services.md
+          - network-services.md
+          - storage-services.md
+      -  managing-iaas.md
+      - topicgroup:
+          label: Migrating your infrastructure
+          topics:
+          - about-migration.md
+          - topicgroup:
+              label: Classic to classic infrastructure
+              topics:
+              - include: ../virtual-servers/vsi_migrate_classic_dctodc.md
+              - include: ../bare-metal/bm-about-custom-image-templates.md
+              - p-p-migration-bare-metal.md
+          - topicgroup:
+              label: Classic to VPC infrastructure
+              topics:
+              - link:
+                  label: Getting started with VPC+ Cloud Migration
+                  href: /wanclouds-vpc-plus/wanclouds-vpc-plus-getting-started-tutorial
+              - on-prem-vpc-migration-rackware-rmm.md
+              - pv-migration-overview.md
+              - pv-migration-private-ip.md
+          - topicgroup:
+              label: Virtualized workloads to VPC infrastructure
+              topics:
+              - any-cloud-to-ibm-cloud-via-rackware.md
+              - vmware-on-prem-to-v2v.md
+              - the-classic-to-v2v.md
+              - hyper-v-to-IBM-Cloud-VPC-VSI.md
+          - topicgroup:
+              label: Script-based migration
+              topics:
+              - data-migration-diy.md
+              - image-migration-diy.md
+              - mysql-db-migration-script-python.md
+          - topicgroup:
+              label: Database migration
+              topics:
+              - mssql-db-migration.md
+              - mysql-db-server-migration.md
+  - navgroup:
+      id: reference
+      topics:
+      - ips.md
+      - ntp-service-overview.md
+      - encryption-classic-infra.md
+      - link:
+         label: Terraform reference
+         href: /ibm-cloud-provider-for-terraform/ibm-cloud-provider-for-terraform-getting-started
+      - link:
+         label: IBM Cloud Terraform modules
+         href: https://github.com/terraform-ibm-modules
+  - navgroup:
+      id: help
+      topics:
+      - topicgroup:
+          label: FAQs for migration
+          topics:
+          - p-p-faqs.md
+          - pv-faqs.md
+          - faqs-for-VMWare-to-VPC-migrations.md
+      - getting-help-diy-image-data-migration.md
+      - topicgroup:
+          label: FAQs for operating systems and add-ons
+          topics:
+          - faq-microsoft.md
+          - faq-redhat.md
+      - link:
+         label: IBM Cloud Support
+         href: https://www.ibm.com/cloud/support

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "title": "Infrastructure",
+  "title": "IBM Cloud Infrastructure",
   "introduction": "Learn more about provisioning compute, network, and storage resources in IBM Cloud.",
   "product_page": "https://www.ibm.com/cloud/infrastructure",
   "console_page": "/infrastructure/overview",
@@ -42,9 +42,4 @@
       "type": "blog"
     }
   ],
-  "section_devtools": {
-    "api": "/apidocs/vpc",
-    "cli": "/docs/vpc?topic=vpc-set-up-environment&interface=cli",
-    "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/is_instance"
-  }
 }

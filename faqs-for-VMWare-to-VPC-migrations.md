@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 keywords: infrastructure
 
@@ -71,7 +71,7 @@ In all cases, add ‘RMM - {{site.data.keyword.cloud_notm}}’ in the subject li
 {: #vmware-can-i-migrate-vm}
 {: faq}
 
-Yes, as long as connectivity is established from on-premises to the RMM server and {{site.data.keyword.vpc_short}}.
+Yes, you can migrate VMware virtual machines when connectivity is established between on-premises, the RMM server, and {{site.data.keyword.vpc_short}}.
 
 ## Is data migration supported for {{site.data.keyword.blockstorageshort}} and {{site.data.keyword.filestorage_short}}?
 {: #vmware-is-data-migration-supported}

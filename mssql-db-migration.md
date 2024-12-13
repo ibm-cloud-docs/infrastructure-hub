@@ -2,7 +2,7 @@
 
 copyright:
   years:  2022, 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 subcollection: infrastructure-hub
 
@@ -43,8 +43,8 @@ Before you begin your Microsoft&reg; SQL Server database migration, review and c
 
 1. Conduct an inventory of the databases that needs to be migrated.
 2. Assess the databases for potential migration issues or blockers, and then resolve any items that you uncovered.
-3. Ensure that enough disk space is available for the target server of the new database.
-4. Ensure that the user has appropriate rights or permissions to perform migration activity.
+3. Make sure that enough disk space is available for the target server of the new database.
+4. Make sure that the user has appropriate rights or permissions to perform migration activity.
 5. SQL Server Management Studio needs to be installed on each server for few methods.
 6. Define a plan for the migration.
 7. Back up all the data.
@@ -88,7 +88,7 @@ RMM can migrate single MSSQL database or clustered databases. The following thin
 * Licenses for database applications on target servers.
 * Update DNS records with correct IP addresses on/for target servers.
 * Configured shared disk on the target side.
-* Ensure all the configuration of the cluster is correct and all services are up and running correctly.
+* Make sure that all the configuration of the cluster is correct and all services are up and running correctly.
 * **Known issue:**
    When migration is performed for servers with clustered node "the trust relationship between this workstation and the primary domain failed". So even if you enter the correct domain credentials post migration, it does not allow to user to log in.
 * **Workaround:**

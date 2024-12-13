@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 keywords:
 content-type: tutorial
@@ -47,7 +47,7 @@ Follow the steps to complete a migration from your Microsoft Hyper-V VM on-premi
     - This procedure can require modifying the servers' host route table or security rules.
     - Update the name server or DNS.
 - The order of the target server, the CPU, and memory does not need to match, but the volumes must be equal to or greater than the source.
-- Make sure to have a `/etc/fstab` entry for automatic mounting of any file system on the target server.
+- Make sure that you have a `/etc/fstab` entry for automatic mounting of any file system on the target server.
 
 To improve the data transfer rate, adjust the bandwidth allocation of the RMM server. For more information, see [Adjusting bandwidth allocation by using the UI](/docs/vpc?topic=vpc-managing-virtual-server-instances&interface=ui#adjusting-bandwidth-allocation-ui).
 {: note}
@@ -124,7 +124,7 @@ The RMM solution handles the OS, application, and data movement. It does not set
 
     d. Secondary volume
 
-Ensure that your VPC, subnet, and other necessary cloud components are set up before you add the cloud user in RMM.
+Make sure that your VPC, subnet, and other necessary cloud components are set up before you add the cloud user in RMM.
 {: note}
 
 ## Prepare source and target servers

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 keywords: infrastructure
 
@@ -24,5 +24,5 @@ After you build your infrastructure and environment, you're ready to start manag
 | [Use IBM Cloud Monitoring](/docs/monitoring?topic=monitoring-getting-started) | Gain operational visibility into the performance and overall system health of your organization. |
 | [Set email preferences](/docs/account?topic=account-email-prefs) | Set up {{site.data.keyword.cloud_notm}} infrastructure email notifications about unplanned events, maintenance, and announcements.  |
 | [Understand how your data is safe](/docs/overview?topic=overview-security) | The {{site.data.keyword.cloud_notm}} platform provides layered security controls across network and infrastructure. |
-| [Understand how you can ensure zero downtime](/docs/overview?topic=overview-zero-downtime) | All {{site.data.keyword.cloud_notm}} resources are hosted in data center locations around the world. |
+| [Understand how IBM Cloud ensures high availability and redundancy](/docs/resiliency?topic=resiliency-ha-redundancy) | All {{site.data.keyword.cloud_notm}} resources are hosted in data center locations around the world. |
 {: caption="Management tasks" caption-side="top"}

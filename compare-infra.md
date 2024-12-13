@@ -2,7 +2,7 @@
 copyright:
   years: 2019, 2024
 
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 keywords: understanding infrastructure, vpc, classic infrastructure, cloud environment, infrastructure comparison, comparing infrastructures
 
@@ -31,9 +31,9 @@ See the following table for the Compute differences between classic and VPC.
 | Category   |  Classic infrastructure   | VPC infrastructure |
 | ---------- | ------------------------- | ------------------ |
 |  **Services**  | * {{site.data.keyword.BluVirtServers_short}} \n * {{site.data.keyword.baremetal_short}} \n * Dedicated hosts \n * Reserved virtual servers  | * {{site.data.keyword.BluVirtServers_short}} \n * {{site.data.keyword.baremetal_short}} \n * Dedicated hosts \n * Reservations for virtual servers and bare metal servers \n * Instance Metadata service \n * Instance templates \n * Instance groups \n * Auto Scale for VPC |
-| **Performance and availability** | * Networking speeds up to 25 Gbps | * High speed networking up to 200 Gbps \n * Better availability achievable through zone architecture  |
+| **Performance and availability** | * Networking speeds up to 25 Gbps | * High-speed networking up to 200 Gbps \n * Better availability achievable through zone architecture  |
 | **Pricing** | * Hourly and monthly billing \n * Suspend billing feature for supported configurations | * Hourly and monthly billing \n * Suspend billing feature \n * Cost savings for reservations |
-| **Bare Metal servers** |  Customizable servers featuring advanced Intel® Xeon® CPUs, or AMD CPUs, and NVIDIA GPUs | Profile-based servers featuring advanced Intel® Xeon® CPUs, DPU technology, rapid provisioning, and hourly billing  |
+| **Bare Metal servers** |  Customizable servers that feature advanced Intel® Xeon® CPUs, or AMD CPUs, and NVIDIA GPUs | Profile-based servers that feature advanced Intel® Xeon® CPUs, DPU technology, rapid provisioning, and hourly billing  |
 | **Virtual server profile families** | * Balanced \n * Balanced local storage \n * Variable compute \n * Compute \n * Memory \n * Transient option for supported profiles \n * GPU | * Balanced \n * Compute \n * Memory \n * Very High Memory \n * Ultra High Memory \n * GPU \n * AI Optimized \n * Storage Optimized \n * Confidential Compute \n * Generations of CPU profiles \n * Profiles for Intel, AMD, and s390x processor architectures  |
 | **Supported images** | * Stock images \n * Instance add-ons: OS add-ons, control panel software, database software \n * Custom images | * Stock images \n * Custom images (includes image from volume) \n * Private catalog images |
 | **Platform integration** | | IAM and resource group integration for a unified experience |
@@ -67,7 +67,7 @@ See the following table for the storage differences between classic and VPC.
 
 |  Classic infrastructure   | VPC infrastructure |
 | ------------------------- | ------------------ |
-|Robust set of storage services, {{site.data.keyword.blockstorageshort}} (iSCSI), and {{site.data.keyword.filestorage_short}} (NFS-based) offerings. Server-side agent based Backup service with dedicated vault. \n - Snapshot support for both offerings.  \n - Cross-regional replication. \n - Adjustable IOPS and increasable capacity. \n - Encryption at rest with provider- or customer-managed encryption. \n - Volume duplication and data refresh from parent volume.| {{site.data.keyword.block_storage_is_short}} provides primary boot disks (with basic lifecycle management), and secondary data volumes. {{site.data.keyword.filestorage_vpc_short}} provides NFS-based file shares. \n - Snapshot and backup support for block volumes. \n - Zonal replication for file shares. \n - Adjustable IOPS and increasable capacity.  \n - Encryption at rest with provider- or customer-managed encryption. \n - Optional encryption in transit for block volumes and file shares. \n - Optional cross-account authorizations for encryption keys. |
+|Robust set of storage services, {{site.data.keyword.blockstorageshort}} (iSCSI), and {{site.data.keyword.filestorage_short}} (NFS-based) offerings. Server-side agent based Backup service with dedicated vault. \n - Snapshot support for both offerings. \n - Cross-regional replication. \n - Adjustable IOPS and increasable capacity. \n - Encryption at rest with provider- or customer-managed encryption. \n - Volume duplication and data refresh from parent volume.| {{site.data.keyword.block_storage_is_short}} provides primary boot disks (with basic lifecycle management), and secondary data volumes. {{site.data.keyword.filestorage_vpc_short}} provides NFS-based file shares. \n - Snapshot and backup support for block volumes. \n - Zonal replication for file shares. \n - Adjustable IOPS and increasable capacity. \n - Encryption at rest with provider- or customer-managed encryption. \n - Optional encryption in transit for block volumes and file shares. \n - Optional cross-account authorizations for encryption keys. |
 {: caption="Storage comparison" caption-side="top"}
 
 ## Security differentiators

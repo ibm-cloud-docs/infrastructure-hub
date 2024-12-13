@@ -2,7 +2,7 @@
 
 copyright:
   years:  2022, 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 keywords:
 
@@ -29,7 +29,7 @@ Review the following prerequisites before you begin your migration:
 1. Set up an {{site.data.keyword.cos_full_notm}} bucket.
 2. Make sure that you have write access to the {{site.data.keyword.cos_short}} bucket.
 3. Make sure that you have a connection to the source and target server from your system.
-4. Ensure that Python3 (version 3.0) and Pip3 are installed on your system.
+4. Make sure that Python3 (version 3.0) and Pip3 are installed on your system.
 
 ## Migration overview diagram
 {: #mysql-db-overview-diagram-python}
@@ -103,7 +103,7 @@ Complete the following steps to mount the {{site.data.keyword.cos_short}} bucket
 After you mount your {{site.data.keyword.cos_short}} bucket, you need to provide your source server details:
 
 1. Enter the source server IP address or hostname. The source server is the MySQL database that needs to be migrated.
-2. Enter the source server login credentials. The script needs to authenticate with the username and password. The user privileges should be equivalent to the `root`.
+2. Enter the source server login credentials. The script needs to authenticate with the username and password. Make sure that the user privileges are equivalent to the `root`.
 
 ### Source server database details
 {: #source-server-db-details}
@@ -118,7 +118,7 @@ After you mount your {{site.data.keyword.cos_short}} bucket, you need to provide
 After you provide your source server and source server database details, you need to provide your target server details:
 
 1. Enter the target server IP address or hostname. The target server is where the MySQL database is to be migrated.
-2. Enter the target server login credentials. Similarly, for the source server, the script needs to be authenticated with the username and password. The user privilege should be equivalent to the `root`.
+2. Enter the target server login credentials. Similarly, for the source server, the script needs to be authenticated with the username and password. Make sure that the user privilege is equivalent to the `root`.
 
 ### Target server database details
 {: #target-server-db-details}

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 keywords: encryption, storage encryption, customer managed encryption, classic infrastructure encryption
 
@@ -55,7 +55,7 @@ For more information about key management (rotation, deletion, auditing), see th
 ### {{site.data.keyword.blockstorageshort}} encryption with LUKS
 {: #block-storage-luks}
 
-You can use LUKS to encrypt {{site.data.keyword.blockstorageshort}} volumes. For more information, see [Achieving full disk encryption with LUKS in RHEL](/docs/BlockStorage?topic=BlockStorage-LUKSencryption). After the LUKS volume is mounted, key management is done through *cryptsetup*.
+You can use LUKS to encrypt {{site.data.keyword.blockstorageshort}} volumes. For more information, see [Achieving full disk encryption with LUKS in RHEL](/docs/BlockStorage?topic=BlockStorage-LUKSencryption). After the LUKS volume is mounted, key management is done through *crypt setup*.
 
 #### LUKS Key Slots
 {: #luks-key-slots}
@@ -280,7 +280,7 @@ Digests:
    ```
    {: screen}
 
-1. Mount the encrypted storage as unencrypted and work with it.
+1. Mount the encrypted storage and work with it.
    ```sh
    root@classic-byok-poc01:/mnt# ls
    filestor  plain

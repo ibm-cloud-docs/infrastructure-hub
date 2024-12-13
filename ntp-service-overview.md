@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2021, 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 keywords: NTP, NTP server, network time protocol
 
@@ -33,7 +33,7 @@ IBM implemented Global Navigation Satellite System (GNSS) devices within the {{s
 
 Aside from GNSS antennas, the appliances are connected to a high-performance oscillator, such as a rubidium atomic clock. The high-performance oscillator keeps the appliance clock accurate for long periods even if the GNSS service is disrupted.
 
-The National Institute of Standards and Technology (NIST) and US Naval Observatory (USNO) Stratum 1 sources are also configured on the time servers that are available for Regulated Services Cloud NTP servers. This applies for NTP servers that are located only in the United States.
+The National Institute of Standards and Technology (NIST) and US Naval Observatory (USNO) Stratum 1 sources are also configured on the time servers that are available for Regulated Services Cloud NTP servers. This statement applies only for the NTP servers that are located in the United States.
 
 The NTP time servers are connected to these GNSS and time synchronization appliance services, as depicted in Figure 1.
 
@@ -42,7 +42,7 @@ The NTP time servers are connected to these GNSS and time synchronization applia
 ## Software components
 {: #ntp-software-components}
 
-NTP services provide a complete implementation of the Network Time Protocol (NTP) version 4. NTP services retain compatibility with versions 1, 2, and 3 as defined by RFC 1059, RFC 1119, and RFC 1305, respectively.
+NTP services provide a complete implementation of the Network Time Protocol (NTP) version 4. NTP services retain compatibility with versions 1, 2, and 3 as defined by RFC 1059, RFC 1119, and RFC 1305.
 
 ## Security
 {: #ntp-security}

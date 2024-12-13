@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 subcollection: infrastructure-hub
 
@@ -132,7 +132,7 @@ No. You can't provision a virtual server with software that reached its EOS date
 {: #faq-microsoft-eos-dates-ibm-cloud}
 {: faq}
 
-For more information about EOS dates for Microsoft software, see [VPC Lifecycle for guest operating systems - Windows Server](/docs/vpc?topic=vpc-guest-os-lifecycle#windows-server) and [Classic Lifecycle for operating systems and add-ons](https://test.cloud.ibm.com/docs/bare-metal?topic=bare-metal-product-lifecycle-classic).
+For more information about EOS dates for Microsoft software, see [VPC Lifecycle for guest operating systems - Windows Server](/docs/vpc?topic=vpc-guest-os-lifecycle#windows-server) and [Classic Lifecycle for operating systems and add-ons](/docs/bare-metal?topic=bare-metal-product-lifecycle-classic).
 
 ## What if a customer wants to keep operating EOS software?
 {: #faq-microsoft-ibm-cloud-using-eos}

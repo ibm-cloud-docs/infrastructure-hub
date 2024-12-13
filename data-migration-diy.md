@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 keywords: migration, migrate, migrating, migrate data, data migration
 
@@ -33,7 +33,7 @@ Before you begin migrating your data, review the following requirements and cons
 ## Step 1: Create {{site.data.keyword.cloud}} Transit Gateway and establish a connection between classic and VPC
 {: #step-1-create-ibm-cloud-transit-gateway-data-migration}
 
-Your classic infrastructure and VPC infrastructure need to be able to reach each other, which can be achieved in many ways: public interfaces, VPN, transit gateway. If you need to move data from a few servers, you might want to use a public interface. However, if you have a large amount of data from different sources or large data sets, then you need to use {{site.data.keyword.tg_full_notm}}, which uses {{site.data.keyword.cloud_notm}} to interconnect between classic and VPC.
+Your classic infrastructure and VPC infrastructure need to be able to reach each other, which can be achieved in many ways: public interfaces, VPN, transit gateway. If you need to move data from a few servers, you might want to use a public interface. However, if you have a large amount of data from different sources or large datasets, then you need to use {{site.data.keyword.tg_full_notm}}, which uses {{site.data.keyword.cloud_notm}} to interconnect between classic and VPC.
 
 Before you create your {{site.data.keyword.tg_full_notm}}, review the following requirements and considerations:
 
@@ -70,7 +70,7 @@ route ADD <destination_network> MASK <subnet_mask> <gateway_ip>
 ### Linux systems
 {: #linux-systems-install-rsync}
 
-On most Linux systems, `rsync` is already installed. To verify whether `rsync` in installed, run the `rsync` command on your terminal. If it isn't installed, complete the following steps for your relevant operating system.
+On most Linux systems, `rsync` is already installed. To verify whether `rsync` in installed, run the `rsync` command on your command line. If it isn't installed, complete the following steps for your relevant operating system.
 
 #### Ubuntu
 {: #install-rsync-ubuntu}
@@ -107,7 +107,7 @@ Complete the following steps to install `rsync` on your Windows 2012, 2012R2, or
 4. Select `rsync` (in net category section).
 5. Select OpenSSH (in net category section).
 6. Click Continue and finish the installation.
-7. Open ‘Cygwin Terminal’, type `rsync` command, and press enter.
+7. Open Cygwin Terminal, type `rsync` command, and press enter.
 8. If the output shows `rsync` command details with options, then it is installed.
 
 ## Step 3: Install OpenSSH
@@ -157,7 +157,7 @@ To install OpenSSH on your Windows 2012 or 2012R2 system, review the following i
 ## Step 5: Run auto `rsync` script
 {: #step-5-run-rsync-script}
 
-Download the auto `rsync` scripts [here](https://github.com/IBM-Cloud/vpc-migration-tools/tree/main/data-migration){: external}.
+Download the auto `rsync` scripts from [here](https://github.com/IBM-Cloud/vpc-migration-tools/tree/main/data-migration){: external}.
 
 ### Linux systems
 {: #linux-systems-rsync-script}
@@ -174,7 +174,7 @@ Download the auto `rsync` scripts [here](https://github.com/IBM-Cloud/vpc-migrat
 {: #windows-systems-rsync-script}
 
 1. Download or copy and paste file to directory `/cygdrive/c/cygwin64/home/Administrator` of source server.
-2. Open Cygwin terminal.
+2. Open Cygwin Terminal.
 3. Type `cd /cygdrive/c/cygwin64/home/Administrator`
 4. Type `Bash ./<auto_rsync_file_name>` and press enter.
 5. Enter the path of the source: `/cygdrive/c/home/Demo-12Jan/12Jan-test1.txt`

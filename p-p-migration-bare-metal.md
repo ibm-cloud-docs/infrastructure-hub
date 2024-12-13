@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 keywords: migration, migrate, migrating, migrate infrastructure
 
@@ -92,7 +92,7 @@ This architecture diagram is applicable for bare metal to virtual server and vir
 
 3. The order of the target server, the CPU, and memory does not need to match, but the volumes must be equal or greater than the source.
 
-4. Make sure to have `/etc/fstab` entry for automatic mounting of any file system on the target server.
+4. Make sure that you have an `/etc/fstab` entry for automatic mounting of any file system on the target server.
 
 ## Order RMM
 {: #p-p-migration-bare-metal-order-rackware}

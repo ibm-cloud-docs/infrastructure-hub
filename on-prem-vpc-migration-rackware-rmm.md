@@ -2,7 +2,7 @@
 
 copyright:
   years:  2022, 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 keywords: migration, migrate, cloud migration, on-premises
 content-type: tutorial
@@ -170,7 +170,7 @@ If source server has a Linux operating system and it has a boot volume greater t
 5. From the edit option in the **Actions** menu of your source, select the **{{site.data.keyword.vpc_short}} Options** tab, enter the relevant information, and click **Modify**.
 6. Run the replication.
 
-Ensure that your VPC, subnet, and other necessary cloud components are set up before you add a cloud user in RMM.
+Make sure that your VPC, subnet, and other necessary cloud components are set up before you add a cloud user in RMM.
 {: note}
 
 #### Assigning the environment to wave

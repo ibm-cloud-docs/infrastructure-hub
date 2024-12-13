@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 keywords:
 
@@ -63,7 +63,7 @@ RMM is a Bring-Your-Own-License (BYOL) subscription-based service. Contact the R
 {: #bm-mounted-filesystem-storage-no-show}
 {: faq}
 
-Make sure to have `/etc/fstab/entry` for automatic mounting of any file system at the target server.
+Make sure that you have an `/etc/fstab` entry for automatic mounting of any file system at the target server.
 
 ## Is it necessary to add an RMM SSH key to the source and target server?
 {: #bm-necessary-to-add-rmm-ssh-key}

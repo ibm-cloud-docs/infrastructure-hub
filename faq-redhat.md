@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 subcollection: infrastructure-hub
 
@@ -80,7 +80,7 @@ In the lifecycle of an operating system, EOS is the last date that {{site.data.k
 
 No. You can't provision a virtual server with software that reached its EOS date. Customers can use the existing EOS software that was provisioned before the EOS date at their own risk.
 
-For more information about EOS, see [VPC - End of support operating system considerations](/docs/vpc?topic=vpc-eos-os-considerations-intro) and [Classic - End of support for operating systems considerations](/docs/bare-metal?topic=bare-metal-eos-os-considerations-bm-classic-intro).
+For more information about EOS, see [VPC - End of support for operating system considerations](/docs/vpc?topic=vpc-eos-os-considerations-intro) and [Classic - End of support for operating systems considerations](/docs/bare-metal?topic=bare-metal-eos-os-considerations-bm-classic-intro).
 
 ## Where can I find the EOS date for Red Hat servers that run in {{site.data.keyword.cloud_notm}}?
 {: #faq-eos-dates-red-hat-ibm-cloud}

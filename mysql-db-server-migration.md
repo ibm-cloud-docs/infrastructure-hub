@@ -2,7 +2,7 @@
 
 copyright:
   years:  2022, 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 subcollection: infrastructure-hub
 
@@ -43,8 +43,8 @@ Before you begin your MySQL database migration, review and complete the followin
 
 1. Back up all the data.
 2. Select the appropriate compute capacity for your target server.
-3. Ensure that enough disk space is available for the target server.
-4. Ensure that the user has appropriate rights or permissions to perform migration activity.
+3. Make sure that enough disk space is available for the target server.
+4. Make sure that the user has appropriate rights or permissions to perform migration activity.
 5. Define a plan for the migration.
 
 ## Migration considerations

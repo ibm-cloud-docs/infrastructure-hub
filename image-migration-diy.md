@@ -2,7 +2,7 @@
 
 copyright:
   years:  2022, 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 keywords: image migration, migrate image, vmdk, vhd
 
@@ -29,7 +29,7 @@ Before you begin migrating your image conversion, review the following requireme
 4. Understand {{site.data.keyword.vpc_short}} custom image requirements.
     - The custom image must contain a single file or volume
     - Is in qcow2 or vhd format
-    - Is cloud-init enabled or can be booted using ESXi kickstart
+    - Is cloud-init enabled or can be booted by using ESXi kickstart
     - Size doesn't exceed 250 GB
     - The minimum size is 10 GB. For any image that is less than 10 GB, the size is rounded up to 10 GB.
 5. Provision an instance of {{site.data.keyword.cos_full_notm}}. For more information, see [Granting access to {{site.data.keyword.cos_full_notm}} to import images](/docs/vpc?topic=vpc-object-storage-prereq).
@@ -208,7 +208,7 @@ The secondary volume needs to be equal to or greater than the secondary VMDK ima
 1. Create secondary volumes, if your VM has secondary vHDD.
 2. Copy the VMDK or VHD image file to the migrated virtual server. Make sure that you have enough space to copy the image file. If necessary, attach a temporary volume with space for copying.
 
-    Skip step 3 if you opted `y` to `guestfs installation` prompt when running pre-check script.
+    Skip step 3 if you opted `y` to `guestfs installation` prompt when you ran the pre-check script.
     {: note}
 
 3. Install the `guestfs` library.

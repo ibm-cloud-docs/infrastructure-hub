@@ -2,7 +2,7 @@
 
 copyright:
   years:  2020, 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-13"
 
 keywords: migration, migrate, migrating, migrate infrastructure, cloud migration
 
@@ -15,7 +15,7 @@ subcollection: infrastructure-hub
 # About migration
 {: #about-migration-infra}
 
-Your drive to migrate might come from many factors including modernization, cost reduction, consolidation, or data center closure. You might also migrate to be more cloud-native or adopt new technologies such as VPC. Regardless of the reason, migration can be as simple as migrating a single virtual server instance, or it can be as complex. For example, you might want to migrate your application to a more complex environment where you need to migrate an entire pod or data center with all of the underlying components.
+Your drive to migrate might come from many factors such as modernization, cost reduction, consolidation, or data center closure. You might also migrate to be more cloud-native or adopt new technologies such as VPC. Regardless of the reason, migration can be as simple as migrating a single virtual server instance, or it can be as complex. For example, you might want to migrate your application to a more complex environment where you need to migrate an entire pod or data center with all of the underlying components.
 {: shortdesc}
 
 ![Migration approach](images/migrate-process.svg){: caption="Migration approach" caption-side="bottom"}
@@ -28,7 +28,7 @@ Your drive to migrate might come from many factors including modernization, cost
 |**Assess** | Do you need to migrate instances to a new data center due to data center closures? Do you want to migrate your entire {{site.data.keyword.cloud}} classic infrastructure to VPC? Assess your situation and identify your existing infrastructure to determine what components you have, how they are configured, and what you want to migrate. \n Not only do you need to assess your current environment, but you need to assess the target environment to understand the capabilities, support, and differences between the two environments, if applicable. In this assessment step, you can get a general idea of the complexity of the migration so that you can develop a migration strategy. |
 |**Plan** | Analyze your current infrastructure and determine whether your resources and components can be migrated, and how much if any disruptions would that cause to your current business environment. Understanding how much time is needed to migrate and whether it needs to be done in stages can help you simplify the migration journey.|
 |**Migrate** | After you assessed your existing infrastructure and planned for your migration, you can migrate your resources and components with ease and confidence. Depending on your migration needs, you can choose from tools that are available to help you with the migration process. |
-|**Validate**  | After you migrate your resources and components into your target infrastructure, and before you make your infrastructure live, validate and test your environment to ensure it is ready for production. This activity might also entail updating your DNS and global load balancers, routes, or retiring old services. |
+|**Validate**  | After you migrate your resources and components into your target infrastructure, and before you make your infrastructure live, validate and test your environment to make sure it is ready for production. This activity might also entail updating your DNS and global load balancers, routes, or retiring old services. |
 {: caption="Migration approach" caption-side="top"}
 
 ## Migration solutions
@@ -104,7 +104,7 @@ For more information, see [Getting started with {{site.data.keyword.vpc-plus-mig
 ## RMM
 {: #rackware-migration}
 
-RackWare Management Module (RMM) is a third-party solution, provided by RackWare that provides an automated and convenient process to migrate existing compute workloads to {{site.data.keyword.cloud_notm}}. With RMM, you can create an exact duplicate of a running source image without the burden of rebuilding or re-creating template images and applications. Migrating large, complex environments through a simple intuitive user interface and automated tasks reduces the time that is required from weeks to days. The application tracks data changes on the source until the cutover, and performs delta syncs to the target server in {{site.data.keyword.cloud_notm}}. Additionally, it helps you with automated wave planning for migrations that can be further customized.
+RackWare Management Module (RMM) is a third-party solution (provided by RackWare) that provides an automated and convenient process to migrate existing compute workloads to {{site.data.keyword.cloud_notm}}. With RMM, you can create an exact duplicate of a running source image without the burden of rebuilding or re-creating template images and applications. Migrating large, complex environments through a simple intuitive user interface and automated tasks reduces the time that is required from weeks to days. The application tracks data changes on the source until the cutover, and performs delta syncs to the target server in {{site.data.keyword.cloud_notm}}. Additionally, it helps you with automated wave planning for migrations that can be further customized.
 
 ### Classic to classic infrastructure migration
 {: #classic-to-classic-migration-rmm}

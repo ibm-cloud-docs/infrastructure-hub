@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-12-13"
+lastupdated: "2024-12-16"
 
 keywords: infrastructure
 
@@ -37,7 +37,7 @@ This software is available in the {{site.data.keyword.cloud_notm}} catalog in th
 {: #vmware-how-procure-rmm-server-license}
 {: faq}
 
-For more information, see [Order license for VMware to VPC migration](/docs/cloud-infrastructure?topic=cloud-infrastructure-migrating-images-vmware-vpc-classic#license-rackware-bring-classic).
+For more information, see [Order license for VMware to VPC migration](/docs/infrastructure-hub?topic=infrastructure-hub-migrating-images-vmware-vpc-classic#license-rackware-bring-classic).
 
 ## Is it necessary to add an RMM SSH key to the source and target server?
 {: #vmware-necessary-add-rmm-ssh-key}
@@ -50,9 +50,9 @@ Yes, RMM uses SSH for communication between source, target, and the RMM server. 
 {: #vmware-where-vmware-doc-info}
 {: faq}
 
-For On-premises VMware VM to {{site.data.keyword.vpc_short}} migration with RMM documentation, click [here](/docs/cloud-infrastructure?topic=cloud-infrastructure-migrating-images-vmware-vpc).
+For On-premises VMware VM to {{site.data.keyword.vpc_short}} migration with RMM documentation, click [here](/docs/infrastructure-hub?topic=infrastructure-hub-migrating-images-vmware-vpc).
 
-For Classic VMware VM to {{site.data.keyword.vpc_short}} migration with RMM documentation, click [here](/docs/cloud-infrastructure?topic=cloud-infrastructure-migrating-images-vmware-vpc-classic)
+For Classic VMware VM to {{site.data.keyword.vpc_short}} migration with RMM documentation, click [here](/docs/infrastructure-hub?topic=infrastructure-hub-migrating-images-vmware-vpc-classic)
 
 ## Who do I contact for support?
 {: #vmware-where-support-info}
@@ -95,4 +95,4 @@ The discovery tool discovers guest VMs from VMware and it uploads into RMM as th
 {: #vmware-does-migration-support-auto-provisioning}
 {: faq}
 
-Yes. With the RMM **Auto-Provision** feature, you can auto-provision the target server. For more information, see "Bare metal to virtual server migration on a private network that uses RMM": option 2 of Step 1: [Set up and provision VPC and virtual server instance](/docs/cloud-infrastructure?topic=cloud-infrastructure-migrating-images-vmware-vpc-classic#cloud-vpc-vsi-setup).
+Yes. With the RMM **Auto-Provision** feature, you can auto-provision the target server. For more information, see "Bare metal to virtual server migration on a private network that uses RMM": option 2 of Step 1: [Set up and provision VPC and virtual server instance](/docs/infrastructure-hub?topic=infrastructure-hub-migrating-images-vmware-vpc-classic#cloud-vpc-vsi-setup).

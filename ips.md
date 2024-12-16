@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-16"
 
 keywords: ip, range, firewall, network, traffic, security
 
@@ -782,7 +782,7 @@ All TCP/UDP ports (for access from your local workstation)
 
 If your server uses a Red Hat Enterprise Linux (RHEL) license provided by {{site.data.keyword.cloud_notm}} infrastructure, provisioning is dependent on completing the following actions:
 
-* Complete the SSL VPN requirements listed in [Service network (on back-end/private network)](/docs/cloud-infrastructure?topic=cloud-infrastructure-ibm-cloud-ip-ranges#service-network).
+* Complete the SSL VPN requirements listed in [Service network (on back-end/private network)](/docs/infrastructure-hub?topic=infrastructure-hub-ibm-cloud-ip-ranges#service-network).
 * Open the RHEL endpoint rhha01.updates.us-south.iaas.service.networklayer.com. This requires adding the IP 161.26.112.28 to the firewall rules. Since DNS round robin is involved, this endpoint is not a single endpoint and could be moved as needed.
 * Allow access to the service network as follows. Otherwise, updates and licensing do not function properly.
 

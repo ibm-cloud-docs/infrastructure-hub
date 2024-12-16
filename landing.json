@@ -8,23 +8,23 @@
     "links": [
       {
         "title": "Understanding Infrastructure basics",
-        "href": "/docs/cloud-infrastructure?topic=cloud-infrastructure-getting-started-tutorial"
+        "href": "/docs/infrastructure-hub?topic=infrastructure-hub-getting-started-tutorial"
       },
       {
         "title": "Comparing IBM Cloud classic and VPC infrastructure environments",
-        "href": "/docs/cloud-infrastructure?topic=cloud-infrastructure-compare-infrastructure"
+        "href": "/docs/infrastructure-hub?topic=infrastructure-hub-compare-infrastructure"
       },
       {
         "title": "Planning your infrastructure",
-        "href": "/docs/cloud-infrastructure?topic=cloud-infrastructure-planning-2"
+        "href": "/docs/infrastructure-hub?topic=infrastructure-hub-planning-2"
       },
       {
         "title": "Migrating your infrastructure",
-        "href": "/docs/cloud-infrastructure?topic=cloud-infrastructure-about-migration-infra"
+        "href": "/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra"
       },
       {
         "title": "FAQs for migration",
-        "href": "/docs/cloud-infrastructure?topic=cloud-infrastructure-bare-metal-faqs"
+        "href": "/docs/infrastructure-hub?topic=infrastructure-hub-bare-metal-faqs"
       }
     ]
   },

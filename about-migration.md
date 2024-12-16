@@ -2,7 +2,7 @@
 
 copyright:
   years:  2020, 2024
-lastupdated: "2024-12-13"
+lastupdated: "2024-12-16"
 
 keywords: migration, migrate, migrating, migrate infrastructure, cloud migration
 
@@ -38,10 +38,10 @@ Review the following table to identify the migration solution that best fits you
 
 | Solution | Bare metal to bare metal | Bare metal to virtual server | Virtual server to virtual server | Block or File storage | Network |
 | ---- | --- | --- | --- | --- | --- |
-| [VPC+ Cloud Migration](/docs/cloud-infrastructure?topic=cloud-infrastructure-about-migration-infra#vpc-cloud-migration) |  |  |  |  |  |
-| [RMM](/docs/cloud-infrastructure?topic=cloud-infrastructure-about-migration-infra#rackware-migration) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |
-| [DIY automation](/docs/cloud-infrastructure?topic=cloud-infrastructure-about-migration-infra#DIY-automation) |  |  |  | ![Checkmark icon](../icons/checkmark-icon.svg) |  |
-| [Custom image templates](/docs/cloud-infrastructure?topic=cloud-infrastructure-about-migration-infra#custom-image-templates) | ![Checkmark icon](../icons/checkmark-icon.svg) |  |  |  |  |
+| [VPC+ Cloud Migration](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#vpc-cloud-migration) |  |  |  |  |  |
+| [RMM](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#rackware-migration) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |
+| [DIY automation](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#DIY-automation) |  |  |  | ![Checkmark icon](../icons/checkmark-icon.svg) |  |
+| [Custom image templates](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#custom-image-templates) | ![Checkmark icon](../icons/checkmark-icon.svg) |  |  |  |  |
 {: caption="Classic to classic infrastructure migration" caption-side="bottom"}
 {: summary="This table has row and column headers. The row headers identify the migration solution. The column headers identify what can be migrated by using the migration solution. To understand what can be migrated by using a particular solution in the table, go to the row, and find the checkmark for the migration motion that you are interested in."}
 {: #table01}
@@ -52,10 +52,10 @@ Review the following table to identify the migration solution that best fits you
 
 | Solution | Bare metal to bare metal | Bare metal to virtual server | Virtual server to virtual server | Block or File storage | Network |
 | ---- | --- | --- | --- | --- | --- |
-| [VPC+ Cloud Migration](/docs/cloud-infrastructure?topic=cloud-infrastructure-about-migration-infra#vpc-cloud-migration) |  |  | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |
-| [RMM](/docs/cloud-infrastructure?topic=cloud-infrastructure-about-migration-infra#rackware-migration) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |
-| [DIY automation](/docs/cloud-infrastructure?topic=cloud-infrastructure-about-migration-infra#DIY-automation) |  |  | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |  |
-| [Custom image templates](/docs/cloud-infrastructure?topic=cloud-infrastructure-about-migration-infra#custom-image-templates) |  |  |  |  |  |
+| [VPC+ Cloud Migration](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#vpc-cloud-migration) |  |  | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |
+| [RMM](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#rackware-migration) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |
+| [DIY automation](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#DIY-automation) |  |  | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |  |
+| [Custom image templates](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#custom-image-templates) |  |  |  |  |  |
 {: caption="Classic to VPC infrastructure migration" caption-side="bottom"}
 {: summary="This table has row and column headers. The row headers identify the migration solution. The column headers identify what can be migrated by using the migration solution. To understand what can be migrated by using a particular solution in the table, go to the row, and find the checkmark for the migration motion that you are interested in."}
 {: #table02}
@@ -66,10 +66,10 @@ Review the following table to identify the migration solution that best fits you
 
 | Solution | Bare metal to bare metal | Bare metal to virtual server | Virtual server to virtual server | Block or File storage | Network |
 | ---- | --- | --- | --- | --- | --- |
-| [VPC+ Cloud Migration](/docs/cloud-infrastructure?topic=cloud-infrastructure-about-migration-infra#vpc-cloud-migration) |  |  |  |  |  |
-| [RMM](/docs/cloud-infrastructure?topic=cloud-infrastructure-about-migration-infra#rackware-migration) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |  |
-| [DIY automation](/docs/cloud-infrastructure?topic=cloud-infrastructure-about-migration-infra#DIY-automation) |  |  | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |  |
-| [Custom image templates](/docs/cloud-infrastructure?topic=cloud-infrastructure-about-migration-infra#custom-image-templates) |  |  |  |  |  |
+| [VPC+ Cloud Migration](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#vpc-cloud-migration) |  |  |  |  |  |
+| [RMM](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#rackware-migration) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |  |
+| [DIY automation](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#DIY-automation) |  |  | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |  |
+| [Custom image templates](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#custom-image-templates) |  |  |  |  |  |
 {: caption="On-premises to VPC infrastructure migration" caption-side="bottom"}
 {: summary="This table has row and column headers. The row headers identify the migration solution. The column headers identify what can be migrated by using the migration solution. To understand what can be migrated by using a particular solution in the table, go to the row, and find the checkmark for the migration motion that you are interested in."}
 {: #table03}
@@ -124,9 +124,9 @@ Review the following migration considerations and limitations:
 * Only compute resources are migrated, along with secondary volume, and secondary block volumes.
 * The RMM tool tracks the data changes on the source server until cutover, and performs delta syncs to the target server.
 
-For more a detailed step-by-step guide, see [{{site.data.keyword.cloud_notm}} classic bare metal to classic bare metal migration](/docs/cloud-infrastructure?topic=cloud-infrastructure-p-p-migration-bare-metal-overview).
+For more a detailed step-by-step guide, see [{{site.data.keyword.cloud_notm}} classic bare metal to classic bare metal migration](/docs/infrastructure-hub?topic=infrastructure-hub-p-p-migration-bare-metal-overview).
 
-For frequently asked questions and answers, see [FAQs for classic bare metal to classic bare metal migration](/docs/cloud-infrastructure?topic=cloud-infrastructure-bare-metal-faqs).
+For frequently asked questions and answers, see [FAQs for classic bare metal to classic bare metal migration](/docs/infrastructure-hub?topic=infrastructure-hub-bare-metal-faqs).
 
 ### Classic to VPC infrastructure migration
 {: #classic-vpc-migration-rmm}
@@ -150,11 +150,11 @@ Review the following migration considerations and limitations:
 VPC does not have support for snapshot, replication, and shared volume. You can manage these solutions through the native OS capabilities, tools, or third party of your choice.
 {: note}
 
-For more information, see [Bare metal to bare metal or virtual server migration overview](/docs/cloud-infrastructure?topic=cloud-infrastructure-pv-migration-overview).
+For more information, see [Bare metal to bare metal or virtual server migration overview](/docs/infrastructure-hub?topic=infrastructure-hub-pv-migration-overview).
 
-For a detailed step-by-step guide on moving your {{site.data.keyword.cloud_notm}} classic bare metal servers to VPC, see [Bare metal to virtual server migration on a private network by using RMM](/docs/cloud-infrastructure?topic=cloud-infrastructure-pv-migration-private-network).
+For a detailed step-by-step guide on moving your {{site.data.keyword.cloud_notm}} classic bare metal servers to VPC, see [Bare metal to virtual server migration on a private network by using RMM](/docs/infrastructure-hub?topic=infrastructure-hub-pv-migration-private-network).
 
-For frequently asked questions and answers, see [FAQs for RackWare](/docs/cloud-infrastructure?topic=cloud-infrastructure-rackware-faqs)
+For frequently asked questions and answers, see [FAQs for RackWare](/docs/infrastructure-hub?topic=infrastructure-hub-rackware-faqs)
 
 ### On-premises to VPC infrastructure migration
 {: #on-prem-vpc-migration-rmm}
@@ -166,9 +166,9 @@ You can use RMM solution to migrate your on-premises workloads to {{site.data.ke
 This architecture diagram is applicable for bare metal to bare metal, bare metal to virtual server, and virtual server to virtual server scenarios.
 {: note}
 
-For a detailed step-by-step guide, see [VMware VM on-premises to {{site.data.keyword.vpc_short}} with RMM](/docs/cloud-infrastructure?topic=cloud-infrastructure-migrating-images-vmware-vpc).
+For a detailed step-by-step guide, see [VMware VM on-premises to {{site.data.keyword.vpc_short}} with RMM](/docs/infrastructure-hub?topic=infrastructure-hub-migrating-images-vmware-vpc).
 
-For frequently asked questions and answers, see [FAQs for VMware (on-premises and classic) to VPC migration](/docs/cloud-infrastructure?topic=cloud-infrastructure-faqs-vmware).
+For frequently asked questions and answers, see [FAQs for VMware (on-premises and classic) to VPC migration](/docs/infrastructure-hub?topic=infrastructure-hub-faqs-vmware).
 
 ### Cloud to VPC infrastructure migration
 {: #cloud-vpc-infrastructure}
@@ -184,14 +184,14 @@ You can migrate your workloads from the following cloud providers:
 * GCP
 * OCI (bare metal)
 
-For a detailed step-by-step guide, see [AWS, Azure, GCP, and OCI workloads to {{site.data.keyword.vpc_short}}](/docs/cloud-infrastructure?topic=cloud-infrastructure-migrating-images-cloud-rackware).
+For a detailed step-by-step guide, see [AWS, Azure, GCP, and OCI workloads to {{site.data.keyword.vpc_short}}](/docs/infrastructure-hub?topic=infrastructure-hub-migrating-images-cloud-rackware).
 
 ## DIY automation
 {: #DIY-automation}
 
 Several do-it-yourself (DIY) automation scripts are available to migrate workloads and data to {{site.data.keyword.cloud_notm}}. The automation scripts are starter scripts that you can modify or adapt to your environment.
 
-Since these scripts are open-sourced and without charge for use, no support or SLAs are offered. For more information, see [Getting help and support for image and data migration](/docs/cloud-infrastructure?topic=cloud-infrastructure-getting-help-support-image-data-migration).
+Since these scripts are open-sourced and without charge for use, no support or SLAs are offered. For more information, see [Getting help and support for image and data migration](/docs/infrastructure-hub?topic=infrastructure-hub-getting-help-support-image-data-migration).
 {: note}
 
 The following DIY automation scripts are available for you to use:
@@ -199,8 +199,8 @@ The following DIY automation scripts are available for you to use:
 |Tool | Description |
 |-----|-------------|
 |Virtual server preparation and validation tool |- This tool ensures that the guest server that you want to import to VPC as a custom image meets the [minimum requirements](/docs/vpc?topic=vpc-about-images#custom-image-reqs). \n - The script is available in this [public GitHub repository](https://github.com/IBM-Cloud/vpc-migration-tools/tree/main/os-precheck-scripts){: external}.  |
-|Image conversion tool   |- You can convert VMDK and VDH images to qcow2 from anywhere to VPC. \n - You can upload an image to {{site.data.keyword.cos_full_notm}} and import it to VPC as a custom image. \n - The script is available in this [public GitHub repository](https://github.com/IBM-Cloud/vpc-migration-tools/tree/main/image-conversion){: external}. \n - For a detailed step-by-step guide, see [Migrating VMDK or VHD images to VPC](/docs/cloud-infrastructure?topic=cloud-infrastructure-migrating-images-vpc).|
-|Data migration tool  | - You can migrate your data from anywhere to {{site.data.keyword.cloud_notm}} classic infrastructure or VPC. \n - The tool uses `rsync` to copy data from the source to the target server. \n - The script is available in this [public GitHub repository](https://github.com/IBM-Cloud/vpc-migration-tools/tree/main/data-migration){: external}. \n - For a detailed step-by-step guide, see [Migrating data from {{site.data.keyword.cloud_notm}} classic infrastructure to VPC](/docs/cloud-infrastructure?topic=cloud-infrastructure-data-migration-classic-to-vpc).  |
+|Image conversion tool   |- You can convert VMDK and VDH images to qcow2 from anywhere to VPC. \n - You can upload an image to {{site.data.keyword.cos_full_notm}} and import it to VPC as a custom image. \n - The script is available in this [public GitHub repository](https://github.com/IBM-Cloud/vpc-migration-tools/tree/main/image-conversion){: external}. \n - For a detailed step-by-step guide, see [Migrating VMDK or VHD images to VPC](/docs/infrastructure-hub?topic=infrastructure-hub-migrating-images-vpc).|
+|Data migration tool  | - You can migrate your data from anywhere to {{site.data.keyword.cloud_notm}} classic infrastructure or VPC. \n - The tool uses `rsync` to copy data from the source to the target server. \n - The script is available in this [public GitHub repository](https://github.com/IBM-Cloud/vpc-migration-tools/tree/main/data-migration){: external}. \n - For a detailed step-by-step guide, see [Migrating data from {{site.data.keyword.cloud_notm}} classic infrastructure to VPC](/docs/infrastructure-hub?topic=infrastructure-hub-data-migration-classic-to-vpc).  |
 {: caption="Available DIY automation scripts" caption-side="top"}
 
 ## Custom image templates

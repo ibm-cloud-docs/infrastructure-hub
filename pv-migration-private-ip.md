@@ -2,7 +2,7 @@
 
 copyright:
    years: 2021, 2024
-lastupdated: "2024-12-13"
+lastupdated: "2024-12-16"
 
 keywords: migration, physical to virtual, migrate
 content-type: tutorial
@@ -51,7 +51,7 @@ This architecture diagram is also applicable for classic bare metal to VPC bare 
     * VPC does not support shared volumes or file-based volumes
     * VPC does not support snapshot or replication
     * GPU is not supported in VPC
-* For more information, see [Comparing {{site.data.keyword.cloud_notm}} classic and VPC infrastructure environments](/docs/cloud-infrastructure?topic=cloud-infrastructure-compare-infrastructure).
+* For more information, see [Comparing {{site.data.keyword.cloud_notm}} classic and VPC infrastructure environments](/docs/infrastructure-hub?topic=infrastructure-hub-compare-infrastructure).
 * Plan for your target server. For more information, see [Planning for Bare Metal Servers on VPC](/docs/vpc?topic=vpc-planning-for-bare-metal-servers&interface=ui).
 
 ## Supported Operating Systems

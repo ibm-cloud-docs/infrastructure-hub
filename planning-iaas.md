@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-12-13"
+lastupdated: "2024-12-16"
 
 keywords: infrastructure
 
@@ -20,7 +20,7 @@ You want to plan your infrastructure before you provision it to make sure that y
 ## Infrastructure architecture
 {: #planning-3}
 
-Start with [IaaS (Infrastructure-as-a-Service)](https://www.ibm.com/topics/iaas){: external} to get a more in-depth overview of the infrastructure-as-a-service platform and architecture.
+Start with [IaaS (Infrastructure-as-a-Service)](https://www.ibm.com/think/topics/iaas){: external} to get a more in-depth overview of the infrastructure-as-a-service platform and architecture.
 
 ## {{site.data.keyword.cloud_notm}} Stencils
 {: #planning-5}
@@ -35,14 +35,14 @@ Use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/cl
 ## {{site.data.keyword.cloud_notm}} services and compliance
 {: #planning-7}
 
-As with any architecture, consider the {{site.data.keyword.cloud_notm}} resources that you might add to your solution as you size your infrastructure. For more information, see [What are IaaS, PaaS, and SaaS?](https://www.ibm.com/topics/iaas-paas-saas){: external} and search for a specific service. You also need to think about any regulations that you must consider when you build your architecture. For example, is your workload considered sensitive or is it regulated? For more information, see [Compliance](https://www.ibm.com/cloud/compliance){: external}.
+As with any architecture, consider the {{site.data.keyword.cloud_notm}} resources that you might add to your solution as you size your infrastructure. For more information, see [What are IaaS, PaaS, and SaaS?](https://www.ibm.com/think/topics/iaas-paas-saas){: external} and search for a specific service. You also need to think about any regulations that you must consider when you build your architecture. For example, is your workload considered sensitive or is it regulated? For more information, see [Compliance](https://www.ibm.com/cloud/compliance){: external}.
 
 ## {{site.data.keyword.cloud_notm}} IP ranges
 {: #planning-ip-ranges}
 
-See [{{site.data.keyword.cloud_notm}} IP ranges](/docs/cloud-infrastructure?topic=cloud-infrastructure-ibm-cloud-ip-ranges).
+See [{{site.data.keyword.cloud_notm}} IP ranges](/docs/infrastructure-hub?topic=infrastructure-hub-ibm-cloud-ip-ranges).
 
 ## Next steps
 {: #nextsteps2}
 
-To continue, see [Building your infrastructure](/docs/cloud-infrastructure?topic=cloud-infrastructure-compute) with compute services.
+To continue, see [Building your infrastructure](/docs/infrastructure-hub?topic=infrastructure-hub-compute) with compute services.

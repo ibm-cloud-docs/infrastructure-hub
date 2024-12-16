@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-12-13"
+lastupdated: "2024-12-16"
 
 keywords: infrastructure
 
@@ -56,4 +56,4 @@ Within the infrastructure layer, you can build a virtual private cloud, which is
 ## Next steps
 {: #nextsteps5}
 
-To continue, see [Building your infrastructure](/docs/cloud-infrastructure?topic=cloud-infrastructure-storage) with storage services.
+To continue, see [Building your infrastructure](/docs/infrastructure-hub?topic=infrastructure-hub-storage) with storage services.

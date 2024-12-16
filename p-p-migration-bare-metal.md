@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-12-13"
+lastupdated: "2024-12-16"
 
 keywords: migration, migrate, migrating, migrate infrastructure
 
@@ -233,4 +233,4 @@ After your migration, validate the target server. The following list is not exha
 
 * [RackWare Cloud Migration](https://www.rackwareinc.com/cloud-migration){: external}
 * [RackWare RMM user guide for {{site.data.keyword.cloud_notm}}](https://www.rackwareinc.com/rackware-rmm-getting-started-for-ibm-cloud){: external}
-* [FAQS for classic bare metal to classic bare metal](/docs/cloud-infrastructure?topic=cloud-infrastructure-bare-metal-faqs)
+* [FAQS for classic bare metal to classic bare metal](/docs/infrastructure-hub?topic=infrastructure-hub-bare-metal-faqs)

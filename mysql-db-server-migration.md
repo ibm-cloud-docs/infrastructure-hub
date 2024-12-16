@@ -2,7 +2,7 @@
 
 copyright:
   years:  2022, 2024
-lastupdated: "2024-12-13"
+lastupdated: "2024-12-16"
 
 subcollection: infrastructure-hub
 
@@ -66,7 +66,7 @@ Before you begin your MySQL database migration, review and complete the followin
 ### RackWare Management Module (RMM)
 {: #mysql-rackware-management-module}
 
-RackWare Management Module (RMM) is a simple workload migration solution that is provided by IBM’s partner RackWare. RMM provides an automated and convenient process to migrate existing compute workloads to {{site.data.keyword.cloud_notm}}. It tracks the data changes on the source server until cutover, and performs delta syncs to the target server in {{site.data.keyword.cloud_notm}}. This tool migrates a server with everything on it including the operating system, along with its installed database application and data (lift and shift migration). RMM can do database migration if it's a platform-based database (for example, it can access database workloads with a public IP address). For more information, see [On-premises VMware VM to {{site.data.keyword.vpc_short}} migration with RMM](/docs/cloud-infrastructure?topic=cloud-infrastructure-migrating-images-vmware-vpc).
+RackWare Management Module (RMM) is a simple workload migration solution that is provided by IBM’s partner RackWare. RMM provides an automated and convenient process to migrate existing compute workloads to {{site.data.keyword.cloud_notm}}. It tracks the data changes on the source server until cutover, and performs delta syncs to the target server in {{site.data.keyword.cloud_notm}}. This tool migrates a server with everything on it including the operating system, along with its installed database application and data (lift and shift migration). RMM can do database migration if it's a platform-based database (for example, it can access database workloads with a public IP address). For more information, see [On-premises VMware VM to {{site.data.keyword.vpc_short}} migration with RMM](/docs/infrastructure-hub?topic=infrastructure-hub-migrating-images-vmware-vpc).
 
 ### Database Migration Script (Python)
 {: #mysql-database-migration-script-python}
@@ -75,4 +75,4 @@ By using Python as a source, you can migrate the database from any server to {{s
 
 The new server runs in the latest versions of MySQL, since this migration focuses on the database alone. The migration process is consistent and secure and can be performed from any system.
 
-For more information, see [MySQL database migration by using Python](/docs/cloud-infrastructure?topic=cloud-infrastructure-mysql-python).
+For more information, see [MySQL database migration by using Python](/docs/infrastructure-hub?topic=infrastructure-hub-mysql-python).

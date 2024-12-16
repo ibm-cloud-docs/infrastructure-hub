@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-12-13"
+lastupdated: "2024-12-16"
 
 keywords: infrastructure
 
@@ -40,4 +40,4 @@ Our cloud storage services offer a scalable, security-rich, and cost-effective h
 ## Next steps
 {: #nextsteps4}
 
-To continue, see [Managing your infrastructure](/docs/cloud-infrastructure?topic=cloud-infrastructure-managing).
+To continue, see [Managing your infrastructure](/docs/infrastructure-hub?topic=infrastructure-hub-managing).

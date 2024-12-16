@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-12-13"
+lastupdated: "2024-12-16"
 
 keywords: infrastructure
 
@@ -50,4 +50,4 @@ Your server is the base of your infrastructure. Depending on your needs, you hav
 ## Next steps
 {: #nextsteps3}
 
-To continue, see [Building your infrastructure](/docs/cloud-infrastructure?topic=cloud-infrastructure-network) with networking services.
+To continue, see [Building your infrastructure](/docs/infrastructure-hub?topic=infrastructure-hub-network) with networking services.

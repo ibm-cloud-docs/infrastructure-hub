@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-12-13"
+lastupdated: "2024-12-16"
 
 keywords: infrastructure
 
@@ -40,9 +40,9 @@ As with any architecture, consider the {{site.data.keyword.cloud_notm}} resource
 ## {{site.data.keyword.cloud_notm}} IP ranges
 {: #planning-ip-ranges}
 
-See [{{site.data.keyword.cloud_notm}} IP ranges](/docs/cloud-infrastructure?topic=cloud-infrastructure-ibm-cloud-ip-ranges).
+See [{{site.data.keyword.cloud_notm}} IP ranges](/docs/infrastructure-hub?topic=infrastructure-hub-ibm-cloud-ip-ranges).
 
 ## Next steps
 {: #nextsteps2}
 
-To continue, see [Building your infrastructure](/docs/cloud-infrastructure?topic=cloud-infrastructure-compute) with compute services.
+To continue, see [Building your infrastructure](/docs/infrastructure-hub?topic=infrastructure-hub-compute) with compute services.

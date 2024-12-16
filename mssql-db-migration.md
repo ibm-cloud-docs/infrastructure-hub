@@ -2,7 +2,7 @@
 
 copyright:
   years:  2022, 2024
-lastupdated: "2024-12-13"
+lastupdated: "2024-12-16"
 
 subcollection: infrastructure-hub
 
@@ -63,25 +63,25 @@ For more information, see [Migration considerations](/docs/microsoft?topic=micro
 
 | Migration tools and solutions | Use cases |
 | ----------------- | -------- |
-| [RackWare Management Module (RMM)](/docs/cloud-infrastructure?topic=cloud-infrastructure-mssql-db-overview#rackware-management-module) | Database on single server or clustered database on multiple servers. For a Microsoft SQL server clustered database migration, user needs to take care of licenses, shared disk configuration, updating the correct IP address in DNS records of DNS / active directory server, setting up DNS server for all node servers. {: note} |
-| [Backup and restore with Windows&reg; {{site.data.keyword.backup_notm}} Agent](/docs/cloud-infrastructure?topic=cloud-infrastructure-mssql-db-overview#backup-and-restore-backup-agent) | Large data migration, full database backup, moving database data to another drive, moving database data between different versions of SQL server. |
-| [Detach and attach](/docs/cloud-infrastructure?topic=cloud-infrastructure-mssql-db-overview#detach-and-attach) | Full database backup, moving database data to another drive, moving database data between different versions of SQL server. |
-| [Import and export data from SQL Server](/docs/cloud-infrastructure?topic=cloud-infrastructure-mssql-db-overview#import-and-export) | Large data migration, full database backup |
-| [Copy Database Wizard](/docs/cloud-infrastructure?topic=cloud-infrastructure-mssql-db-overview#copy-database-wizard) | Small data migration |
-| [Generate a script](/docs/cloud-infrastructure?topic=cloud-infrastructure-mssql-db-overview#generate-script) | Small data migration or schema-only migration |
-| [Backup and restore with SQL Server Management Studio](/docs/cloud-infrastructure?topic=cloud-infrastructure-mssql-db-overview#backup-and-restore-management-studio) | Large data migration, full database backup, moving database data to another drive, moving database data between different versions of SQL server. |
-| [Transactional replication](/docs/cloud-infrastructure?topic=cloud-infrastructure-mssql-db-overview#transaction-replication)| Copying and distributing data and database objects from one database to another, synchronizing between databases to maintain consistency. |
-| [Database mirroring](/docs/cloud-infrastructure?topic=cloud-infrastructure-mssql-db-overview#database-mirroring)| Copying or mirroring of an SQL Server database on a standby server. |
-| [Always On availability groups](/docs/cloud-infrastructure?topic=cloud-infrastructure-mssql-db-overview#always-on-availability-groups) | Large data migration |
-| [Always On distributed availability groups](/docs/cloud-infrastructure?topic=cloud-infrastructure-mssql-db-overview#always-on-distributed-availability-groups) | Large data migration |
-| [Data Migration Assistant (DMA)](/docs/cloud-infrastructure?topic=cloud-infrastructure-mssql-db-overview#data-migration-assistant) | Large data migration, migration assessment, server upgrade |
-| [Smart Bulk Copy](/docs/cloud-infrastructure?topic=cloud-infrastructure-mssql-db-overview#smart-bulk-copy) | Large data migration, other cloud service providers to {{site.data.keyword.vpc_short}}, on-premises to {{site.data.keyword.vpc_short}}. |
+| [RackWare Management Module (RMM)](/docs/infrastructure-hub?topic=infrastructure-hub-mssql-db-overview#rackware-management-module) | Database on single server or clustered database on multiple servers. For a Microsoft SQL server clustered database migration, user needs to take care of licenses, shared disk configuration, updating the correct IP address in DNS records of DNS / active directory server, setting up DNS server for all node servers. {: note} |
+| [Backup and restore with Windows&reg; {{site.data.keyword.backup_notm}} Agent](/docs/infrastructure-hub?topic=infrastructure-hub-mssql-db-overview#backup-and-restore-backup-agent) | Large data migration, full database backup, moving database data to another drive, moving database data between different versions of SQL server. |
+| [Detach and attach](/docs/infrastructure-hub?topic=infrastructure-hub-mssql-db-overview#detach-and-attach) | Full database backup, moving database data to another drive, moving database data between different versions of SQL server. |
+| [Import and export data from SQL Server](/docs/infrastructure-hub?topic=infrastructure-hub-mssql-db-overview#import-and-export) | Large data migration, full database backup |
+| [Copy Database Wizard](/docs/infrastructure-hub?topic=infrastructure-hub-mssql-db-overview#copy-database-wizard) | Small data migration |
+| [Generate a script](/docs/infrastructure-hub?topic=infrastructure-hub-mssql-db-overview#generate-script) | Small data migration or schema-only migration |
+| [Backup and restore with SQL Server Management Studio](/docs/infrastructure-hub?topic=infrastructure-hub-mssql-db-overview#backup-and-restore-management-studio) | Large data migration, full database backup, moving database data to another drive, moving database data between different versions of SQL server. |
+| [Transactional replication](/docs/infrastructure-hub?topic=infrastructure-hub-mssql-db-overview#transaction-replication)| Copying and distributing data and database objects from one database to another, synchronizing between databases to maintain consistency. |
+| [Database mirroring](/docs/infrastructure-hub?topic=infrastructure-hub-mssql-db-overview#database-mirroring)| Copying or mirroring of an SQL Server database on a standby server. |
+| [Always On availability groups](/docs/infrastructure-hub?topic=infrastructure-hub-mssql-db-overview#always-on-availability-groups) | Large data migration |
+| [Always On distributed availability groups](/docs/infrastructure-hub?topic=infrastructure-hub-mssql-db-overview#always-on-distributed-availability-groups) | Large data migration |
+| [Data Migration Assistant (DMA)](/docs/infrastructure-hub?topic=infrastructure-hub-mssql-db-overview#data-migration-assistant) | Large data migration, migration assessment, server upgrade |
+| [Smart Bulk Copy](/docs/infrastructure-hub?topic=infrastructure-hub-mssql-db-overview#smart-bulk-copy) | Large data migration, other cloud service providers to {{site.data.keyword.vpc_short}}, on-premises to {{site.data.keyword.vpc_short}}. |
 {: caption="Migration methods and use cases" caption-side="bottom"}
 
 ### RackWare Management Module (RMM)
 {: #rackware-management-module}
 
-RackWare Management Module (RMM) is a simple workload migration solution that is provided by IBM’s partner RackWare. RMM provides an automated, and convenient process to migrate existing compute workloads to {{site.data.keyword.cloud_notm}}. It tracks data changes on the source server until cutover, and performs delta syncs to the target server in {{site.data.keyword.cloud_notm}}. This tool migrates a server with everything on it including the operating system, along with its installed database application and data (lift and shift migration). RMM can do database migration if it is a platform-based database (for example, it can access database workloads with a public IP address). For more information, see [On-premises VMware VM to {{site.data.keyword.vpc_short}} migration with RMM](/docs/cloud-infrastructure?topic=cloud-infrastructure-migrating-images-vmware-vpc).
+RackWare Management Module (RMM) is a simple workload migration solution that is provided by IBM’s partner RackWare. RMM provides an automated, and convenient process to migrate existing compute workloads to {{site.data.keyword.cloud_notm}}. It tracks data changes on the source server until cutover, and performs delta syncs to the target server in {{site.data.keyword.cloud_notm}}. This tool migrates a server with everything on it including the operating system, along with its installed database application and data (lift and shift migration). RMM can do database migration if it is a platform-based database (for example, it can access database workloads with a public IP address). For more information, see [On-premises VMware VM to {{site.data.keyword.vpc_short}} migration with RMM](/docs/infrastructure-hub?topic=infrastructure-hub-migrating-images-vmware-vpc).
 
 RMM can migrate single MSSQL database or clustered databases. The following things must be considered after migration:
 

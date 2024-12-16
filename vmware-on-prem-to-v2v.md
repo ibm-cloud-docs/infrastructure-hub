@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-12-13"
+lastupdated: "2024-12-16"
 
 keywords:
 content-type: tutorial
@@ -245,5 +245,5 @@ Before decommissioning the source server, it is imperative to validate the targe
 {: #rackware-rmm-v2v-resources}
 
 1. [Discovery Tool](https://github.com/IBM-Cloud/vpc-migration-tools/blob/main/v2v-discovery-tool-rmm/VMware/README.md){: external}
-2. [FAQs](/docs/cloud-infrastructure?topic=cloud-infrastructure-faqs-vmware)
+2. [FAQs](/docs/infrastructure-hub?topic=infrastructure-hub-faqs-vmware)
 3. [RackWare usage guide](https://www.rackwareinc.com/cloud-migration){: external}

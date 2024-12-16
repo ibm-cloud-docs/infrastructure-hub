@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2024
-lastupdated: "2024-12-13"
+lastupdated: "2024-12-16"
 
 keywords: cloud environment, virtual server, virtual machine, vm, understanding infrastructure, IaaS model, IT ops admin, on-premises, data center
 
@@ -71,4 +71,4 @@ A hybrid cloud includes resources that combine the aspects of both public and pr
 ## Next steps
 {: #nextsteps1}
 
-To continue, see [Planning your infrastructure](/docs/cloud-infrastructure?topic=cloud-infrastructure-planning-2).
+To continue, see [Planning your infrastructure](/docs/infrastructure-hub?topic=infrastructure-hub-planning-2).

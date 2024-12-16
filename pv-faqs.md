@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-12-11"
+lastupdated: "2024-12-16"
 
 keywords:
 
@@ -57,13 +57,13 @@ The number of concurrent migrations that can occur is limited up to the number o
 {: #rw-obtain-activate-promotional-license}
 {: faq}
 
-You can retrieve the promotional license through the discovery script that is part of the RMM software appliance. For more information about how to use the script, see [Bare metal to virtual server migration on a private network with RMM](/docs/cloud-infrastructure?topic=cloud-infrastructure-pv-migration-private-network).
+You can retrieve the promotional license through the discovery script that is part of the RMM software appliance. For more information about how to use the script, see [Bare metal to virtual server migration on a private network with RMM](/docs/infrastructure-hub?topic=infrastructure-hub-pv-migration-private-network).
 
 ## What are the considerations or limitations for the physical to virtual migration?
 {: #rw-considerations-limitations-migration}
 {: faq}
 
-For more information about considerations and limitations of the physical to virtual migration, see [Bare metal to virtual server migration overview](/docs/cloud-infrastructure?topic=cloud-infrastructure-pv-migration-overview).
+For more information about considerations and limitations of the physical to virtual migration, see [Bare metal to virtual server migration overview](/docs/infrastructure-hub?topic=infrastructure-hub-pv-migration-overview).
 
 ## Is the migration intrusive?
 {: #rw-migration-intrusive}
@@ -75,4 +75,4 @@ In most cases, the migration is not intrusive. The migration can be done when th
 {: #rw-create-target-vsi}
 {: faq}
 
-Yes. With the RMM **Auto-Provision** feature, you can create the target virtual server instance. For more information, see ["Bare metal to virtual server migration on a private network with RMM": option 2 of Step 1: Set up and provision VPC and virtual server instance](/docs/cloud-infrastructure?topic=cloud-infrastructure-pv-migration-private-network#set-up-provision-vpc-vsi).
+Yes. With the RMM **Auto-Provision** feature, you can create the target virtual server instance. For more information, see ["Bare metal to virtual server migration on a private network with RMM": option 2 of Step 1: Set up and provision VPC and virtual server instance](/docs/infrastructure-hub?topic=infrastructure-hub-pv-migration-private-network#set-up-provision-vpc-vsi).

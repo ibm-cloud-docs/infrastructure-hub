@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-12-16"
+lastupdated: "2024-12-17"
 
 keywords: ip, range, firewall, network, traffic, security
 
@@ -15,15 +15,15 @@ subcollection: infrastructure-hub
 # {{site.data.keyword.cloud_notm}} IP ranges
 {: #ibm-cloud-ip-ranges}
 
-A frequently asked question is, "What IP ranges do I allow through the firewall?" The following tables contain the full range of IP addresses to use with these IBM firewalls and appliances.
+A frequently asked question is, "What IP ranges do I allow through the firewall?" The following tables contain the full range of IP addresses to use with these IBM firewalls and appliances. The most important subnets to focus on are the [IBM Cloud service networks](/docs/infrastructure-hub?topic=infrastructure-hub-ibm-cloud-ip-ranges#service-network). These are private (rfc1918) subnets that require connections to and from your servers for provisioning, reloads, remote reboots, and other infrastructure services like DNS resoution, NTP (time) and network attached storage.
 {: shortdesc}
 
 * {{site.data.keyword.cloud_notm}} Juniper vSRX Standard
-* IBM Virtual Router Appliance
-* Fortinet vFSA
-* Fortinet Fortigate Security Appliance 10 Gbps
-* IBM Security Groups
-* Hardware Firewall
+* {{site.data.keyword.cloud_notm}} Ciena Virtual Router Appliance (Vyatta)
+* {{site.data.keyword.cloud_notm}} Fortinet vFSA
+* {{site.data.keyword.cloud_notm}} Fortinet Fortigate Security Appliance 10 Gbps
+* {{site.data.keyword.cloud_notm}} Security Groups
+* {{site.data.keyword.cloud_notm}} Hardware Firewall
 
 To identify potential conflicts between IP ranges in your on-premises environment and IP ranges used in {{site.data.keyword.cloud_notm}}, you can search in the [IP Ranges Calculator tool](https://ibm.biz/cidr-calculator). By using the tool, you can download the listed IP ranges in JSON format. Disclaimer: This community tool is updated based on support availability.
 {: important}
@@ -79,7 +79,7 @@ Ports to allow:
 |wdc04|Washington D.C. |169.55.118.0/23|
 |wdc06|Washington D.C. |169.60.118.0/23|
 |wdc07|Washington D.C. |169.61.118.0/23|
-{: caption="Table 1: Front-end (public) network" caption-side="bottom"}
+{: caption="Table 1: Front-end (public) network" caption-side="bottom"}   
 
 ## Load balancer IPs
 {: #load-balancer-ips}
@@ -118,7 +118,7 @@ Ports to allow:
 |wdc04|Washington D.C. |169.55.117.0/24|
 |wdc06|Washington D.C. |169.60.117.0/24|
 |wdc07|Washington D.C. |169.61.117.0/24|
-{: caption="Table 2: Load balancer IPs" caption-side="bottom"}
+{: caption="Table 2: Load balancer IPs" caption-side="bottom"}   
 
 ## Back-end (private) network
 {: #back-end-network}
@@ -164,7 +164,7 @@ Ports to allow:
 | London | lon02 | BCR01 | 10.1.219.0/24  \n 10.3.40.8/29  \n 10.3.40.16/28  \n 10.3.40.32/27  \n 10.3.40.64/26  \n 10.3.40.128/25  \n 10.112.0.0/15  \n 10.201.107.0/24 |
 | | lon02 | BCR02 | 10.164.0.0/15 |
 | | lon04 | BCR01 | 10.3.7.0/24  \n 10.45.0.0/16  \n 10.201.43.0/24  \n 10.222.0.0/16 |
-| | lon05 | BCR01 | 10.3.21.0/24  \n 10.196.0.0/15  \n 10.201.59.0/24 |
+| | lon05 | BCR01 | 10.3.21.0/24  \n 10.196.0.0/15  \n 10.201.59.0/24 | 
 | | lon06 | BCR01 | 10.3.11.0/24  \n 10.72.0.0/16  \n 10.201.75.0/24  \n 10.242.0.0/16 |
 | Madrid | mad02 | BCR01 | 10.3.45.0/24  \n 10.118.0.0/18 |
 | | mad04 | BCR01 | 10.3.43.0/24  \n 10.118.64.0/18  \n 10.201.253.0/24 |
@@ -193,7 +193,7 @@ Ports to allow:
 | | syd04 | BCR01 | 10.3.6.0/24  \n 10.63.0.0/16  \n 10.201.27.0/24 |
 | | syd05 | BCR01 | 10.3.23.0/24  \n 10.195.0.0/16  \n 10.207.27.0/24 |
 | Tokyo | tok02 | BCR01 | 10.2.241.0/24  \n 10.3.30.0/24  \n 10.3.75.0/24  \n 10.3.242.0/24  \n 10.129.0.0/16  \n 10.132.0.0/15  \n 10.201.171.0/24 |
-| | tok02 | BCR02 | 10.212.0.0/16 \n 10.44.0.0/16 |
+| | tok02 | BCR02 | 10.212.0.0/16 \n 10.44.0.0/16 | 
 | | tok04 | BCR01 | 10.3.17.0/24  \n 10.192.0.0/16  \n 10.201.187.0/24 |
 | | tok05 | BCR01 | 10.3.19.0/24  \n 10.193.0.0/16  \n 10.201.203.0/24 |
 | | tor01 | BCR01 | 10.2.59.0/24  \n 10.3.42.0/24  \n 10.114.0.0/15  \n 10.202.107.0/24 |
@@ -216,16 +216,16 @@ Ports to allow:
 
 [CHANGE LOG](#cloud-infrastructure-oct2622)
 
-To provision and reload classic Virtual Servers and classic Bare Metal Servers, the following private service networks must be allowed through your gateway appliances and firewalls.
+To provision and reload classic Virtual Servers and classic Bare Metal Servers, the following private service networks must be allowed through your gateway appliances and firewalls. 
 
-Be sure to configure rules and verify routes for the service networks listed in the table below for "All", dal10, wdc04, and the location of your server.
+Be sure to configure rules and verify routes for the service networks listed in the table below for "All", dal10, wdc04, and the location of your server. 
 {: important}
 
 Additionally, complete the following steps:
-* Allow and route the following service networks to the BCR on your gateway appliance or firewall for all Bare Metal and Virtual Server provisions and reloads: 10.0.64.0/19, 10.200.80.0/20, 161.26.13.0/24, 161.26.96.0/22, 166.9.12.0/23, 166.9.48.0/24, 166.9.50.0/24, 166.9.228.0/24, 166.9.250.192/27, 10.3.160.0/20, 10.201.0.0/20, 161.26.92.0/22, 161.26.132.0/22, 166.9.20.0/23, 166.9.231.0/24.
+* Allow and route the following service networks to the BCR on your gateway appliance or firewall for all Bare Metal and Virtual Server provisions and reloads: 10.0.64.0/19, 10.200.80.0/20, 161.26.13.0/24, 161.26.96.0/22, 166.9.12.0/23, 166.9.48.0/24, 166.9.50.0/24, 166.9.228.0/24, 166.9.250.192/27, 10.3.160.0/20, 10.201.0.0/20, 161.26.92.0/22, 161.26.132.0/22, 166.9.20.0/23, 166.9.231.0/24. 
 * For RHEL servers, ensure the entire 161.26.0.0/16 is allowed and routed properly to the BCR. Add any additional datacenter service networks that are mentioned in the RHEL section near the bottom of the page.
 * Allow traffic between the service networks and your server in both directions.
-* By default, all classic servers and classic gateway and firewall devices are configured with a static route for the `10.0.0.0/8`, `161.26.0.0/16` and `166.8.0.0/14` networks to the Back-end Customer Router (BCR). If you configure overlapping routes with those subnets, validate that you have also configured PBR or a similar service. Otherwise, consider using different IP space that doesn't overlap with our service networks for your VPNs or tunnels. Failing to do so can result in the failure to provision your Virtual Servers and Bare Metal Servers.
+* By default, all classic servers and classic gateway and firewall devices are configured with a static route for the `10.0.0.0/8`, `161.26.0.0/16` and `166.8.0.0/14` networks to the Back-end Customer Router (BCR). If you configure overlapping routes with those subnets, validate that you have also configured PBR or a similar service. Otherwise, consider using different IP space that doesn't overlap with our service networks for your VPNs or tunnels. Failing to do so can result in the failure to provision your Virtual Servers and Bare Metal Servers. 
 
 Ports to allow:
 - All TCP/UDP ports (for access from your local workstation)
@@ -278,7 +278,7 @@ Ports to allow:
 |wdc04|Washington D.C.|10.3.160.0/20  \n 10.201.0.0/20  \n 161.26.92.0/22  \n 161.26.132.0/22  \n 166.9.20.0/23  \n 166.9.231.0/24|
 |wdc06|Washington D.C.|10.200.160.0/20  \n 161.26.120.0/22  \n 166.9.22.0/23  \n 166.9.232.0/24  \n 166.9.251.64/27|
 |wdc07|Washington D.C.|10.200.176.0/20  \n 161.26.132.0/22  \n 166.9.24.0/23  \n 166.9.233.0/24  \n 166.9.251.96/27|
-{: caption="Table 4: Service network" caption-side="bottom"}
+{: caption="Table 4: Service network" caption-side="bottom"}   
 
 [^fn1]: The 10.1.129.0/24 subnet, within the 10.1.128.0/19 master subnet, is used for Global service virtual IPs, which are not located in dal05.
 
@@ -648,7 +648,7 @@ As of 8 June 2020, all instances of the AdvMon (Nimsoft) by Data Center service 
 * sjc03 address 161.26.72.0/22
 * sjc03 address 161.26.74.0/24
 * sjc04 address 161.26.136.0/22
-* sjc04  address 161.26.138.0/24
+* sjc04 address 161.26.138.0/24
 * sng01 address 10.200.144.0/20
 * sng01 address 161.26.76.0/22
 * sng01 address 161.26.78.0/24
@@ -676,7 +676,7 @@ As of 8 June 2020, all instances of the AdvMon (Nimsoft) by Data Center service 
 * tok04 address 161.26.154.0/24
 * tok04 address 166.9.42.0/23
 * tok05 address 161.26.156.0/22
-* tok05  address 161.26.158.0/24
+* tok05 address 161.26.158.0/24
 * tok05 address 166.9.44.0/23
 * tor01 address 10.202.96.0/20
 * tor01 address 10.202.110.0/24
@@ -757,7 +757,7 @@ All TCP/UDP ports (for access from your local workstation)
 |wdc03|Washington D.C.|100.101.132.0/24|vpn.wdc03.ibmcloudforgov.com|
 |wdc04|Washington D.C.|10.3.212.0/24|vpn.wdc.softlayer.com|
 |wdc07|Washington D.C.|10.200.204.0/24|vpn.wdc.softlayer.com|
-{: caption="Table 9: SSL VPN data centers" caption-side="bottom"}
+{: caption="Table 9: SSL VPN data centers" caption-side="bottom"}  
 
 ## Legacy networks
 {: #legacy-networks}
@@ -784,29 +784,64 @@ If your server uses a Red Hat Enterprise Linux (RHEL) license provided by {{site
 
 * Complete the SSL VPN requirements listed in [Service network (on back-end/private network)](/docs/infrastructure-hub?topic=infrastructure-hub-ibm-cloud-ip-ranges#service-network).
 * Open the RHEL endpoint rhha01.updates.us-south.iaas.service.networklayer.com. This requires adding the IP 161.26.112.28 to the firewall rules. Since DNS round robin is involved, this endpoint is not a single endpoint and could be moved as needed.
-* Allow access to the service network as follows. Otherwise, updates and licensing do not function properly.
+* Allow access to the service network as follows. Otherwise, updates and licensing do not function properly. 
 
-|Server location|Allow private service network for this data center|
-|---|---|
-|Amsterdam (ams03)|fra02|
-|Chennai (che01)|tok02|
-|Dallas (dal05, dal09, dal10, dal12, dal13)|dal09|
-|Frankfurt (fra02, fra04, fra05)|fra02|
-|London (lon02, lon04, lon05, lon06)|lon02|
-|Milan (mil01)|fra02|
-|Montreal (mon01)|mon01|
-|Paris (par01)|fra02|
-|San Jose (sjc01, sjc03, sjc04)|dal09|
-|Sao Paulo (sao01)|dal09|
-|Singapore (sng01)|syd01|
-|Sydney (syd01, syd04, syd05)|syd01|
-|Tokyo (tok02, tok04, tok05)|tok02|
-|Toronto (tor01)|mon01|
-|Washington DC (wdc01, wdc04, wdc06, wdc07)|mon01|
-|Any data center not listed|dal09|
+| Server location | Permitted data centers | IP ranges |
+|---|---|---|
+| Amsterdam (ams03) | fra02 | 161.26.36.0/22 |
+| | fra04 | 161.26.144.0/22 |
+| | fra05 | 161.26.148.0/22 |
+| Chennai (che01) | tok02 | 161.26.84.0/22 |
+| | tok04 | 161.26.152.0/22 |
+| | tok05 | 161.26.156.0/22 |
+| Dallas (dal05, dal09, dal10, dal12, dal13) | dal10 | 161.26.96.0/22 |
+| | dal12 | 161.26.108.0/22 |
+| | dal13 | 161.26.112.0/22 |
+| Frankfurt (fra02, fra04, fra05) | fra02 | 161.26.36.0/22 |
+| | fra04 | 161.26.144.0/22 |
+| | fra05 | 161.26.148.0/22 |
+| London (lon02, lon04, lon05, lon06) | lon04 | 161.26.128.0/22 |
+| | lon05 | 161.26.160.0/22 |
+| | lon06 | 161.26.140.0/22 |
+| Milan (mil01) | fra02 | 161.26.36.0/22 |
+| | fra04 | 161.26.144.0/22 |
+| | fra05 | 161.26.148.0/22 |
+| Montreal (mon01) | tor01 | 161.26.88.0/22 |
+| | tor04 | 161.26.196.0/22 | 
+| | tor05 | 161.26.200.0/22 | 
+| Paris (par01) | fra02 | 161.26.36.0/22 |
+| | fra04 | 161.26.144.0/22 |
+| | fra05 | 161.26.148.0/22 |
+| San Jose (sjc01, sjc03, sjc04) | dal10 | 161.26.96.0/22 |
+| | dal12 | 161.26.108.0/22 |
+| | dal13 | 161.26.112.0/22 |
+| Sao Paulo (sao01) | sao01 | 161.26.64.0/22 |
+| | sao04 | 161.26.204.0/22 | 
+| | sao05 | 161.26.208.0/22 | 
+| Singapore (sng01) | syd01 | 161.26.80.0/22 |
+| | syd04 | 161.26.124.0/22 |
+| | syd05 | 161.26.164.0/22 |
+| Sydney (syd01, syd04, syd05)| syd01 | 161.26.80.0/22 |
+| | syd04 | 161.26.124.0/22 |
+| | syd05 | 161.26.164.0/22 |
+| Tokyo (tok02, tok04, tok05)| tok02 | 161.26.84.0/22 |
+| | tok04 | 161.26.152.0/22 |
+| | tok05 | 161.26.156.0/22 |
+| Toronto (tor01)| tor01 | 161.26.88.0/22 |
+| | tor04 | 161.26.196.0/22 |
+| | tor05 | 161.26.200.0/22 |
+| Washington DC (wdc01, wdc04, wdc06, wdc07)| wdc04 |  161.26.92.0/22 |
+| | wdc06 |  161.26.116.0/22 |
+| | wdc07 |  161.26.120.0/22 |
+| Osaka | osa21 | 161.26.184.0/22 |
+| | osa22 | 161.26.188.0/22 |
+| | osa23 | 161.26.192.0/22 |
+| Any data center not listed | dal10 | 161.26.96.0/22 |
+| | dal12 | 161.26.108.0/22 |
+| | dal13 | 161.26.112.0/22 |
 {: caption="Table 12: Red Hat Enterprise Linux server requirements" caption-side="bottom"}
 
-To resolve common provisioning issues, permit access to the entire service network by allowing the IP 161.26.0.0/16.
+To resolve common provisioning issues, permit access to the entire service network by allowing the IP 161.26.0.0/16. 
 {: important}
 
 ## Windows VSI server requirements

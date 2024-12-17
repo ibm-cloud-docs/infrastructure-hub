@@ -79,7 +79,7 @@ Ports to allow:
 |wdc04|Washington D.C. |169.55.118.0/23|
 |wdc06|Washington D.C. |169.60.118.0/23|
 |wdc07|Washington D.C. |169.61.118.0/23|
-{: caption="Table 1: Front-end (public) network" caption-side="bottom"}   
+{: caption="Table 1: Front-end (public) network" caption-side="bottom"}
 
 ## Load balancer IPs
 {: #load-balancer-ips}
@@ -118,7 +118,7 @@ Ports to allow:
 |wdc04|Washington D.C. |169.55.117.0/24|
 |wdc06|Washington D.C. |169.60.117.0/24|
 |wdc07|Washington D.C. |169.61.117.0/24|
-{: caption="Table 2: Load balancer IPs" caption-side="bottom"}   
+{: caption="Table 2: Load balancer IPs" caption-side="bottom"}
 
 ## Back-end (private) network
 {: #back-end-network}
@@ -841,7 +841,7 @@ If your server uses a Red Hat Enterprise Linux (RHEL) license provided by {{site
 | | dal13 | 161.26.112.0/22 |
 {: caption="Table 12: Red Hat Enterprise Linux server requirements" caption-side="bottom"}
 
-To resolve common provisioning issues, permit access to the entire service network by allowing the IP 161.26.0.0/16. 
+To resolve common provisioning issues, permit access to the entire service network by allowing the IP 161.26.0.0/16.
 {: important}
 
 ## Windows VSI server requirements

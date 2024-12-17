@@ -757,7 +757,7 @@ All TCP/UDP ports (for access from your local workstation)
 |wdc03|Washington D.C.|100.101.132.0/24|vpn.wdc03.ibmcloudforgov.com|
 |wdc04|Washington D.C.|10.3.212.0/24|vpn.wdc.softlayer.com|
 |wdc07|Washington D.C.|10.200.204.0/24|vpn.wdc.softlayer.com|
-{: caption="Table 9: SSL VPN data centers" caption-side="bottom"}  
+{: caption="Table 9: SSL VPN data centers" caption-side="bottom"}
 
 ## Legacy networks
 {: #legacy-networks}

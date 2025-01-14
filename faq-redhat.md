@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-12-13"
+  years: 2025
+lastupdated: "2025-01-14"
 
 subcollection: infrastructure-hub
 
@@ -54,7 +54,7 @@ If Red Hat involvement is required to solve a potential issue, {{site.data.keywo
 {: #faq-owner-responsibilites-ibm-cloud-red-hat}
 {: faq}
 
-{{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Red Hat stock images. {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) covers any issue with the cloud infrastructure and the stock images - such as driver mismatch or licensing. Issues that are related to image licensing are the responsibility of the customer. Custom images (customer-owned images) are also the responsibility of the customer.
+{{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Red Hat stock images. {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) covers any issue with the cloud infrastructure and the stock images, such as driver mismatch or licensing. For custom images, it is the client's responsibility to resolve any issues related to the custom image, such as such as driver mismatch or licensing. 
 
 ## Does IBM Cloud support Bring Your Own License (BYOL) for Red Hat operating systems?
 {: #faq-byol-red-hat-ibm-cloud}

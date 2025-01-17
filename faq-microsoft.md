@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-12-13"
+  years: 2025
+lastupdated: "2025-01-17"
 
 subcollection: infrastructure-hub
 
@@ -63,23 +63,23 @@ If Microsoft involvement is required to solve a potential issue, {{site.data.key
 
 For client BYOL Microsoft software issues, you need to contact [Microsoft support](https://support.microsoft.com/en-us){: external}.
 
-## Does {{site.data.keyword.cloud_notm}} and Microsoft offer an extended support agreement?
+## Does {{site.data.keyword.cloud_notm}} support Extended Security Updates on Microsoft Products ?
 {: #faq-extended-support-microsoft-ibm-cloud}
 {: faq}
 
-{{site.data.keyword.cloud_notm}} adheres to Microsoft end of service (EOS) dates. {{site.data.keyword.cloud_notm}} and Microsoft don't offer an extended support agreement. However, IBM support works with [Microsoft support](https://support.microsoft.com/en-us){: external} when needed.
+{{site.data.keyword.cloud_notm}} adheres to Microsoft End of Service (EOS) dates. If you purchase extended support updates from Microsoft, you can apply the same dates to your EOS Windows virtual servers.
 
 ## What is the level of support between {{site.data.keyword.cloud_notm}} and customers who use Microsoft software?
 {: #faq-microsoft-ibm-cloud-responsibilities}
 {: faq}
 
-{{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Microsoft stock images. {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) covers any issue with the cloud infrastructure and the stock images - such as driver mismatch or licensing. Issues that are related to images and licensing are the responsibility of the customer. Custom images (customer-owned images) are also the responsibility of the customer.
+{{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Microsoft stock images. {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) covers any issue with the cloud infrastructure and the stock images, such as driver mismatch or licensing. For custom images, the client is responsible for any issues that are related to the custom image, such as a driver mismatch or licensing.
 
-## Is the Microsoft operating system cost included in the on-demand {{site.data.keyword.cloud_notm}} virtual servers cost?
+## Is the cost of the Microsoft operating system included in the on-demand {{site.data.keyword.cloud_notm}} virtual server cost?
 {: #faq-microsoft-os-cost-ibm-cloud}
 {: faq}
 
-For IBM stock images, the operating systems license cost is included as part of the virtual server cost that you see in the catalog. Custom image licenses are billed separately.
+For IBM stock images, the operating systems license cost is included as part of the virtual server cost that you see in the catalog.
 
 ## Does {{site.data.keyword.cloud_notm}} support Bring Your Own License (BYOL) for Microsoft software?
 {: #faq-microsoft-ibm-cloud-byol}
@@ -126,7 +126,7 @@ In the lifecycle of an operating system, EOS is the last date that {{site.data.k
 {: #faq-microsoft-ibm-cloud-provision-eos}
 {: faq}
 
-No. You can't provision a virtual server with software that reached its EOS date. Customers can use the existing EOS software that was provisioned before the EOS date at their own risk.
+No. When a product reaches its EOS, you can't provision it from the IBM Catalog. You can use the existing EOS software that was provisioned before the EOS date, at your own risk.
 
 ## Where can I find the EOS date for Microsoft Servers that run in {{site.data.keyword.cloud_notm}}?
 {: #faq-microsoft-eos-dates-ibm-cloud}

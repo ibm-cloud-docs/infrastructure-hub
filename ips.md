@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2024
-lastupdated: "2024-12-17"
+  years: 2017, 2025
+lastupdated: "2025-02-05"
 
 keywords: ip, range, firewall, network, traffic, security
 
@@ -83,6 +83,8 @@ Ports to allow:
 
 ## Load balancer IPs
 {: #load-balancer-ips}
+
+The following IPs are Classic hardware Load Balancer IPs, and do not relate to IPs associated with IBM Cloud Load Balancer. For information on IPs associated with IBM Cloud Load Balancer, refer to this [FAQ](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer#public).
 
 |Data center|City|IP range|
 |---|---|---|

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-02-05"
+lastupdated: "2025-02-10"
 
 keywords: ip, range, firewall, network, traffic, security
 
@@ -287,9 +287,6 @@ Ports to allow:
 ### Service by data center
 {: #service-by-data-center}
 
-As of 8 June 2020, all instances of the AdvMon (Nimsoft) by Data Center service are deprecated and are no longer supported. For more information, see [FAQs](/docs/virtual-servers?topic=virtual-servers-faq-monitoring#what-are-important-transition-dates).
-{: deprecated}
-
 | Data center | IP range |
 |-----|-----|
 | **Required Flows**:  \n * Outbound TCP 8086 and TCP 8087 from your private  \n VLANs to IP ranges documented in dal09 and dal10 only.  \n * Outbound TCP 2546 from your private VLANs to IP ranges  \n documented for each DC where you need to access your vault. | |
@@ -391,50 +388,6 @@ As of 8 June 2020, all instances of the AdvMon (Nimsoft) by Data Center service 
 {: caption="File and Block by Data Center" caption-side="left"}
 {: #simpletabtable2}
 {: tab-title="File & Block"}
-{: tab-group="IAM-simple"}
-{: class="simple-tab-table"}
-
-| Data center | IP range |
-|-----|-----|
-| **Required Flows**:  \n * Inbound: TCP and UDP, 48000.  \n * Outbound: TCP and UDP, 48000-48020. | |
-| ams03 | 10.3.131.0/24 |
-| che01 | 10.200.19.0/24 |
-| dal05 | 10.1.143.0/24  \n 10.1.139.0/24|
-| dal08 | 100.100.3.0/24 |
-| dal09 | 10.2.115.0/24 |
-| dal10 | 10.200.83.0/24 |
-| dal12 | 10.200.115.0/24 |
-| dal13 | 10.200.131.0/24 |
-| fra02 | 10.3.83.0/24 \n 10.201.147.0/24 |
-| fra04 | 10.201.115.0/24 |
-| fra05 | 10.201.131.0/24 |
-| lon02 | 10.1.211.0/24 \n 10.201.99.0/24 |
-| lon04 | 10.201.35.0/24 |
-| lon05 | 10.201.51.0/24 |
-| lon06 | 10.201.67.0/24 |
-| mil01 | 10.3.147.0/24 |
-| mon01 | 10.3.115.0/24 |
-| par01 | 10.2.147.0/24 |
-| sao01 | 10.200.3.0/24 |
-| sjc01 | 10.1.195.0/24 |
-| sjc03 | 10.3.179.0/24 |
-| sjc04 | 10.201.83.0/24 |
-| sng01 | 10.2.35.0/24 |
-| syd01 | 10.3.99.0/24 |
-| syd04 | 10.201.19.0/24 |
-| tok02 | 10.3.67.0/24 \n 10.201.163.0/24 |
-| tok04 | 10.201.179.0/24 |
-| tok05 | 10.201.195.0/24 |
-| tor01 | 10.2.51.0/24 |
-| wdc01 | 10.1.111.0/24 |
-| wdc03 | 100.100.35.0/24 |
-| wdc04 | 10.3.163.0/24 |
-| wdc04 | 10.201.3.0/24 |
-| wdc06 | 10.200.163.0/24 |
-| wdc07 | 10.200.179.0/24 |
-{: caption="AdvMon (Nimsoft) by Data Center" caption-side="left"}
-{: #simpletabtable3}
-{: tab-title="AdvMon (Nimsoft)"}
 {: tab-group="IAM-simple"}
 {: class="simple-tab-table"}
 

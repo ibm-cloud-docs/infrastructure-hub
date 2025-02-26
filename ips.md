@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-02-17"
+lastupdated: "2025-02-20"
 
 keywords: ip, range, firewall, network, traffic, security
 
@@ -55,6 +55,7 @@ Ports to allow:
 |mad04|Madrid |13.121.118.0/24|
 |mad05|Madrid |13.122.118.0/24|
 |mil01|Milan |159.122.138.0/23|
+|mon01|Montreal |169.54.118.0/23|
 |osa21|Osaka |163.68.118.0/24|
 |osa22|Osaka |163.69.118.0/24|
 |osa23|Osaka |163.73.118.0/24|
@@ -78,7 +79,7 @@ Ports to allow:
 |wdc04|Washington D.C. |169.55.118.0/23|
 |wdc06|Washington D.C. |169.60.118.0/23|
 |wdc07|Washington D.C. |169.61.118.0/23|
-{: caption="Table 1: Front-end (public) network" caption-side="bottom"}
+{: caption="Front-end (public) network" caption-side="bottom"}
 
 ## Load balancer IPs
 {: #load-balancer-ips}
@@ -102,6 +103,7 @@ The following IPs are Classic hardware Load Balancer IPs, and do not relate to I
 |lon05|London |141.125.117.0/24|
 |lon06|London |158.176.117.0/24|
 |mil01|Milan |159.122.137.0/24|
+|mon01|Montreal |169.54.117.0/24|
 |par01|Paris |159.8.117.0/24|
 |sao01|São Paulo |169.57.137.0/24|
 |sjc01|San Jose |50.23.117.0/24|
@@ -118,7 +120,7 @@ The following IPs are Classic hardware Load Balancer IPs, and do not relate to I
 |wdc04|Washington D.C. |169.55.117.0/24|
 |wdc06|Washington D.C. |169.60.117.0/24|
 |wdc07|Washington D.C. |169.61.117.0/24|
-{: caption="Table 2: Load balancer IPs" caption-side="bottom"}
+{: caption="Load balancer IPs" caption-side="bottom"}
 
 ## Back-end (private) network
 {: #back-end-network}
@@ -170,6 +172,7 @@ Ports to allow:
 | | mad04 | BCR01 | 10.3.43.0/24  \n 10.118.64.0/18  \n 10.201.253.0/24 |
 | | mad05 | BCR01 | 10.3.41.0/24  \n 10.118.128.0/18  \n 10.201.254.0/24 |
 | Milan | mil01 | BCR01 | 10.1.241.0/24  \n 10.3.50.8/29  \n 10.3.50.16/28  \n 10.3.50.32/27  \n 10.3.50.64/26  \n 10.3.50.128/25  \n 10.3.155.0/24  \n 10.144.0.0/15 |
+| Montreal| mon01 | BCR01 | 10.3.46.8/29  \n 10.3.46.16/28  \n 10.3.46.32/27  \n 10.3.46.64/26  \n 10.3.46.128/25  \n 10.3.123.0/24  \n 10.140.0.0/15 |
 | Osaka | osa21 | BCR01 | 10.3.59.0/24  \n 10.8.0.0/16  \n 10.201.246.0/24 |
 | | osa22 | BCR01 | 10.3.57.0/24  \n 10.9.0.0/16  \n 10.201.247.0/24 |
 | | osa23 | BCR01 | 10.3.55.0/24  \n 10.10.0.0/16  \n 10.201.248.0/24 |
@@ -208,7 +211,7 @@ Ports to allow:
 | | wdc04 | BCR05 | 10.213.0.0/16 |
 | | wdc06 | BCR01 | 10.3.4.0/24  \n 10.188.0.0/15  \n 10.200.171.0/24 |
 | | wdc07 | BCR01 | 10.3.5.0/24  \n 10.39.0.0/16  \n 10.190.0.0/15  \n 10.200.187.0/24 |
-{: caption="Table 3: Customer private network space" caption-side="bottom"}
+{: caption="Customer private network space" caption-side="bottom"}
 
 ## Service network (on back-end/private network)
 {: #service-network}
@@ -253,6 +256,7 @@ Ports to allow:
 |mad04|Madrid|10.203.112.0/20   \n 161.26.216.0/22|
 |mad05|Madrid|10.203.128.0/20   \n 161.26.220.0/22|
 |mil01|Milan|10.3.144.0/20   \n 161.26.52.0/22|
+|mon01|Montreal|10.3.112.0/20  \n 161.26.56.0/22|
 |osa21|Osaka|10.202.112.0/20  \n 161.26.184.0/22  \n 166.9.70.0/24|
 |osa22|Osaka|10.202.144.0/20  \n 161.26.188.0/22  \n 166.9.71.0/24|
 |osa23|Osaka|10.202.160.0/20  \n 161.26.192.0/22  \n 166.9.72.0/24|
@@ -277,7 +281,7 @@ Ports to allow:
 |wdc04|Washington D.C.|10.3.160.0/20  \n 10.201.0.0/20  \n 161.26.92.0/22  \n 161.26.132.0/22  \n 166.9.20.0/23  \n 166.9.231.0/24|
 |wdc06|Washington D.C.|10.200.160.0/20  \n 161.26.120.0/22  \n 166.9.22.0/23  \n 166.9.232.0/24  \n 166.9.251.64/27|
 |wdc07|Washington D.C.|10.200.176.0/20  \n 161.26.132.0/22  \n 166.9.24.0/23  \n 166.9.233.0/24  \n 166.9.251.96/27|
-{: caption="Table 4: Service network" caption-side="bottom"}
+{: caption="Service network" caption-side="bottom"}
 
 [^fn1]: The 10.1.129.0/24 subnet, within the 10.1.128.0/19 master subnet, is used for Global service virtual IPs, which are not located in dal05.
 
@@ -303,6 +307,7 @@ Ports to allow:
 | lon05 | 10.201.54.0/24 |
 | lon06 | 10.201.70.0/24 |
 | mil01 | 10.3.150.0/24 |
+| mon01 | 10.3.118.0/24 |
 | osa21 | 10.202.118.0/24 |
 | osa22 | 10.202.150.0/24 |
 | osa23 | 10.202.166.0/24 |
@@ -352,6 +357,7 @@ Ports to allow:
 | mad04 | 10.203.125.0/24 \n 161.26.218.0/24 |
 | mad05 | 10.203.141.0/24 \n 161.26.222.0/24 |
 | mil01 | 10.3.158.0/24  \n 161.26.54.0/24 |
+| mon01 | 10.3.126.0/24  \n 161.26.58.0/24 |
 | osa21 | 10.202.126.0/24  \n 161.26.186.0/24 |
 | osa22 | 10.202.158.0/24  \n 161.26.190.0/24 |
 | osa23 | 10.202.174.0/24  \n 161.26.194.0/24 |
@@ -405,6 +411,7 @@ Ports to allow:
 | lon05 | 10.201.50.0/24 |
 | lon06 | 10.201.66.0/24 |
 | mil01 | 10.3.146.0/24 |
+| mon01 | 10.3.114.0/24 |
 | osa21 | 10.202.114.0/24 |
 | osa22 | 10.202.146.0/24 |
 | osa23 | 10.202.162.0/24 |
@@ -557,6 +564,8 @@ Ports to allow:
 * lon06 address 166.9.38.0/23
 * mil01 address 161.26.52.0/22
 * mil01 address 161.26.54.0/24
+* mon01 address 161.26.56.0/22
+* mon01 address 161.26.58.0/24
 * osa21 address 161.26.184.0/22
 * osa21 address 161.26.186.0/24
 * osa21 address 166.9.70.0/24
@@ -684,6 +693,7 @@ All TCP/UDP ports (for access from your local workstation)
 |mad02|Madrid|10.1.56.0/24|vpn.mad.softlayer.com|
 |mad04|Madrid|10.1.60.0/24|vpn.mad.softlayer.com|
 |mil01|Milan|10.3.216.0/24|vpn.mil01.softlayer.com|
+|mon01|Montreal|10.3.224.0/24|vpn.mon01.softlayer.com|
 |osa22|Osaka|10.202.132.0/24|vpn.osa.softlayer.com|
 |osa23|Osaka|10.202.136.0/24|vpn.osa.softalyer.com|
 |par01|Paris|10.3.236.0/24|vpn.par01.softlayer.com|
@@ -703,7 +713,7 @@ All TCP/UDP ports (for access from your local workstation)
 |wdc03|Washington D.C.|100.101.132.0/24|vpn.wdc03.ibmcloudforgov.com|
 |wdc04|Washington D.C.|10.3.212.0/24|vpn.wdc.softlayer.com|
 |wdc07|Washington D.C.|10.200.204.0/24|vpn.wdc.softlayer.com|
-{: caption="Table 9: SSL VPN data centers" caption-side="bottom"}
+{: caption="SSL VPN data centers" caption-side="bottom"}
 
 ## Legacy networks
 {: #legacy-networks}
@@ -719,7 +729,7 @@ All TCP/UDP ports (for access from your local workstation)
 |216.12.193.9|
 |216.40.193.0/24|
 |216.234.234.0/24|
-{: caption="Table 11: Legacy networks" caption-side="bottom"}
+{: caption="Legacy networks" caption-side="bottom"}
 
 ## Red Hat Enterprise Linux server requirements
 {: #red-hat-enterprise-linux-server}
@@ -750,8 +760,9 @@ If your server uses a Red Hat Enterprise Linux (RHEL) license provided by {{site
 | Milan (mil01) | fra02 | 161.26.36.0/22 |
 | | fra04 | 161.26.144.0/22 |
 | | fra05 | 161.26.148.0/22 |
+| Montreal (mon01) | tor01 | 161.26.88.0/22 |
 | | tor04 | 161.26.196.0/22 | 
-| | tor05 | 161.26.200.0/22 | 
+| | tor05 | 161.26.200.0/22 |
 | Paris (par01) | fra02 | 161.26.36.0/22 |
 | | fra04 | 161.26.144.0/22 |
 | | fra05 | 161.26.148.0/22 |
@@ -782,15 +793,15 @@ If your server uses a Red Hat Enterprise Linux (RHEL) license provided by {{site
 | Any data center not listed | dal10 | 161.26.96.0/22 |
 | | dal12 | 161.26.108.0/22 |
 | | dal13 | 161.26.112.0/22 |
-{: caption="Table 12: Red Hat Enterprise Linux server requirements" caption-side="bottom"}
+{: caption="Red Hat Enterprise Linux server requirements" caption-side="bottom"}
 
 To resolve common provisioning issues, permit access to the entire service network by allowing the IP 161.26.0.0/16.
 {: important}
 
-## Windows VSI server requirements
+## Windows virtual server instance requirements
 {: #windows-vsi-server}
 
-If you have a firewall, you must allow your Windows VSI to access to WSUS server IP address ranges as follows; otherwise, updates and licensing do not function properly.
+If you have a firewall, you must allow your Windows virtual server instance to access to WSUS server IP address ranges as follows; otherwise, updates and licensing do not function properly.
 
 * wsustok0401.service.softlayer.com is 10.201.177.200
 * wsustok0201.service.softlayer.com is 10.3.65.50
@@ -799,6 +810,6 @@ If you have a firewall, you must allow your Windows VSI to access to WSUS server
 |Data Center|City|BCR IP Range|
 |---|---|---|
 |tok04|Tokyo|10.3.17.0/24 \n 10.192.0.0/16 \n 10.201.187.0/24|
-{: caption="Table 13: Windows VSI server requirements" caption-side="bottom"}
+{: caption="Windows virtual server instance server requirements" caption-side="bottom"}
 
 For more information about locating your WSUS server in the Windows registry by using a registration key, see [Configuring Automatic Updates by editing the registry](https://learn.microsoft.com/en-us/windows/deployment/update/waas-wu-settings#configuring-automatic-updates-by-editing-the-registry){: external} or [Configure Clients in a Non–Active Directory Environment](https://learn.microsoft.com/de-de/security-updates/windowsupdateservices/21669493){: external}.

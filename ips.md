@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-02-20"
+lastupdated: "2025-03-14"
 
 keywords: ip, range, firewall, network, traffic, security
 
@@ -330,7 +330,6 @@ Ports to allow:
 | wdc07 | 10.200.182.0/24 |
 {: class="simple-tab-table"}
 {: caption="eVault by Data Center" caption-side="left"}
-{: #simpletabtable1}
 {: tab-title="eVault"}
 {: tab-group="IAM-simple"}
 
@@ -387,7 +386,6 @@ Ports to allow:
 | wdc06 | 10.200.174.0/24  \n 161.26.118.0/24 |
 | wdc07 | 10.200.90.0/24  \n 161.26.122.0/24 |
 {: caption="File and Block by Data Center" caption-side="left"}
-{: #simpletabtable2}
 {: tab-title="File & Block"}
 {: tab-group="IAM-simple"}
 {: class="simple-tab-table"}
@@ -434,7 +432,6 @@ Ports to allow:
 | wdc06 | 10.200.162.0/24 |
 | wdc07 | 10.200.178.0/24 |
 {: caption="ICOS by Data Center" caption-side="left"}
-{: #simpletabtable4}
 {: tab-title="ICOS"}
 {: tab-group="IAM-simple"}
 {: class="simple-tab-table"}

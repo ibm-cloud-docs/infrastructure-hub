@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-01-17"
+lastupdated: "2025-03-21"
 
 subcollection: infrastructure-hub
 
@@ -67,7 +67,7 @@ For client BYOL Microsoft software issues, you need to contact [Microsoft suppor
 {: #faq-extended-support-microsoft-ibm-cloud}
 {: faq}
 
-{{site.data.keyword.cloud_notm}} adheres to Microsoft End of Service (EOS) dates. If you purchase extended support updates from Microsoft, you can apply the same dates to your EOS Windows virtual servers.
+{{site.data.keyword.cloud_notm}} adheres to Microsoft End of Service (EOS) dates. If you purchase extended support updates from Microsoft, you can apply the same dates to your EOS Windows virtual servers. For an OS that is under ESU, contact Microsoft for any issues that are related to the image. For issues that are related to infrastructure or any {{site.data.keyword.cloud_notm}} service, contact [support](/docs/vpc?topic=vpc-getting-help-and-support-for-vpc).
 
 ## What is the level of support between {{site.data.keyword.cloud_notm}} and customers who use Microsoft software?
 {: #faq-microsoft-ibm-cloud-responsibilities}
@@ -126,7 +126,7 @@ In the lifecycle of an operating system, EOS is the last date that {{site.data.k
 {: #faq-microsoft-ibm-cloud-provision-eos}
 {: faq}
 
-No. When a product reaches its EOS, you can't provision it from the IBM Catalog. You can use the existing EOS software that was provisioned before the EOS date, at your own risk.
+Yes, you can provision a virtual server by using the EOS OS if it is made into an image template before the EOS date. After you create image template, you can use it to provision servers after the EOS. For more information about creating image templates, see [Creating an image template](/docs/image-templates?topic=image-templates-creating-an-image-template).
 
 ## Where can I find the EOS date for Microsoft Servers that run in {{site.data.keyword.cloud_notm}}?
 {: #faq-microsoft-eos-dates-ibm-cloud}

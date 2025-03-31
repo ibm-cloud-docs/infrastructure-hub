@@ -103,14 +103,14 @@ toc:
       id: help
       topics:
       - topicgroup:
-          label: FAQs for migration
+          label: FAQ for migration
           topics:
           - p-p-faqs.md
           - pv-faqs.md
           - faqs-for-VMWare-to-VPC-migrations.md
       - getting-help-diy-image-data-migration.md
       - topicgroup:
-          label: FAQs for operating systems and add-ons
+          label: FAQ for operating systems and add-ons
           topics:
           - faq-microsoft.md
           - faq-redhat.md

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-03-21"
+lastupdated: "2025-03-31"
 
 subcollection: infrastructure-hub
 
@@ -12,7 +12,7 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQs about Microsoft and {{site.data.keyword.cloud}} infrastructure
+# FAQ about Microsoft and {{site.data.keyword.cloud}} infrastructure
 {: #faqs-for-microsoft-software-ibm-cloud}
 
 IBM is a Gold Certified member of the Microsoft Partner Network&reg; and licensed to sell Microsoft&reg; software under the Services Provider License Agreement (SPLA). IBM is also an authorized license mobility Microsoft partner. Use of Microsoft software is solely subject to terms and conditions from Microsoft. When you use Microsoft software in {{site.data.keyword.cloud_notm}}, you are fully responsible for complying with Microsoft licensing terms.

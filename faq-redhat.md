@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-01-14"
+lastupdated: "2025-03-31"
 
 subcollection: infrastructure-hub
 
@@ -12,7 +12,7 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQs about Red Hat and {{site.data.keyword.cloud}} infrastructure
+# FAQ about Red Hat and {{site.data.keyword.cloud}} infrastructure
 {: #faqs-for-red-hat-ibm-cloud}
 
 Review frequently asked questions (FAQs) for using Red Hat and {{site.data.keyword.cloud_notm}} infrastructure.

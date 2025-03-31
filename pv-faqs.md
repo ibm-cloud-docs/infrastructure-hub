@@ -1,18 +1,20 @@
 ---
 
 copyright:
-  years: 2021, 2024
-lastupdated: "2024-12-16"
+  years: 2021, 2025
+lastupdated: "2025-03-31"
 
 keywords:
 
 subcollection: infrastructure-hub
 
+content-type: faq
+
 ---
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQs for RackWare
+# FAQ for RackWare
 {: #rackware-faqs}
 
 ## What is an RMM server?

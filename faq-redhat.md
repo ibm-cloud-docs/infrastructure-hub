@@ -24,6 +24,12 @@ Review frequently asked questions (FAQs) for using Red Hat and {{site.data.keywo
 * See [Lifecycle for operating systems and add-ons - Red Hat Enterprise Linux (RHEL)](/docs/bare-metal?topic=bare-metal-product-lifecycle-classic#rhel-classic) for the Red Hat versions that {{site.data.keyword.cloud_notm}} Classic infrastructure supports.
 * See [Lifecycle for guest operating systems - Red Hat Enterprise Linux (RHEL)](/docs/vpc?topic=vpc-guest-os-lifecycle#rhel) for the Red Hat versions that {{site.data.keyword.vpc_short}} supports.
 
+## How are updates applied to Red Hat Enterprise Linux on {{site.data.keyword.cloud_notm}}?
+{: #faq-updates-applied-red-hat-ibm-cloud}
+{: faq}
+
+{{site.data.keyword.IBM}} maintains internal repositories that are up-to-date with the official Red Hat repositories. When using an {{site.data.keyword.IBM_notm}}-supplied RHEL image, the `dnf update` process pulls updates from the {{site.data.keyword.IBM_notm}} maintained repositories.
+
 ## What support can I expect from {{site.data.keyword.cloud_notm}} for Red Hat products?
 {: #faq-red-hat-ibm-support}
 {: faq}

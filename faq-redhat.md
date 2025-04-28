@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-03-31"
+lastupdated: "2025-04-28"
 
 subcollection: infrastructure-hub
 
@@ -28,7 +28,7 @@ Review frequently asked questions (FAQs) for using Red Hat and {{site.data.keywo
 {: #faq-updates-applied-red-hat-ibm-cloud}
 {: faq}
 
-When Red Hat releases an update, IBM stock images pull updates from Red Hat official repositories - repositories that are maintained by Red Hat.
+{{site.data.keyword.IBM}} maintains internal repositories that are up-to-date with the official Red Hat repositories. 
 
 ## What support can I expect from {{site.data.keyword.cloud_notm}} for Red Hat products?
 {: #faq-red-hat-ibm-support}
@@ -36,13 +36,13 @@ When Red Hat releases an update, IBM stock images pull updates from Red Hat offi
 
 For Red Hat software that is purchased natively on {{site.data.keyword.cloud_notm}}, [support](/docs/account?topic=account-gettinghelp) is the first point of contact for any issue with a Red Hat software-related issue.
 
-IBM provides three support plans.
+{{site.data.keyword.IBM_notm}} provides three support plans.
 
 * Basic
 * Advanced
 * Premium.
 
-For more information, see [IBM support plans](/docs/account?topic=account-support-plans).
+For more information, see [{{site.data.keyword.IBM_notm}} support plans](/docs/account?topic=account-support-plans).
 
 ## How does {{site.data.keyword.cloud_notm}} and Red Hat work together to solve issues?
 {: #faq-support-red-hat-and-ibm-cloud}
@@ -54,9 +54,9 @@ If Red Hat involvement is required to solve a potential issue, {{site.data.keywo
 {: #faq-owner-responsibilites-ibm-cloud-red-hat}
 {: faq}
 
-{{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Red Hat stock images. {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) covers any issue with the cloud infrastructure and the stock images, such as driver mismatch or licensing. For custom images, it is the client's responsibility to resolve any issues related to the custom image, such as such as driver mismatch or licensing. 
+{{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Red Hat stock images. {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) covers any issue with the cloud infrastructure and the stock images, such as driver mismatch or licensing. For custom images, it is the client's responsibility to resolve any issues related to the custom image, such as such as driver mismatch or licensing.
 
-## Does IBM Cloud support Bring Your Own License (BYOL) for Red Hat operating systems?
+## Does {{site.data.keyword.Bluemix_notm}} support Bring Your Own License (BYOL) for Red Hat operating systems?
 {: #faq-byol-red-hat-ibm-cloud}
 {: faq}
 
@@ -66,7 +66,7 @@ Yes. {{site.data.keyword.cloud_notm}} supports BYOL. You need to contact [Red Ha
 {: #faq-byol-charges-red-hat-ibm-cloud}
 {: faq}
 
-If you use the BYOL option, you are charged by IBM for only the {{site.data.keyword.cloud_notm}} infrastructure.
+If you use the BYOL option, you are charged by {{site.data.keyword.IBM_notm}} for only the {{site.data.keyword.cloud_notm}} infrastructure.
 
 ## What is the end of service (EOS) policy for Red Hat OS in {{site.data.keyword.cloud_notm}}?
 {: #faq-eos-red-hat-ibm-cloud}

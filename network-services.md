@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-12-16"
+  years: 2020, 2025
+lastupdated: "2025-04-28"
 
 keywords: infrastructure
 
@@ -39,14 +39,13 @@ Within the infrastructure layer, you can build a virtual private cloud, which is
 
 | Option | Description |
 |--------|---------------|
-| [Content Delivery Network](/docs/CDN?topic=CDN-getting-started) | Used for various industry solutions, including media, entertainment, software, gaming, banking, and e-commerce, to meet the needs of your businesses. |
 | [Domain Name Service](/docs/dns-svcs?topic=dns-svcs-getting-started) | Provides a central location to view and manage your domains through the basic DNS management interface, and also gives you the option to manage reverse and secondary DNS in the same location for free of charge. |
 | [Global IP addresses](/docs/subnets?topic=subnets-about-subnets-and-ips#global-ip-addresses) | Provide flexibility to shift workloads between servers, even across geographically disparate data centers. |
 | [Load balancing](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started) | Distributes processing and communications evenly across multiple servers within a data center so that a single device does not carry an entire load. |
 | [Virtual Router Appliance](/docs/virtual-router-appliance?topic=virtual-router-appliance-getting-started-vra) | Selectively routes private and public network traffic through a full-featured enterprise router with firewall, traffic-shaping, policy-based routing, VPN, and a host of other features. |
 | [IPSec VPN](/docs/iaas-vpn?topic=iaas-vpn-setup-ipsec-vpn#setup-ipsec-vpn) | A suite of protocols designed to authenticate and encrypt all IP traffic between two locations by using a tunnel mode that provides an encrypted site-to-site network. |
 | [{{site.data.keyword.cloud_notm}} Direct Link](/docs/direct-link?topic=direct-link-get-started-with-ibm-cloud-direct-link#get-started-with-ibm-cloud-direct-link) | Leverages a Cloud Exchange provider to deliver connectivity to {{site.data.keyword.cloud_notm}} infrastructure locations. |
-| [Gateway Appliances](/docs/gateway-appliance?topic=gateway-appliance-getting-started) | Enhances control over network traffic, accelerates your network’s performance, and improves your network security. |
+| [Gateway Appliances](/docs/gateway-appliance?topic=gateway-appliance-getting-started-ga) | Enhances control over network traffic, accelerates your network’s performance, and improves your network security. |
 | [Hardware Firewalls](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started) |Prevent unwanted traffic from hitting your servers, reduce your attack surface, and allow your server resources to be dedicated for their intended use. |
 | [Fortigate Security Appliance 10 Gbps](/docs/fortigate-10g?topic=fortigate-10g-getting-started) | Protect traffic on multiple VLANs for both public and private networks.|
 | [VLANs](/docs/vlans?topic=vlans-getting-started) | Isolate broadcast traffic on the public and private networks. |

@@ -31,7 +31,7 @@ Review frequently asked questions (FAQs) for using Red Hat and {{site.data.keywo
 {{site.data.keyword.IBM}} maintains internal repositories that are up-to-date with the official Red Hat repositories. When using an {{site.data.keyword.IBM_notm}}-supplied RHEL image, the `dnf update` process pulls updates from the {{site.data.keyword.IBM_notm}} maintained repositories.
 
 ## How are updates applied to Red Hat Enterprise Linux AI on {{site.data.keyword.cloud_notm}}?
-{: #faq-updates-applied-red-hat-ibm-cloud}
+{: #faq-updates-applied-red-hat-ai-ibm-cloud}
 {: faq}
 
 The public RHEL AI image provided by {{site.data.keyword.IBM_notm}} is kept up to date with most recent Red Hat image.

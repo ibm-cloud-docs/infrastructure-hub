@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-28"
+lastupdated: "2025-05-12"
 
 subcollection: infrastructure-hub
 
@@ -28,7 +28,15 @@ Review frequently asked questions (FAQs) for using Red Hat and {{site.data.keywo
 {: #faq-updates-applied-red-hat-ibm-cloud}
 {: faq}
 
-{{site.data.keyword.IBM}} maintains internal repositories that are up-to-date with the official Red Hat repositories. 
+{{site.data.keyword.IBM}} maintains internal repositories that are up-to-date with the official Red Hat repositories. When using an {{site.data.keyword.IBM_notm}}-supplied RHEL image, the `dnf update` process pulls updates from the {{site.data.keyword.IBM_notm}} maintained repositories.
+
+## How are updates applied to Red Hat Enterprise Linux AI on {{site.data.keyword.cloud_notm}}?
+{: #faq-updates-applied-red-hat-ibm-cloud}
+{: faq}
+
+The public RHEL AI image provided by {{site.data.keyword.IBM_notm}} is kept up to date with most recent Red Hat image.
+
+{{site.data.keyword.IBM_notm}} doesn't maintain an internal container registry for RHEL AI. Which means that you can't update an existing RHEL AI virtual server instance that was created by using an {{site.data.keyword.IBM_notm}}-supplied stock image. To get the most recent image updates, you need to provision a new virtual server instance with the most recent stock image.
 
 ## What support can I expect from {{site.data.keyword.cloud_notm}} for Red Hat products?
 {: #faq-red-hat-ibm-support}

@@ -28,13 +28,13 @@ Review frequently asked questions (FAQs) for using Red Hat and {{site.data.keywo
 {: #faq-updates-applied-red-hat-ibm-cloud}
 {: faq}
 
-{{site.data.keyword.IBM}} maintains internal repositories that are up-to-date with the official Red Hat repositories. When using an {{site.data.keyword.IBM_notm}}-supplied RHEL image, the `dnf update` process pulls updates from the {{site.data.keyword.IBM_notm}} maintained repositories.
+{{site.data.keyword.IBM}} maintains internal repositories that are up-to-date with the official Red Hat repositories. When an {{site.data.keyword.IBM_notm}}-supplied RHEL image is used, the `dnf update` process pulls updates from the {{site.data.keyword.IBM_notm}} maintained repositories.
 
 ## How are updates applied to Red Hat Enterprise Linux AI on {{site.data.keyword.cloud_notm}}?
 {: #faq-updates-applied-red-hat-ai-ibm-cloud}
 {: faq}
 
-The public RHEL AI image provided by {{site.data.keyword.IBM_notm}} is kept up to date with most recent Red Hat image.
+The public RHEL AI image that is provided by {{site.data.keyword.IBM_notm}} is kept up to date with most recent Red Hat image.
 
 {{site.data.keyword.IBM_notm}} doesn't maintain an internal container registry for RHEL AI. Which means that you can't update an existing RHEL AI virtual server instance that was created by using an {{site.data.keyword.IBM_notm}}-supplied stock image. To get the most recent image updates, you need to provision a new virtual server instance with the most recent stock image.
 
@@ -48,7 +48,7 @@ For Red Hat software that is purchased natively on {{site.data.keyword.cloud_not
 
 * Basic
 * Advanced
-* Premium.
+* Premium
 
 For more information, see [{{site.data.keyword.IBM_notm}} support plans](/docs/account?topic=account-support-plans).
 
@@ -62,7 +62,7 @@ If Red Hat involvement is required to solve a potential issue, {{site.data.keywo
 {: #faq-owner-responsibilites-ibm-cloud-red-hat}
 {: faq}
 
-{{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Red Hat stock images. {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) covers any issue with the cloud infrastructure and the stock images, such as driver mismatch or licensing. For custom images, it is the client's responsibility to resolve any issues related to the custom image, such as such as driver mismatch or licensing.
+{{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Red Hat stock images. {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) covers any issue with the cloud infrastructure and the stock images, such as driver mismatch or licensing. For custom images, it is the client's responsibility to resolve any issues that are related to the custom image, such as driver mismatch or licensing.
 
 ## Does {{site.data.keyword.Bluemix_notm}} support Bring Your Own License (BYOL) for Red Hat operating systems?
 {: #faq-byol-red-hat-ibm-cloud}

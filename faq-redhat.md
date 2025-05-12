@@ -48,7 +48,7 @@ For Red Hat software that is purchased natively on {{site.data.keyword.cloud_not
 
 * Basic
 * Advanced
-* Premium.
+* Premium
 
 For more information, see [{{site.data.keyword.IBM_notm}} support plans](/docs/account?topic=account-support-plans).
 

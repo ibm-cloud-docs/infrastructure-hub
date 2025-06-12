@@ -23,6 +23,7 @@ toc:
            href: https://www.ibm.com/cloud/vpc
        - compare-infra.md
        - topicgroup:
+           id: related-links
            label: Related links
            links:
            - link:
@@ -39,11 +40,12 @@ toc:
   - navgroup:
       id: plan
       topics:
-      - planning-iaas.md        
+      - planning-iaas.md
   - navgroup:
       id: howto
       topics:
       - topicgroup:
+          id: building-infrastructure
           label: Building your infrastructure
           topics:
           - compute-services.md
@@ -51,16 +53,19 @@ toc:
           - storage-services.md
       -  managing-iaas.md
       - topicgroup:
+          id: migrating-infrastructure
           label: Migrating your infrastructure
           topics:
           - about-migration.md
           - topicgroup:
+              id: classic-to-classic-infrastructure
               label: Classic to classic infrastructure
               topics:
               - include: ../virtual-servers/vsi_migrate_classic_dctodc.md
               - include: ../bare-metal/bm-about-custom-image-templates.md
               - p-p-migration-bare-metal.md
           - topicgroup:
+              id: classic-to-vpc-infrastructure
               label: Classic to VPC infrastructure
               topics:
               - link:
@@ -70,6 +75,7 @@ toc:
               - pv-migration-overview.md
               - pv-migration-private-ip.md
           - topicgroup:
+              id: virtualized-workloads-to-vpc-infrastructure
               label: Virtualized workloads to VPC infrastructure
               topics:
               - any-cloud-to-ibm-cloud-via-rackware.md
@@ -77,12 +83,14 @@ toc:
               - the-classic-to-v2v.md
               - hyper-v-to-IBM-Cloud-VPC-VSI.md
           - topicgroup:
+              id: script-based-migration
               label: Script-based migration
               topics:
               - data-migration-diy.md
               - image-migration-diy.md
               - mysql-db-migration-script-python.md
           - topicgroup:
+              id: database-migration
               label: Database migration
               topics:
               - mssql-db-migration.md
@@ -103,6 +111,7 @@ toc:
       id: help
       topics:
       - topicgroup:
+          id: faq-migration
           label: FAQ for migration
           topics:
           - p-p-faqs.md
@@ -110,6 +119,7 @@ toc:
           - faqs-for-VMWare-to-VPC-migrations.md
       - getting-help-diy-image-data-migration.md
       - topicgroup:
+          id: faq-operating-system-add-ons
           label: FAQ for operating systems and add-ons
           topics:
           - faq-microsoft.md

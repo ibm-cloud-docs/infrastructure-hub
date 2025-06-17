@@ -123,6 +123,7 @@ toc:
           topics:
           - faq-microsoft.md
           - faq-redhat.md
+      - getting-help.md
       - getting-help-diy-image-data-migration.md
       - link:
          label: IBM Cloud Support

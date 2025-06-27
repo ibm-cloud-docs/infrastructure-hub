@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023,  2025
-lastupdated: "2025-06-17"
+lastupdated: "2025-06-27"
 
 keywords:
 
@@ -18,6 +18,7 @@ subcollection: infrastructure-hub
 If you experience an issue or have questions when you deploy {{site.data.keyword.Bluemix_short}} Infrastructure, try the following resources before you open a support case.
 {: shortdesc}
 
+* Ask a question in the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant) from the console or the {{site.data.keyword.cloud_notm}} CLI.
 * Review the [FAQs](/docs/infrastructure-hub?topic=infrastructure-hub-bare-metal-faqs) in the deployment guide.
 * ![{{site.data.keyword.cloud_notm}} icon](../icons/ibm-cloud-16.svg "IBM Cloud icon") Check the status of the {{site.data.keyword.cloud_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
 * ![GitHub icon](../icons/logo-github-16.svg "GitHub icon") Review the [GitHub issues](https://github.com/ibm-cloud-docs/infrastructure-hub/issues){: external} to see whether other users experienced the same problem.

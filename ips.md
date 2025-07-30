@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-03-14"
+lastupdated: "2025-07-30"
 
 keywords: ip, range, firewall, network, traffic, security
 
@@ -12,7 +12,7 @@ subcollection: infrastructure-hub
 
 {{site.data.keyword.attribute-definition-list}}
 
-# {{site.data.keyword.cloud_notm}} IP ranges
+# {{site.data.keyword.cloud_notm}} IP ranges (Classic infrastructure)
 {: #ibm-cloud-ip-ranges}
 
 A frequently asked question is, "What IP ranges do I allow through the firewall?" The following tables contain the full range of IP addresses to use with these IBM firewalls and appliances. The most important subnets to focus on are the [IBM Cloud service networks](/docs/infrastructure-hub?topic=infrastructure-hub-ibm-cloud-ip-ranges#service-network). These are private (rfc1918) subnets that require connections to and from your servers for provisioning, reloads, remote reboots, and other infrastructure services like DNS resoution, NTP (time) and network attached storage.

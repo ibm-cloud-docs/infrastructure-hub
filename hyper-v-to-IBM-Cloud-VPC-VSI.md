@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-12-13"
+  years:  2021, 2025
+lastupdated: "2025-08-05"
 
 keywords:
 content-type: tutorial
@@ -217,5 +217,5 @@ Before you decommission the source server, it is imperative to validate the targ
 {: #rackware-rmm-vmware-v2v-resources}
 
 1. [Discovery Tool](https://github.com/IBM-Cloud/vpc-migration-tools/blob/main/v2v-discovery-tool-rmm/HyperV/README.md){: external}
-2. [RackWare Cloud Migration](https://www.rackwareinc.com/cloud-migration){: external}
-3. [RackWare RMM Users Guide for {{site.data.keyword.cloud_notm}}](https://www.rackwareinc.com/rackware-rmm-getting-started-for-ibm-cloud){: external}
+2. [RackWare Cloud Migration](https://www.rackwareinc.com/rackware-platform/migration){: external}
+3. [Video: Migrate to the {{{{site.data.keyword.cloud_notm}} with RackWare](https://www.rackwareinc.com/solutions/cloud-environments/rackware-and-ibm){: external}

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-12-16"
+  years:  2021, 2025
+lastupdated: "2025-08-05"
 
 keywords:
 content-type: tutorial
@@ -186,4 +186,4 @@ Before you decommission the source server, it is imperative to validate the targ
 
 1. [Discovery Tool](https://github.com/IBM-Cloud/vpc-migration-tools/blob/main/v2v-discovery-tool-rmm/VMware/README.md){: external}
 2. [FAQs](/docs/infrastructure-hub?topic=infrastructure-hub-faqs-vmware)
-3. [RackWare usage guide](https://www.rackwareinc.com/cloud-migration){: external}
+3. [RackWare usage guide](https://www.rackwareinc.com/rackware-platform/migration){: external}

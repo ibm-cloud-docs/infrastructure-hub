@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2025
-lastupdated: "2025-03-31"
+lastupdated: "2025-08-05"
 
 keywords:
 
@@ -27,7 +27,7 @@ RackWare Management Module (RMM) server is a software appliance that is offered 
 {: #rw-where-to-find-more-information}
 {: faq}
 
-For more information, see [RackWare's Cloud Migration documentation](https://www.rackwareinc.com/cloud-migration){: external} and [RackWare RMM Getting Started for {{site.data.keyword.cloud_notm}}](https://www.rackwareinc.com/rackware-rmm-getting-started-for-ibm-cloud){: external}.
+For more information, see [RackWare's Cloud Migration documentation](https://www.rackwareinc.com/rackware-platform/migration){: external} and [Video: Migrate to the {{{{site.data.keyword.cloud_notm}} with RackWare](https://www.rackwareinc.com/solutions/cloud-environments/rackware-and-ibm){: external}.
 
 ## How do I install the RMM server?
 {: #rw-how-to-install}

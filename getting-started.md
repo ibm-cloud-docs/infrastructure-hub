@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2024
-lastupdated: "2024-12-16"
+  years: 2018, 2025
+lastupdated: "2025-08-05"
 
 keywords: cloud environment, virtual server, virtual machine, vm, understanding infrastructure, IaaS model, IT ops admin, on-premises, data center
 
@@ -28,23 +28,10 @@ Before you moved to the cloud, you worked with an inherently secure environment 
 
 {{site.data.keyword.cloud}} is here to support you 100% on your journey. The resources available to you include comprehensive documentation, planning tools, qualified support specialists, and an active user community. Let's get you started on your journey.
 
-![Plan, build, and manage your cloud infrastructure with IBM](https://www.youtube.com/embed/Kmt_odiCWvU){: video output="iframe" data-script="#video-transcript-it-ops-2" id="youtubeplayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+Watch this short video about how to [plan, build and manage your cloud Infrastructure with IBM](https://youtu.be/Kmt_odiCWvU?si=TBuUCmhKpu8bTAEH){: external}
+{: tip}
 
-## Video transcript
-{: #video-transcript-it-ops-2}
-{: notoc}
 
-Welcome to {{site.data.keyword.cloud_notm}}! As an IT operations administrator, you had your choice of any number of cloud providers. You chose {{site.data.keyword.cloud_notm}} because it's a leader in cloud as a service. We offer superior levels of security, functionality, integration, interoperability, and usability. 
-
-Use the {{site.data.keyword.cloud_notm}} console to get access to our catalog of over 190 unique services across several categories including Security, Compute, Network, Storage, Integration, and Data Management. Click **Catalog** menu item, then select from the categories that are listed in the transcript.
-
-After you planned and designed your infrastructure, use the cost estimator to see how much your infrastructure might cost before placing your order. You can access it by clicking the Cost Estimator ![Cost estimator icon](../icons/calculator.svg "Cost estimator") in the console menu bar. Click **Cost estimator** icon then click Review summary.
-
-The IT ops admin journey steps you through the various stages of planning, building, and managing your environment. The journey contains links to the compute, storage, and networking options offered by {{site.data.keyword.cloud_notm}}, and information on the {{site.data.keyword.cloud_notm}} Platform as a Service and Software as a Service.
-
-{{site.data.keyword.cloud_notm}} offers you a strong support network that includes forums and wikis, as well as support specialists to answer your questions. Click the Support menu option, then find the Ask the community link or Create a case link in the Need more help? section. As a member of the {{site.data.keyword.cloud_notm}} IT operations administrator family, you have the support of designers, developers, and other IT ops admins who share the same ideas and risks as you do.
-
-Know that you have the support of {{site.data.keyword.cloud_notm}}, too. Once again, welcome. 
 
 ## Cloud service models
 {: #cloud-svc-models-2}

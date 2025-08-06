@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-08-05"
+lastupdated: "2025-08-06"
 
 keywords:
 content-type: tutorial
@@ -218,4 +218,4 @@ Before you decommission the source server, it is imperative to validate the targ
 
 1. [Discovery Tool](https://github.com/IBM-Cloud/vpc-migration-tools/blob/main/v2v-discovery-tool-rmm/HyperV/README.md){: external}
 2. [RackWare Cloud Migration](https://www.rackwareinc.com/rackware-platform/migration){: external}
-3. [Video: Migrate to the {{{{site.data.keyword.cloud_notm}} with RackWare](https://www.rackwareinc.com/solutions/cloud-environments/rackware-and-ibm){: external}
+3. [Video: Migrate to the {{site.data.keyword.cloud_notm}} with RackWare](https://www.rackwareinc.com/solutions/cloud-environments/rackware-and-ibm){: external}

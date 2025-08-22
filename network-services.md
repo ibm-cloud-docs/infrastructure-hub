@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-08-05"
+lastupdated: "2025-08-22"
 
 keywords: infrastructure
 
@@ -31,7 +31,7 @@ Within the infrastructure layer, you can build a virtual private cloud, which is
 | [VPN for VPC](/docs/vpc?topic=vpc-using-vpn) | Securely connect your VPC to another private network. You can use VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premises private network or another VPC. |
 | [DNS Services](/docs/dns-svcs/getting-started) | Provides private DNS to Virtual Private Cloud (VPC) users.  |
 | [Transit Gateway](/docs/transit-gateway?topic=transit-gateway-getting-started) | Interconnect IBM Cloud Classic and Virtual Private Cloud (VPC) infrastructures worldwide, keeping traffic within the IBM Cloud network. |
-|[Direct Link 2.0](/docs/dl/getting-started)|Seamlessly connect your on-premises resources to your cloud resources. |
+|[Direct Link](/docs/dl/getting-started)|Seamlessly connect your on-premises resources to your cloud resources. |
 {: caption="Networking options - VPC" caption-side="top"}
 
 ## Classic infrastructure

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2022, 2024
-lastupdated: "2024-12-13"
+  years:  2022, 2025
+lastupdated: "2025-08-22"
 
 keywords: image migration, migrate image, vmdk, vhd
 
@@ -141,7 +141,7 @@ The converted boot image can be uploaded through the migration script by opting 
 {: #step-5-create-virtual-server-instance}
 
 1. Import your image to {{site.data.keyword.vpc_short}}. For more information, see [Importing and validating custom images into VPC](/docs/vpc?topic=vpc-importing-custom-images-vpc&interface=ui).
-2. To create the virtual server instance, log in to the [{{site.data.keyword.cloud_notm}} console](https://cloud.ibm.com/){: external}.
+2. To create the virtual server instance, log in to the [{{site.data.keyword.cloud_notm}} console](/login){: external}.
 3. Go to the **menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastructure > Compute > Custom images > Your custom image**.
 4. From the Action menu, select **New virtual server**.
 

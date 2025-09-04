@@ -20,7 +20,7 @@ toc:
            href: https://www.ibm.com/cloud/infrastructure
        - link:
            label: What is VPC?
-           href: https://www.ibm.com/cloud/vpc
+           href: https://www.ibm.com/solutions/vpc
        - compare-infra.md
        - topicgroup:
            id: related-links

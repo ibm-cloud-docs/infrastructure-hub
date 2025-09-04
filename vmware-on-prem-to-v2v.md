@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-08-05"
+lastupdated: "2025-08-22"
 
 keywords:
 content-type: tutorial
@@ -67,7 +67,7 @@ To improve data transfer rate, adjust the bandwidth allocation of the RMM server
 
 The RMM tool is available in the {{site.data.keyword.cloud_notm}} catalog. After you order, a virtual server with RMM software is installed into your VPC of choice. The RMM server has a public IP address for reachability and a default login.
 
-If public IP address is not attached to RMM server, then its 'Reserved IP' address can be used to access RMM server with [bastion host](https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-vpc-secure-management-bastion-server).
+If public IP address is not attached to RMM server, then its 'Reserved IP' address can be used to access RMM server with [bastion host](/docs/solution-tutorials?topic=solution-tutorials-vpc-secure-management-bastion-server).
 {: note}
 
 1. Order the RMM server from the [{{site.data.keyword.cloud_notm}} catalog](/catalog/content/IBM-MarketPlace-P2P-1.3-22935832-bd76-49ab-b53e-12fc5d04c266-global){: external}.
@@ -109,9 +109,9 @@ If public IP address is not attached to RMM server, then its 'Reserved IP' addre
 {: #connectivity-customer-vpc}
 {: step}
 
-Your source and target server need to communicate with each other and the RMM. You can establish connectivity over the public internet with public IP addresses or with a private-only environment. If you have a private-only environment, you must set up either a VPN or Direct Link 2.0:
+Your source and target server need to communicate with each other and the RMM. You can establish connectivity over the public internet with public IP addresses or with a private-only environment. If you have a private-only environment, you must set up either a VPN or Direct Link:
 
-- Use the [Direct Link 2.0](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl) connection to {{site.data.keyword.cloud_notm}}. It is a costly solution and can be considered only if Direct Link 2.0 is already present.
+- Use the [Direct Link](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl) connection to {{site.data.keyword.cloud_notm}}. It is a costly solution and can be considered only if Direct Link is already present.
 
 - [Site-to-site VPN](/docs/vpc?topic=vpc-vpn-overview)
 

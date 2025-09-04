@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-22"
 
 keywords: cloud environment, virtual server, virtual machine, vm, understanding infrastructure, IaaS model, IT ops admin, on-premises, data center
 
@@ -28,10 +28,8 @@ Before you moved to the cloud, you worked with an inherently secure environment 
 
 {{site.data.keyword.cloud}} is here to support you 100% on your journey. The resources available to you include comprehensive documentation, planning tools, qualified support specialists, and an active user community. Let's get you started on your journey.
 
-Watch this short video about how to [plan, build and manage your cloud Infrastructure with IBM](https://youtu.be/Kmt_odiCWvU?si=Gp9Myia87JDOv8xe){: external}
+To learn more about cloud infrastructure, see [What is cloud infrastructure?](https://www.ibm.com/think/topics/cloud-infrastructure){: external}.
 {: tip}
-
-
 
 ## Cloud service models
 {: #cloud-svc-models-2}

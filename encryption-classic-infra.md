@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2024
-lastupdated: "2024-12-13"
+  years: 2022, 2025
+lastupdated: "2025-08-22"
 
 keywords: encryption, storage encryption, customer managed encryption, classic infrastructure encryption
 
@@ -42,15 +42,15 @@ You can provision {{site.data.keyword.keymanagementserviceshort}} from the {{sit
 * [Creating or importing keys](/docs/key-protect?topic=key-protect-getting-started-tutorial)
 * A data encryption key (DEK) ought to be stored in an encrypted (wrapped) format. Key Protect wraps the DEK by encrypting it with the root key.
     * [Retrieving a wrapped key](/docs/key-protect?topic=key-protect-wrap-keys&interface=ui)
-    * [Retrieving a wrapped key with the API](https://cloud.ibm.com/apidocs/key-protect#wrapkey){: external}
+    * [Retrieving a wrapped key with the API](/apidocs/key-protect#wrapkey){: external}
 * After it is retrieved, the wrapped DEK can be stored on the local file system, and unwrapped when the key is needed for some file system operation (such as mounting, and encryption).
     * [Unwrapping a wrapped key](/docs/key-protect?topic=key-protect-unwrap-keys&interface=ui)
-    * [Unwrapping a wrapped key with the API](https://cloud.ibm.com/apidocs/key-protect#unwrapkey){: external}
+    * [Unwrapping a wrapped key with the API](/apidocs/key-protect#unwrapkey){: external}
 
 If the root key is rotated or for some other reason an update is needed to the wrapped DEK, the previous API call returns the new DEK also. Store this new DEK and use it for future operations.
 {: note}
 
-For more information about key management (rotation, deletion, auditing), see the Key Protect [Getting started tutorial](/docs/key-protect?topic=key-protect-getting-started-tutorial) and the [API reference](https://cloud.ibm.com/apidocs/key-protect){: external}.
+For more information about key management (rotation, deletion, auditing), see the Key Protect [Getting started tutorial](/docs/key-protect?topic=key-protect-getting-started-tutorial) and the [API reference](/apidocs/key-protect){: external}.
 
 ### {{site.data.keyword.blockstorageshort}} encryption with LUKS
 {: #block-storage-luks}

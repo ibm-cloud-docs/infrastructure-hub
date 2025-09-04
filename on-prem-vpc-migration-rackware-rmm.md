@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2022, 2024
-lastupdated: "2024-12-13"
+  years:  2022, 2025
+lastupdated: "2025-08-22"
 
 keywords: migration, migrate, cloud migration, on-premises
 content-type: tutorial
@@ -115,9 +115,9 @@ Complete the following steps to get a license:
 {: #onprem2cloud-connectivity-between-source-and-cloud}
 {: step}
 
-Your source and target server need to communicate with each other and the RMM. You can establish connectivity over the public internet with public IP addresses, or if you have a private-only environment, then you must set up either a VPN or Direct Link 2.0:
+Your source and target server need to communicate with each other and the RMM. You can establish connectivity over the public internet with public IP addresses, or if you have a private-only environment, then you must set up either a VPN or Direct Link:
 
-- Use [Direct Link 2.0 connection](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl) to {{site.data.keyword.cloud_notm}}.
+- Use [Direct Link connection](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl) to {{site.data.keyword.cloud_notm}}.
 - Have port 22 open with SSH accessible to RMM server.
 - Public interface (least recommended due to security concerns).
 

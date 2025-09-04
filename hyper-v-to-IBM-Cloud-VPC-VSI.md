@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-08-06"
+lastupdated: "2025-08-22"
 
 keywords:
 content-type: tutorial
@@ -58,7 +58,7 @@ To improve the data transfer rate, adjust the bandwidth allocation of the RMM se
 
 You can order RMM-BYOL from the {{site.data.keyword.cloud_notm}} catalog. A virtual server with the RMM software is installed into the VPC that you provide when you order. The RMM server has a public IP address for reachability.
 
-If public IP address is not attached to RMM server, then its 'Reserved IP' address can be used to access RMM server with [bastion host](https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-vpc-secure-management-bastion-server).
+If public IP address is not attached to RMM server, then its 'Reserved IP' address can be used to access RMM server with [bastion host](/docs/solution-tutorials?topic=solution-tutorials-vpc-secure-management-bastion-server).
 {: note}
 
 1. Order RMM-BYOL from the [{{site.data.keyword.cloud_notm}} catalog](/catalog/content/IBM-MarketPlace-P2P-1.3-22935832-bd76-49ab-b53e-12fc5d04c266-global){: external}.
@@ -135,7 +135,7 @@ Before you can begin, you need to do a few things on the source and target serve
 
 1. The RMM server needs to connect with servers through SSH; thus the RMM public SSH keys need to be copied on both the source and target servers.
 
-2. If the source server has both public and private interfaces, host routes need to be added to ensure the communication between the source and target servers. The routing is done over the transit gateway path or Direct Link 2.0 connection to {{site.data.keyword.cloud_notm}}. Complete the following steps to prepare your relevant servers:
+2. If the source server has both public and private interfaces, host routes need to be added to ensure the communication between the source and target servers. The routing is done over the transit gateway path or Direct Link connection to {{site.data.keyword.cloud_notm}}. Complete the following steps to prepare your relevant servers:
 
 ### Linux systems
 {: #linux-systems-vmware-virtual}

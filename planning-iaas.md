@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-12-16"
+  years: 2020, 2025
+lastupdated: "2025-09-04"
 
 keywords: infrastructure
 
@@ -30,12 +30,12 @@ Create a diagram of your {{site.data.keyword.cloud_notm}} architecture by using 
 ## {{site.data.keyword.cloud_notm}} cost estimator
 {: #planning-6}
 
-Use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/cloud/cloud-calculator){: external} to find the lowest cost estimate for the configuration that suits you best. Use this cloud price calculator to configure {{site.data.keyword.cloud_notm}} products and to generate reliable cost estimates.
+Use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/products/cloud/cloud-calculator){: external} to find the lowest cost estimate for the configuration that suits you best. Use this cloud price calculator to configure {{site.data.keyword.cloud_notm}} products and to generate reliable cost estimates.
 
 ## {{site.data.keyword.cloud_notm}} services and compliance
 {: #planning-7}
 
-As with any architecture, consider the {{site.data.keyword.cloud_notm}} resources that you might add to your solution as you size your infrastructure. For more information, see [What are IaaS, PaaS, and SaaS?](https://www.ibm.com/think/topics/iaas-paas-saas){: external} and search for a specific service. You also need to think about any regulations that you must consider when you build your architecture. For example, is your workload considered sensitive or is it regulated? For more information, see [Compliance](https://www.ibm.com/cloud/compliance){: external}.
+As with any architecture, consider the {{site.data.keyword.cloud_notm}} resources that you might add to your solution as you size your infrastructure. For more information, see [What are IaaS, PaaS, and SaaS?](https://www.ibm.com/think/topics/iaas-paas-saas){: external} and search for a specific service. You also need to think about any regulations that you must consider when you build your architecture. For example, is your workload considered sensitive or is it regulated? For more information, see [Compliance](https://www.ibm.com/products/cloud/compliance){: external}.
 
 ## {{site.data.keyword.cloud_notm}} IP ranges
 {: #planning-ip-ranges}

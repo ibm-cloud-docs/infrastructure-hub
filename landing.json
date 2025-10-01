@@ -2,7 +2,7 @@
   "version": 2,
   "title": "IBM Cloud Infrastructure",
   "introduction": "Learn more about provisioning compute, network, and storage resources in IBM Cloud.",
-  "product_page": "https://www.ibm.com/cloud/infrastructure",
+  "product_page": "https://www.ibm.com/products/cloud",
   "console_page": "/infrastructure/overview",
   "section_topics": {
     "links": [
@@ -32,7 +32,7 @@
     {
       "title": "Cloud Infrastructure Solutions Overview ",
       "description": "IBM Cloud Infrastructure as a Service; the infrastructure for smarter business. Find the right solutions for your business requirements.",
-      "href": "https://www.ibm.com/cloud/infrastructure",
+      "href": "https://www.ibm.com/products/cloud",
       "type": "blog"
     },
     {

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2025-03-31"
+  years: 2024, 2025
+lastupdated: "2025-10-30"
 
 subcollection: infrastructure-hub
 
@@ -47,11 +47,11 @@ You can also use Remote Desktop Services that include some user-specific options
 
 For Microsoft software that is purchased natively on {{site.data.keyword.cloud_notm}}, {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) is the first point of contact for any issue with a Microsoft software-related issue.
 
-IBM provides three support plans.
+IBM provides a choice of support plans.
 
 * Basic
 * Advanced
-* Premium.
+* Premium
 
 For more information, see [IBM support plans](/docs/account?topic=account-support-plans).
 
@@ -69,7 +69,7 @@ For client BYOL Microsoft software issues, you need to contact [Microsoft suppor
 
 {{site.data.keyword.cloud_notm}} adheres to Microsoft End of Service (EOS) dates. If you purchase extended support updates from Microsoft, you can apply the same dates to your EOS Windows virtual servers. For an OS that is under ESU, contact Microsoft for any issues that are related to the image. For issues that are related to infrastructure or any {{site.data.keyword.cloud_notm}} service, contact [support](/docs/vpc?topic=vpc-getting-help-and-support-for-vpc).
 
-## What is the level of support between {{site.data.keyword.cloud_notm}} and customers who use Microsoft software?
+## What support can I expect from {{site.data.keyword.cloud_notm}} for the infrastructure image that I select?
 {: #faq-microsoft-ibm-cloud-responsibilities}
 {: faq}
 

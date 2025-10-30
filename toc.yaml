@@ -1,4 +1,3 @@
----
 toc:
   properties:
     subcollection: infrastructure-hub
@@ -9,29 +8,28 @@ toc:
     content-type: solution
     description: Provision your compute, network, and storage resources on IBM Cloud
     label: Infrastructure
-#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group.
   entries:
   - navgroup:
       id: overview
       topics:
-       - getting-started.md
-       - link:
-           label: What is IBM Cloud Infrastructure as a Service?
-           href: https://www.ibm.com/products/cloud
-       - link:
-           label: What is VPC?
-           href: https://www.ibm.com/solutions/vpc
-       - compare-infra.md
-       - topicgroup:
-           id: related-links
-           label: Related links
-           links:
-           - link:
-               label: Service and infrastructure availability
-               href: /overview/overview-services_region
-           - link:
-               label: Getting started with IAM tutorial
-               href: /account/account-iamoverview
+      - getting-started.md
+      - link:
+          label: What is IBM Cloud Infrastructure as a Service?
+          href: https://www.ibm.com/products/cloud
+      - link:
+          label: What is VPC?
+          href: https://www.ibm.com/solutions/vpc
+      - compare-infra.md
+      - topicgroup:
+          id: related-links
+          label: Related links
+          links:
+          - link:
+              label: Service and infrastructure availability
+              href: /overview/overview-services_region
+          - link:
+              label: Getting started with IAM tutorial
+              href: /account/account-iamoverview
   - navgroup:
       id: architecture
       topics:
@@ -51,7 +49,7 @@ toc:
           - compute-services.md
           - network-services.md
           - storage-services.md
-      -  managing-iaas.md
+      - managing-iaas.md
       - topicgroup:
           id: migrating-infrastructure
           label: Migrating your infrastructure
@@ -102,11 +100,11 @@ toc:
       - ntp-service-overview.md
       - encryption-classic-infra.md
       - link:
-         label: Terraform reference
-         href: /ibm-cloud-provider-for-terraform/ibm-cloud-provider-for-terraform-getting-started
+          label: Terraform reference
+          href: /ibm-cloud-provider-for-terraform/ibm-cloud-provider-for-terraform-getting-started
       - link:
-         label: IBM Cloud Terraform modules
-         href: https://github.com/terraform-ibm-modules
+          label: IBM Cloud Terraform modules
+          href: https://github.com/terraform-ibm-modules
   - navgroup:
       id: help
       topics:
@@ -126,5 +124,5 @@ toc:
       - getting-help.md
       - getting-help-diy-image-data-migration.md
       - link:
-         label: IBM Cloud Support
-         href: https://www.ibm.com/cloud/support
+          label: IBM Cloud Support
+          href: https://www.ibm.com/cloud/support

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024, 2025
-lastupdated: "2025-10-30"
+  years: 2024, 2026
+lastupdated: "2026-02-10"
 
 subcollection: infrastructure-hub
 
@@ -73,7 +73,9 @@ For client BYOL Microsoft software issues, you need to contact [Microsoft suppor
 {: #faq-microsoft-ibm-cloud-responsibilities}
 {: faq}
 
-{{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Microsoft stock images. {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) covers any issue with the cloud infrastructure and the stock images, such as driver mismatch or licensing. For custom images, the client is responsible for any issues that are related to the custom image, such as a driver mismatch or licensing.
+{{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Microsoft stock images. {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) covers any issue with the cloud infrastructure and the stock images, such as driver mismatch or licensing. In addition, support is available for standard Windows Server features included in the stock image, such as roles and features like iSCSI configuration. These features are considered part of the base operating system functionality provided by Microsoft and included in the stock image. 
+
+For custom images, the client is responsible for any issues that arise from modifications made after provisioning, including changes to drivers, licensing, or additional software installations.
 
 ## Is the cost of the Microsoft operating system included in the on-demand {{site.data.keyword.cloud_notm}} virtual server cost?
 {: #faq-microsoft-os-cost-ibm-cloud}

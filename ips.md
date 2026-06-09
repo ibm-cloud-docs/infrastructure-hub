@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-10-03"
+  years: 2017, 2026
+lastupdated: "2026-06-09"
 
 keywords: ip, range, firewall, network, traffic, security
 
@@ -30,6 +30,9 @@ To identify potential conflicts between IP ranges in your on-premises environmen
 
 ## Front-end (public) network
 {: #front-end-network}
+
+Customers must not use any IP range listed under IBM Cloud service network ranges. The restriction applies globally, not only within the referenced data center. Even unused subranges within these blocks may be used in the future and should be avoided. For as list of IP ranges reserved for internal IBM Cloud use, see [Back-end private network](/docs/infrastructure-hub?topic=infrastructure-hub-ibm-cloud-ip-ranges#back-end-network).
+{: note}
 
 Ports to allow:
 - All TCP/UDP ports
@@ -124,6 +127,9 @@ The following IPs are Classic hardware Load Balancer IPs, and do not relate to I
 
 ## Back-end (private) network
 {: #back-end-network}
+
+Customers must not use any IP range listed under IBM Cloud service network ranges. The restriction applies globally, not only within the referenced data center. Even unused subranges within these blocks may be used in the future and should be avoided. Reservations in a specific data center (for example, DAL10) are still relevant for hybrid connectivity (Direct Link, Transit Gateway, VPN, Azure, etc.).
+{: note}
 
 IP block: Your private IP block for server-to-server communications (`10.X.X.X/X`)
 

@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2025
-lastupdated: "2025-08-22"
+  years: 2022, 2026
+lastupdated: "2026-06-11"
 
 keywords: encryption, storage encryption, customer managed encryption, classic infrastructure encryption
 
@@ -14,8 +14,23 @@ subcollection: infrastructure-hub
 # Encryption options for {{site.data.keyword.cloud}} classic infrastructure storage
 {: #encryption-classic-infrastructure}
 
-By default {{site.data.keyword.cloud}} classic infrastructure includes provider-managed data-at-rest encryption capabilities. If your environment requires customer-managed encryption, you have several options that include {{site.data.keyword.keymanagementserviceshort}}, LUKS encryption for {{site.data.keyword.blockstoragefull}}, file-level encryption options for {{site.data.keyword.filestorage_full}}, and server-side encryption for {{site.data.keyword.cos_full_notm}}.
+By default {{site.data.keyword.cloud}} classic infrastructure includes provider-managed data-at-rest encryption capabilities. {{site.data.keyword.blockstoragefull}} and {{site.data.keyword.filestorage_full}} do not support native customer-managed encryption (BYOK) integration. However, you can implement customer-managed encryption through manual configuration using LUKS encryption for {{site.data.keyword.blockstorageshort}} or file-level encryption for {{site.data.keyword.filestorage_short}}. {{site.data.keyword.cos_full_notm}} supports customer-managed encryption with {{site.data.keyword.keymanagementserviceshort}}.
 {: shortdesc}
+
+For native BYOK support with {{site.data.keyword.blockstorageshort}} and {{site.data.keyword.filestorage_short}}, consider migrating to [VPC infrastructure](/docs/vpc?topic=vpc-block-storage-about), which provides integrated customer-managed encryption with Standard (multi-tenant) and Dedicated (single-tenant) {{site.data.keyword.keymanagementserviceshort}}.
+{: tip}
+
+## Customer-managed encryption support summary
+{: #byok-support-summary}
+
+The following table summarizes customer-managed encryption (BYOK) support for classic infrastructure storage services:
+
+| Storage service | Native BYOK support | Customer-implemented encryption | Key management options |
+| --------------- | ------------------- | ------------------------------- | ---------------------- |
+| {{site.data.keyword.blockstorageshort}} | No | Yes - LUKS encryption (OS-level) | {{site.data.keyword.keymanagementserviceshort}} can store LUKS passphrases |
+| {{site.data.keyword.filestorage_short}} | No | Yes - File-level encryption (gocryptfs, EncFS) | {{site.data.keyword.keymanagementserviceshort}} can store encryption passphrases |
+| {{site.data.keyword.cos_short}} | Yes | Yes | Standard or Dedicated {{site.data.keyword.keymanagementserviceshort}}, SSE-C |
+{: caption="Customer-managed encryption support for classic infrastructure storage" caption-side="bottom"}
 
 ## Provider-managed encryption
 {: #provider-managed-encryption}
@@ -28,14 +43,29 @@ By default {{site.data.keyword.cloud}} classic infrastructure includes provider-
 ## Customer-managed encryption
 {: #customer-managed-encryption}
 
-Some workloads or use cases require full customer control over the encryption, including key management. You can use the following information to learn about possible methods to achieve customer-managed encryption within the standard {{site.data.keyword.cloud}} Classic Infrastructure feature set. You can implement any of the following options: {{site.data.keyword.keymanagementserviceshort}}, LUKS encryption for {{site.data.keyword.blockstorageshort}}, file-level encryption options for {{site.data.keyword.filestorage_short}}, and server-side encryption for {{site.data.keyword.cos_full_notm}}. Most of these customer-managed encryption options require manual setup.
+Some workloads or use cases require full customer control over the encryption, including key management. You can use the following information to learn about possible methods to achieve customer-managed encryption within the standard {{site.data.keyword.cloud}} Classic Infrastructure feature set. You can implement any of the following options: LUKS encryption for {{site.data.keyword.blockstorageshort}}, file-level encryption options for {{site.data.keyword.filestorage_short}}, and server-side encryption for {{site.data.keyword.cos_full_notm}}. Most of these customer-managed encryption options require manual setup.
 
-### Key Protect
+### Using Key Protect for customer-implemented encryption
 {: #key-protect}
 
-[{{site.data.keyword.keymanagementservicefull}}](https://www.ibm.com/products/key-protect){: external} is one method that you can use to set up customer-managed encryption. For more information about {{site.data.keyword.keymanagementserviceshort}}, see [About Key Protect](/docs/key-protect?topic=key-protect-about). Whenever the following snippets call for a *passphrase* or *password*, you can use a key from Key Protect by using copy and paste or some shell scripting.
+[{{site.data.keyword.keymanagementservicefull}}](https://www.ibm.com/products/key-protect){: external} provides secure key management for {{site.data.keyword.cloud_notm}} services. For more information about {{site.data.keyword.keymanagementserviceshort}}, see [About Key Protect](/docs/key-protect?topic=key-protect-about).
 
-When you use {{site.data.keyword.cos_full_notm}} with {{site.data.keyword.keymanagementserviceshort}}, a root key is used to encrypt buckets, so only the provisioning and the creation of the root key steps are necessary.
+{{site.data.keyword.keymanagementserviceshort}} is **not natively integrated** with {{site.data.keyword.blockstorageshort}} or {{site.data.keyword.filestorage_short}} on classic infrastructure. However, you can use {{site.data.keyword.keymanagementserviceshort}} to securely store and manage encryption keys (such as LUKS passphrases) that you use for customer-implemented encryption solutions. When implementing LUKS encryption or file-level encryption, you can retrieve keys from {{site.data.keyword.keymanagementserviceshort}} programmatically instead of storing them locally.
+
+#### Key Protect with {{site.data.keyword.cos_full_notm}}
+{: #key-protect-cos}
+
+{{site.data.keyword.cos_full_notm}} **does support** native integration with {{site.data.keyword.keymanagementserviceshort}}. When you use {{site.data.keyword.cos_full_notm}} with {{site.data.keyword.keymanagementserviceshort}}, a root key is used to encrypt buckets. {{site.data.keyword.keymanagementserviceshort}} offers two deployment options:
+
+- **Standard (multi-tenant)**: Provides FIPS 140-2 Level 3 compliance using shared HSM infrastructure. IBM manages the HSM master keys. Suitable for most customer-managed encryption use cases.
+- **Dedicated (single-tenant)**: Provides FIPS 140-3 Level 4 compliance (certification in progress, expected by end of 2026) with dedicated HSM partitions. Customers fully own and manage their master keys, with no IBM administrator access. This option provides maximum isolation and is designed for highly regulated workloads.
+
+For more information, see [Server-Side Encryption with IBM Key Protect](/docs/cloud-object-storage?topic=cloud-object-storage-kp).
+
+#### Using Key Protect to store LUKS passphrases
+{: #key-protect-luks}
+
+If you implement LUKS encryption for {{site.data.keyword.blockstorageshort}} or file-level encryption for {{site.data.keyword.filestorage_short}}, you can use {{site.data.keyword.keymanagementserviceshort}} to securely store your encryption passphrases. This approach provides centralized key management while maintaining customer control over encryption.
 
 You can provision {{site.data.keyword.keymanagementserviceshort}} from the {{site.data.keyword.cloud_notm}} console or with the API. After you provision a Key Protect instance, you can create (or import) a customer-managed root key. This root key never leaves the HSM but it is used to encrypt and decrypt other keys. When the root key is available, you can create (or import) a standard key to directly encrypt and decrypt data. For more information about using {{site.data.keyword.keymanagementserviceshort}}, see the following topics:
 

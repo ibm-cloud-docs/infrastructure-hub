@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2026
-lastupdated: "2026-06-11"
+lastupdated: "2026-06-30"
 
 keywords: encryption, storage encryption, customer managed encryption, classic infrastructure encryption
 
@@ -38,7 +38,7 @@ The following table summarizes customer-managed encryption (BYOK) support for cl
 {{site.data.keyword.cloud_notm}} classic infrastructure provides the following automatic data-at-rest encryption capabilities:
 
 - {{site.data.keyword.cos_full_notm}} encrypts all objects by default with provider-managed keys.
-- {{site.data.keyword.blockstorageshort}} and {{site.data.keyword.filestorage_short}} volume are secured automatically with provider-managed Industry-Standard AES-256 encryption. All snapshots and replicas of encrypted storage volumes are also encrypted by default. This feature can’t be turned off on a volume basis. All cluster-to-cluster traffic is encrypted with TLS.
+- {{site.data.keyword.blockstorageshort}} and {{site.data.keyword.filestorage_short}} volume are secured automatically with provider-managed Industry-Standard Advanced Encryption Standard with a 256-bit key (AES-256) encryption. All snapshots and replicas of encrypted storage volumes are also encrypted by default. This feature can’t be turned off on a volume basis. All cluster-to-cluster traffic is encrypted with TLS.
 
 ## Customer-managed encryption
 {: #customer-managed-encryption}
@@ -269,7 +269,6 @@ Digests:
 	            84 63 a8 7d 2a e8 2d d8 46 b6 87 2f 87 fa a9 e0
 	Digest:     09 aa 56 8f 14 dd c7 76 9a 51 5e 74 b9 1b 95 8a
 	            14 a2 93 59 18 b3 70 df 54 53 c0 85 2c 3b 79 fd
-[root@classic-byok-poc02 ~]#
 ```
 {: screen}
 

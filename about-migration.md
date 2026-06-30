@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2020, 2024
-lastupdated: "2024-12-16"
+  years:  2020, 2026
+lastupdated: "2026-06-30"
 
 keywords: migration, migrate, migrating, migrate infrastructure, cloud migration
 
@@ -94,7 +94,7 @@ You can migrate the following key elements of {{site.data.keyword.cloud_notm}} c
 * Storage volumes (primary and secondary)
 * Security groups
 * Load balancers
-* Firewall (ACL) configuration
+* Firewall configuration - Access control list (ACL)
 * VPN configuration
 * SSH keys
 * Public gateway

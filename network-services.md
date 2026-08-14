@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2025
-lastupdated: "2025-08-22"
+  years: 2020, 2026
+lastupdated: "2026-08-14"
 
 keywords: infrastructure
 
@@ -45,8 +45,8 @@ Within the infrastructure layer, you can build a virtual private cloud, which is
 | [Virtual Router Appliance](/docs/virtual-router-appliance?topic=virtual-router-appliance-getting-started-vra) | Selectively routes private and public network traffic through a full-featured enterprise router with firewall, traffic-shaping, policy-based routing, VPN, and a host of other features. |
 | [{{site.data.keyword.cloud_notm}} Direct Link](/docs/direct-link?topic=direct-link-get-started-with-ibm-cloud-direct-link#get-started-with-ibm-cloud-direct-link) | Leverages a Cloud Exchange provider to deliver connectivity to {{site.data.keyword.cloud_notm}} infrastructure locations. |
 | [Gateway Appliances](/docs/gateway-appliance?topic=gateway-appliance-getting-started-ga) | Enhances control over network traffic, accelerates your network’s performance, and improves your network security. |
-| [Hardware Firewalls](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started) |Prevent unwanted traffic from hitting your servers, reduce your attack surface, and allow your server resources to be dedicated for their intended use. |
-| [Fortigate Security Appliance 10 Gbps](/docs/fortigate-10g?topic=fortigate-10g-getting-started) | Protect traffic on multiple VLANs for both public and private networks.|
+| [Hardware Firewalls](/docs/hardware-firewall-shared) [Deprecated]{: tag-red} |Prevent unwanted traffic from hitting your servers, reduce your attack surface, and allow your server resources to be dedicated for their intended use. |
+| [Fortigate Security Appliance 10 Gbps](/docs/fortigate-10g) [Deprecated]{: tag-red} | Protect traffic on multiple VLANs for both public and private networks.|
 | [VLANs](/docs/vlans?topic=vlans-getting-started) | Isolate broadcast traffic on the public and private networks. |
 | [Subnets](/docs/subnets?topic=subnets-getting-started) |Each subnet provides IP addresses to resources in different ways.  |
 {: caption="Networking options - Classic" caption-side="top"}

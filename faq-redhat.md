@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2025-12-03"
+  years: 2026
+lastupdated: "2026-08-14"
 
 subcollection: infrastructure-hub
 
@@ -42,7 +42,7 @@ The public RHEL AI image that is provided by {{site.data.keyword.IBM_notm}} is k
 {: #faq-red-hat-ibm-support}
 {: faq}
 
-For Red Hat software that is purchased natively on {{site.data.keyword.cloud_notm}}, [support](/docs/account?topic=account-gettinghelp) is the first point of contact for any issue with a Red Hat software-related issue.
+For Red Hat software that is purchased natively on {{site.data.keyword.cloud_notm}}, [support](/docs/support?topic=support-gettinghelp) is the first point of contact for any issue with a Red Hat software-related issue.
 
 {{site.data.keyword.IBM_notm}} provides three support plans.
 
@@ -50,19 +50,19 @@ For Red Hat software that is purchased natively on {{site.data.keyword.cloud_not
 * Advanced
 * Premium
 
-For more information, see [{{site.data.keyword.IBM_notm}} support plans](/docs/account?topic=account-support-plans).
+For more information, see [{{site.data.keyword.IBM_notm}} support plans](/docs/support?topic=support-support-plans).
 
 ## How does {{site.data.keyword.cloud_notm}} and Red Hat work together to solve issues?
 {: #faq-support-red-hat-and-ibm-cloud}
 {: faq}
 
-If Red Hat involvement is required to solve a potential issue, {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) engages Red Hat support. For client BYOL issues, you need to contact [Red Hat support](https://www.redhat.com/en/services/support){: external}.
+If Red Hat involvement is required to solve a potential issue, {{site.data.keyword.cloud_notm}} [support](/docs/support?topic=support-gettinghelp) engages Red Hat support. For client BYOL issues, you need to contact [Red Hat support](https://www.redhat.com/en/services/support){: external}.
 
 ## What support can I expect from {{site.data.keyword.cloud_notm}} for the infrastructure image that I select?
 {: #faq-owner-responsibilites-ibm-cloud-red-hat}
 {: faq}
 
-{{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Red Hat stock images. {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) covers any issue with the cloud infrastructure and the stock images, such as driver mismatch or licensing. In addition, support is available for the standard Red Hat server included in the stock image, as well as for software available in Red Hat repository, such as iSCSI configuration. These items are considered part of the base operating system functionality provided by Red Hat and included in the stock image. For custom images, it is the client's responsibility to resolve any issues that are related to the custom image, such as driver mismatch, licensing, or additional software installations.
+{{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Red Hat stock images. {{site.data.keyword.cloud_notm}} [support](/docs/support?topic=support-gettinghelp) covers any issue with the cloud infrastructure and the stock images, such as driver mismatch or licensing. In addition, support is available for the standard Red Hat server included in the stock image, as well as for software available in Red Hat repository, such as iSCSI configuration. These items are considered part of the base operating system functionality provided by Red Hat and included in the stock image. For custom images, it is the client's responsibility to resolve any issues that are related to the custom image, such as driver mismatch, licensing, or additional software installations.
 
 ## Does {{site.data.keyword.Bluemix_notm}} support Bring Your Own License (BYOL) for Red Hat operating systems?
 {: #faq-byol-red-hat-ibm-cloud}

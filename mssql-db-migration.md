@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2022, 2024
-lastupdated: "2024-12-16"
+  years:  2022, 2026
+lastupdated: "2026-08-14"
 
 subcollection: infrastructure-hub
 
@@ -159,7 +159,7 @@ Data Migration Assistant is a database assessment and migration tool that is pro
 ### Smart Bulk Copy
 {: #smart-bulk-copy}
 
-The Smart Bulk Copy tool is used to move data from one SQL Server database to another. It uses physical partitions and parallel copy tasks for faster transfer of data. It can also be used to move data from two instances of SQL Server running in two different cloud providers or to move from on-premises to the cloud. This method is suitable for large-size data migration. For more information, see [Smart Bulk Copy](https://learn.microsoft.com/en-us/samples/azure-samples/smartbulkcopy/smart-bulk-copy/){: external}.
+The Smart Bulk Copy tool is used to move data from one SQL Server database to another. It uses physical partitions and parallel copy tasks for faster transfer of data. It can also be used to move data from two instances of SQL Server running in two different cloud providers or to move from on-premises to the cloud. This method is suitable for large-size data migration. For more information, see [Database Migration / Reverse Migration between Azure SQL (DB/MI) and SQL Server using SmartBulkCopy](https://techcommunity.microsoft.com/blog/modernizationbestpracticesblog/database-migration--reverse-migration-between-azure-sql-dbmi-and-sql-server-usin/3264451){: external}.
 
 ## Set up target on {{site.data.keyword.vpc_short}}
 {: #mssql-db-setup-target}

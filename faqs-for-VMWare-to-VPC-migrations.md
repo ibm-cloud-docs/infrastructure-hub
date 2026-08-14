@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2025
-lastupdated: "2025-08-05"
+  years: 2021, 2026
+lastupdated: "2026-08-14"
 
 keywords: infrastructure
 
@@ -45,16 +45,16 @@ For more information, see [Order license for VMware to VPC migration](/docs/infr
 {: #vmware-necessary-add-rmm-ssh-key}
 {: faq}
 
-Yes, RMM uses SSH for communication between source, target, and the RMM server. So it is necessary to add the RMM server’s public key to the source and target server.
+Yes, RMM uses SSH for communication between source, target, and the RMM server. Therefore, you must add the RMM server's public key to the source and target server.
 
 
 ## Where can I find {{site.data.keyword.cloud}} documentation about VMware VM (on-premises or classic) to {{site.data.keyword.vpc_short}} migration?
 {: #vmware-where-vmware-doc-info}
 {: faq}
 
-For On-premises VMware VM to {{site.data.keyword.vpc_short}} migration with RMM documentation, click [here](/docs/infrastructure-hub?topic=infrastructure-hub-migrating-images-vmware-vpc).
+For more information, see [On-premises VMware VM to {{site.data.keyword.vpc_short}} migration with RMM](/docs/infrastructure-hub?topic=infrastructure-hub-migrating-images-vmware-vpc).
 
-For Classic VMware VM to {{site.data.keyword.vpc_short}} migration with RMM documentation, click [here](/docs/infrastructure-hub?topic=infrastructure-hub-migrating-images-vmware-vpc-classic)
+For more information, see [Classic VMware VM to {{site.data.keyword.vpc_short}} migration with RMM](/docs/infrastructure-hub?topic=infrastructure-hub-migrating-images-vmware-vpc-classic).
 
 ## Who do I contact for support?
 {: #vmware-where-support-info}
@@ -79,7 +79,7 @@ Yes, you can migrate VMware virtual machines when connectivity is established be
 {: #vmware-is-data-migration-supported}
 {: faq}
 
-Only local storage and {{site.data.keyword.blockstorageshort}} is supported in {{site.data.keyword.cloud_notm}} classic. {{site.data.keyword.filestorage_short}} share’s data migration is not supported. To migrate data from file shares, consider the use of a third-party tool such as `rsync`. A sample script that uses `rsync` can be found [here](https://github.com/IBM-Cloud/vpc-migration-tools){: external}.
+Only local storage and {{site.data.keyword.blockstorageshort}} is supported in {{site.data.keyword.cloud_notm}} classic. {{site.data.keyword.filestorage_short}} data migration for file shares is not supported. To migrate data from file shares, use a third-party tool such as `rsync`. For detailed steps, see [Migrating data from IBM Cloud classic infrastructure to VPC](/docs/classic-to-vpc?topic=classic-to-vpc-data-migration-classic-to-vpc).
 
 ## Is the migration intrusive?
 {: #vmware-is-migration-intrusive}

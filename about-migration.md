@@ -2,7 +2,7 @@
 
 copyright:
   years:  2020, 2026
-lastupdated: "2026-06-30"
+lastupdated: "2026-08-14"
 
 keywords: migration, migrate, migrating, migrate infrastructure, cloud migration
 
@@ -18,7 +18,7 @@ subcollection: infrastructure-hub
 Your drive to migrate might come from many factors such as modernization, cost reduction, consolidation, or data center closure. You might also migrate to be more cloud-native or adopt new technologies such as VPC. Regardless of the reason, migration can be as simple as migrating a single virtual server instance, or it can be as complex. For example, you might want to migrate your application to a more complex environment where you need to migrate an entire pod or data center with all of the underlying components.
 {: shortdesc}
 
-![Migration approach](images/migrate-process.svg){: caption="Migration approach" caption-side="bottom"}
+![Migration approach](images/migrate-process.svg "Diagram showing the four-step migration approach: Assess, Plan, Migrate, and Validate"){: caption="Migration approach" caption-side="bottom"}
 
 ## Migration approach
 {: #migration-approach}
@@ -29,7 +29,7 @@ Your drive to migrate might come from many factors such as modernization, cost r
 |**Plan** | Analyze your current infrastructure and determine whether your resources and components can be migrated, and how much if any disruptions would that cause to your current business environment. Understanding how much time is needed to migrate and whether it needs to be done in stages can help you simplify the migration journey.|
 |**Migrate** | After you assessed your existing infrastructure and planned for your migration, you can migrate your resources and components with ease and confidence. Depending on your migration needs, you can choose from tools that are available to help you with the migration process. |
 |**Validate**  | After you migrate your resources and components into your target infrastructure, and before you make your infrastructure live, validate and test your environment to make sure it is ready for production. This activity might also entail updating your DNS and global load balancers, routes, or retiring old services. |
-{: caption="Migration approach" caption-side="top"}
+{: caption="Migration approach" caption-side="bottom"}
 
 ## Migration solutions
 {: #migration-solutions}
@@ -124,7 +124,7 @@ Review the following migration considerations and limitations:
 * Only compute resources are migrated, along with secondary volume, and secondary block volumes.
 * The RMM tool tracks the data changes on the source server until cutover, and performs delta syncs to the target server.
 
-For more a detailed step-by-step guide, see [{{site.data.keyword.cloud_notm}} classic bare metal to classic bare metal migration](/docs/infrastructure-hub?topic=infrastructure-hub-p-p-migration-bare-metal-overview).
+For a detailed step-by-step guide, see [{{site.data.keyword.cloud_notm}} classic bare metal to classic bare metal migration](/docs/infrastructure-hub?topic=infrastructure-hub-p-p-migration-bare-metal-overview).
 
 For frequently asked questions and answers, see [FAQs for classic bare metal to classic bare metal migration](/docs/infrastructure-hub?topic=infrastructure-hub-bare-metal-faqs).
 
@@ -133,7 +133,7 @@ For frequently asked questions and answers, see [FAQs for classic bare metal to 
 
 You can use RMM solution to migrate your classic bare metal server to an {{site.data.keyword.vpc_short}} virtual server instance or bare metal. By migrating from bare metal servers to virtual servers or bare metal, you can modernize your environment and adopt virtualization.
 
-![Physical to virtual migration private IP diagram.](images/P2V-Private-1.svg){: caption="Migrating over private interface" caption-side="bottom"}
+![Physical to virtual migration private IP diagram](images/P2V-Private-1.svg "Diagram of the physical-to-virtual migration topology using a private IP interface"){: caption="Migrating over private interface" caption-side="bottom"}
 
 A similar architecture diagram is applicable for 'Bare metal to bare metal' and 'Virtual server to virtual server' use cases for classic to VPC infrastructure migration.
 {: note}
@@ -145,7 +145,7 @@ Review the following migration considerations and limitations:
 * When you place your order, you get a 3-month promotional license, then you must use BYOL.
 * Only the compute resources are migrated, along with secondary volume and block volumes.
 * The RMM tool tracks the data changes on the source server until cutover, and performs delta syncs to the target server.
-* This migration is a nondisruptive.
+* This migration is nondisruptive.
 
 VPC does not have support for snapshot, replication, and shared volume. You can manage these solutions through the native OS capabilities, tools, or third party of your choice.
 {: note}
@@ -154,14 +154,14 @@ For more information, see [Bare metal to bare metal or virtual server migration 
 
 For a detailed step-by-step guide on moving your {{site.data.keyword.cloud_notm}} classic bare metal servers to VPC, see [Bare metal to virtual server migration on a private network by using RMM](/docs/infrastructure-hub?topic=infrastructure-hub-pv-migration-private-network).
 
-For frequently asked questions and answers, see [FAQs for RackWare](/docs/infrastructure-hub?topic=infrastructure-hub-rackware-faqs)
+For frequently asked questions and answers, see [FAQs for RackWare](/docs/infrastructure-hub?topic=infrastructure-hub-rackware-faqs).
 
 ### On-premises to VPC infrastructure migration
 {: #on-prem-vpc-migration-rmm}
 
 You can use RMM solution to migrate your on-premises workloads to {{site.data.keyword.vpc_short}}.
 
-![Topology](images/On-Prem-1.svg){: caption="On-premises to VPC migration" caption-side="bottom"}
+![On-premises to VPC migration topology](images/On-Prem-1.svg "Diagram showing on-premises to VPC migration topology"){: caption="On-premises to VPC migration" caption-side="bottom"}
 
 This architecture diagram is applicable for bare metal to bare metal, bare metal to virtual server, and virtual server to virtual server scenarios.
 {: note}
@@ -175,7 +175,7 @@ For frequently asked questions and answers, see [FAQs for VMware (on-premises an
 
 You can use RMM solution to migrate from other cloud providers to {{site.data.keyword.vpc_short}}.
 
-![Architecture](images/AnyCloud_final.svg){: caption="Other cloud providers to VPC migration" caption-side="bottom"}
+![Other cloud providers to VPC migration architecture](images/AnyCloud_final.svg "Diagram showing migration from other cloud providers (AWS, Azure, GCP, OCI) to IBM Cloud VPC"){: caption="Other cloud providers to VPC migration" caption-side="bottom"}
 
 You can migrate your workloads from the following cloud providers:
 
@@ -191,7 +191,7 @@ For a detailed step-by-step guide, see [AWS, Azure, GCP, and OCI workloads to {{
 
 Several do-it-yourself (DIY) automation scripts are available to migrate workloads and data to {{site.data.keyword.cloud_notm}}. The automation scripts are starter scripts that you can modify or adapt to your environment.
 
-Since these scripts are open-sourced and without charge for use, no support or SLAs are offered. For more information, see [Getting help and support for image and data migration](/docs/infrastructure-hub?topic=infrastructure-hub-getting-help-support-image-data-migration).
+Because these scripts are open source and available at no charge, no support or SLAs are offered. For more information, see [Getting help and support for image and data migration](/docs/infrastructure-hub?topic=infrastructure-hub-getting-help-support-image-data-migration).
 {: note}
 
 The following DIY automation scripts are available for you to use:
@@ -201,7 +201,7 @@ The following DIY automation scripts are available for you to use:
 |Virtual server preparation and validation tool |- This tool ensures that the guest server that you want to import to VPC as a custom image meets the [minimum requirements](/docs/vpc?topic=vpc-about-images#custom-image-reqs). \n - The script is available in this [public GitHub repository](https://github.com/IBM-Cloud/vpc-migration-tools/tree/main/os-precheck-scripts){: external}.  |
 |Image conversion tool   |- You can convert VMDK and VDH images to qcow2 from anywhere to VPC. \n - You can upload an image to {{site.data.keyword.cos_full_notm}} and import it to VPC as a custom image. \n - The script is available in this [public GitHub repository](https://github.com/IBM-Cloud/vpc-migration-tools/tree/main/image-conversion){: external}. \n - For a detailed step-by-step guide, see [Migrating VMDK or VHD images to VPC](/docs/infrastructure-hub?topic=infrastructure-hub-migrating-images-vpc).|
 |Data migration tool  | - You can migrate your data from anywhere to {{site.data.keyword.cloud_notm}} classic infrastructure or VPC. \n - The tool uses `rsync` to copy data from the source to the target server. \n - The script is available in this [public GitHub repository](https://github.com/IBM-Cloud/vpc-migration-tools/tree/main/data-migration){: external}. \n - For a detailed step-by-step guide, see [Migrating data from {{site.data.keyword.cloud_notm}} classic infrastructure to VPC](/docs/infrastructure-hub?topic=infrastructure-hub-data-migration-classic-to-vpc).  |
-{: caption="Available DIY automation scripts" caption-side="top"}
+{: caption="Available DIY automation scripts" caption-side="bottom"}
 
 ## Custom image templates
 {: #custom-image-templates}

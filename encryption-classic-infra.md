@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2026
-lastupdated: "2026-06-30"
+lastupdated: "2026-08-14"
 
 keywords: encryption, storage encryption, customer managed encryption, classic infrastructure encryption
 
@@ -14,7 +14,7 @@ subcollection: infrastructure-hub
 # Encryption options for {{site.data.keyword.cloud}} classic infrastructure storage
 {: #encryption-classic-infrastructure}
 
-By default {{site.data.keyword.cloud}} classic infrastructure includes provider-managed data-at-rest encryption capabilities. {{site.data.keyword.blockstoragefull}} and {{site.data.keyword.filestorage_full}} do not support native customer-managed encryption (BYOK) integration. However, you can implement customer-managed encryption through manual configuration using LUKS encryption for {{site.data.keyword.blockstorageshort}} or file-level encryption for {{site.data.keyword.filestorage_short}}. {{site.data.keyword.cos_full_notm}} supports customer-managed encryption with {{site.data.keyword.keymanagementserviceshort}}.
+By default, {{site.data.keyword.cloud}} classic infrastructure includes provider-managed data-at-rest encryption capabilities. {{site.data.keyword.blockstoragefull}} and {{site.data.keyword.filestorage_full}} do not support native customer-managed encryption (BYOK) integration. However, you can implement customer-managed encryption through manual configuration by using LUKS encryption for {{site.data.keyword.blockstorageshort}} or file-level encryption for {{site.data.keyword.filestorage_short}}. {{site.data.keyword.cos_full_notm}} supports customer-managed encryption with {{site.data.keyword.keymanagementserviceshort}}.
 {: shortdesc}
 
 For native BYOK support with {{site.data.keyword.blockstorageshort}} and {{site.data.keyword.filestorage_short}}, consider migrating to [VPC infrastructure](/docs/vpc?topic=vpc-block-storage-about), which provides integrated customer-managed encryption with Standard (multi-tenant) and Dedicated (single-tenant) {{site.data.keyword.keymanagementserviceshort}}.
@@ -43,51 +43,51 @@ The following table summarizes customer-managed encryption (BYOK) support for cl
 ## Customer-managed encryption
 {: #customer-managed-encryption}
 
-Some workloads or use cases require full customer control over the encryption, including key management. You can use the following information to learn about possible methods to achieve customer-managed encryption within the standard {{site.data.keyword.cloud}} Classic Infrastructure feature set. You can implement any of the following options: LUKS encryption for {{site.data.keyword.blockstorageshort}}, file-level encryption options for {{site.data.keyword.filestorage_short}}, and server-side encryption for {{site.data.keyword.cos_full_notm}}. Most of these customer-managed encryption options require manual setup.
+Some workloads or use cases require full customer control over the encryption, including key management. You can use the following information to learn about possible methods to achieve customer-managed encryption within the standard {{site.data.keyword.cloud}} classic infrastructure feature set. You can implement any of the following options: LUKS encryption for {{site.data.keyword.blockstorageshort}}, file-level encryption options for {{site.data.keyword.filestorage_short}}, and server-side encryption for {{site.data.keyword.cos_full_notm}}. Most of these customer-managed encryption options require manual setup.
 
-### Using Key Protect for customer-implemented encryption
+### Using {{site.data.keyword.keymanagementserviceshort}} for customer-implemented encryption
 {: #key-protect}
 
 [{{site.data.keyword.keymanagementservicefull}}](https://www.ibm.com/products/key-protect){: external} provides secure key management for {{site.data.keyword.cloud_notm}} services. For more information about {{site.data.keyword.keymanagementserviceshort}}, see [About Key Protect](/docs/key-protect?topic=key-protect-about).
 
-{{site.data.keyword.keymanagementserviceshort}} is **not natively integrated** with {{site.data.keyword.blockstorageshort}} or {{site.data.keyword.filestorage_short}} on classic infrastructure. However, you can use {{site.data.keyword.keymanagementserviceshort}} to securely store and manage encryption keys (such as LUKS passphrases) that you use for customer-implemented encryption solutions. When implementing LUKS encryption or file-level encryption, you can retrieve keys from {{site.data.keyword.keymanagementserviceshort}} programmatically instead of storing them locally.
+{{site.data.keyword.keymanagementserviceshort}} is **not natively integrated** with {{site.data.keyword.blockstorageshort}} or {{site.data.keyword.filestorage_short}} on classic infrastructure. However, you can use {{site.data.keyword.keymanagementserviceshort}} to securely store and manage encryption keys (such as LUKS passphrases) that you use for customer-implemented encryption solutions. When you implement LUKS encryption or file-level encryption, you can retrieve keys from {{site.data.keyword.keymanagementserviceshort}} programmatically instead of storing them locally.
 
 #### Key Protect with {{site.data.keyword.cos_full_notm}}
 {: #key-protect-cos}
 
 {{site.data.keyword.cos_full_notm}} **does support** native integration with {{site.data.keyword.keymanagementserviceshort}}. When you use {{site.data.keyword.cos_full_notm}} with {{site.data.keyword.keymanagementserviceshort}}, a root key is used to encrypt buckets. {{site.data.keyword.keymanagementserviceshort}} offers two deployment options:
 
-- **Standard (multi-tenant)**: Provides FIPS 140-2 Level 3 compliance using shared HSM infrastructure. IBM manages the HSM master keys. Suitable for most customer-managed encryption use cases.
-- **Dedicated (single-tenant)**: Provides FIPS 140-3 Level 4 compliance (certification in progress, expected by end of 2026) with dedicated HSM partitions. Customers fully own and manage their master keys, with no IBM administrator access. This option provides maximum isolation and is designed for highly regulated workloads.
+- **Standard (multi-tenant)**: Provides FIPS 140-2 Level 3 compliance by using shared HSM infrastructure. IBM manages the HSM master keys. Suitable for most customer-managed encryption use cases.
+- **Dedicated (single-tenant)**: Provides FIPS 140-3 Level 4 compliance (certification in progress, which is expected by the end of 2026) with dedicated HSM partitions. Customers fully own and manage their master keys, with no IBM administrator access. This option provides maximum isolation and is designed for highly regulated workloads.
 
 For more information, see [Server-Side Encryption with IBM Key Protect](/docs/cloud-object-storage?topic=cloud-object-storage-kp).
 
 #### Using Key Protect to store LUKS passphrases
 {: #key-protect-luks}
 
-If you implement LUKS encryption for {{site.data.keyword.blockstorageshort}} or file-level encryption for {{site.data.keyword.filestorage_short}}, you can use {{site.data.keyword.keymanagementserviceshort}} to securely store your encryption passphrases. This approach provides centralized key management while maintaining customer control over encryption.
+If you implement LUKS encryption for {{site.data.keyword.blockstorageshort}} or file-level encryption for {{site.data.keyword.filestorage_short}}, you can use {{site.data.keyword.keymanagementserviceshort}} to securely store your encryption passphrases. This approach provides centralized key management while customers maintain control over encryption.
 
-You can provision {{site.data.keyword.keymanagementserviceshort}} from the {{site.data.keyword.cloud_notm}} console or with the API. After you provision a Key Protect instance, you can create (or import) a customer-managed root key. This root key never leaves the HSM but it is used to encrypt and decrypt other keys. When the root key is available, you can create (or import) a standard key to directly encrypt and decrypt data. For more information about using {{site.data.keyword.keymanagementserviceshort}}, see the following topics:
+You can provision {{site.data.keyword.keymanagementserviceshort}} from the {{site.data.keyword.cloud_notm}} console or with the API. After you provision a Key Protect instance, you can create (or import) a customer-managed root key. This root key is never exported from the HSM but it is used to encrypt and decrypt other keys. When the root key is available, you can create (or import) a standard key to directly encrypt and decrypt data. For more information about using {{site.data.keyword.keymanagementserviceshort}}, see the following topics:
 
 * [Creating or importing keys](/docs/key-protect?topic=key-protect-getting-started-tutorial)
-* A data encryption key (DEK) ought to be stored in an encrypted (wrapped) format. Key Protect wraps the DEK by encrypting it with the root key.
+* A data encryption key (DEK) must be stored in an encrypted (wrapped) format. {{site.data.keyword.keymanagementserviceshort}} wraps the DEK by encrypting it with the root key.
     * [Retrieving a wrapped key](/docs/key-protect?topic=key-protect-wrap-keys&interface=ui)
-    * [Retrieving a wrapped key with the API](/apidocs/key-protect#wrapkey){: external}
+    * [Retrieving a wrapped key with the API](/docs/apis/key-protect#wrapkey)
 * After it is retrieved, the wrapped DEK can be stored on the local file system, and unwrapped when the key is needed for some file system operation (such as mounting, and encryption).
     * [Unwrapping a wrapped key](/docs/key-protect?topic=key-protect-unwrap-keys&interface=ui)
-    * [Unwrapping a wrapped key with the API](/apidocs/key-protect#unwrapkey){: external}
+    * [Unwrapping a wrapped key with the API](/docs/apis/key-protect#unwrapkey)
 
 If the root key is rotated or for some other reason an update is needed to the wrapped DEK, the previous API call returns the new DEK also. Store this new DEK and use it for future operations.
 {: note}
 
-For more information about key management (rotation, deletion, auditing), see the Key Protect [Getting started tutorial](/docs/key-protect?topic=key-protect-getting-started-tutorial) and the [API reference](/apidocs/key-protect){: external}.
+For more information about key management (rotation, deletion, auditing), see the {{site.data.keyword.keymanagementserviceshort}} [Getting started tutorial](/docs/key-protect?topic=key-protect-getting-started-tutorial) and the [API reference](/docs/apis/key-protect).
 
 ### {{site.data.keyword.blockstorageshort}} encryption with LUKS
 {: #block-storage-luks}
 
-You can use LUKS to encrypt {{site.data.keyword.blockstorageshort}} volumes. For more information, see [Achieving full disk encryption with LUKS in RHEL](/docs/BlockStorage?topic=BlockStorage-LUKSencryption). After the LUKS volume is mounted, key management is done through *crypt setup*.
+You can use LUKS to encrypt {{site.data.keyword.blockstorageshort}} volumes. For more information, see [Achieving full disk encryption with LUKS in RHEL](/docs/BlockStorage?topic=BlockStorage-LUKSencryption). After the LUKS volume is mounted, key management is done through `cryptsetup`.
 
-#### LUKS Key Slots
+#### LUKS key slots
 {: #luks-key-slots}
 
 LUKS has 8 key slots.

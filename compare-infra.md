@@ -2,7 +2,7 @@
 copyright:
   years: 2019, 2026
 
-lastupdated: "2026-06-30"
+lastupdated: "2026-08-14"
 
 keywords: understanding infrastructure, vpc, classic infrastructure, cloud environment, infrastructure comparison, comparing infrastructures
 
@@ -15,7 +15,7 @@ subcollection: infrastructure-hub
 # Comparing {{site.data.keyword.cloud_notm}} classic and VPC infrastructure environments
 {: #compare-infrastructure}
 
-Compare the key differences between {{site.data.keyword.cloud}} infrastructure environments to decide which one is best for your workloads and applications. Check out this [video](https://mediacenter.ibm.com/media/IBM%20Bare%20Metal%20Servers%20-%20Classic%20vs.%20VPC%20Infrastructure%20Explainer%20Video/1_hn1d69nn){: external} to learn more about the differences between the classic and VPC infrastructures.
+Compare the key differences between {{site.data.keyword.cloud}} infrastructure environments to decide which one is best for your workloads and applications. Watch this [video](https://mediacenter.ibm.com/media/IBM%20Bare%20Metal%20Servers%20-%20Classic%20vs.%20VPC%20Infrastructure%20Explainer%20Video/1_hn1d69nn){: external} to learn more about the differences between the classic and VPC infrastructures.
 {: shortdesc}
 
 If you aren't familiar with the environment types, review the following descriptions.
@@ -26,7 +26,7 @@ If you aren't familiar with the environment types, review the following descript
 ## Compute differentiators
 {: #compare-compute}
 
-See the following table for the Compute differences between classic and VPC.
+See the following table for the compute differences between classic and VPC.
 
 | Category   |  Classic infrastructure   | VPC infrastructure |
 | ---------- | ------------------------- | ------------------ |
@@ -44,7 +44,7 @@ See the following table for the Compute differences between classic and VPC.
 ## Network differentiators
 {: #compare-network}
 
-See the following table for the Networking differences between classic and VPC.
+See the following table for the networking differences between classic and VPC.
 
 | Category   |  Classic infrastructure   | VPC infrastructure |
 | ---------- | ------------------------- | ------------------ |
@@ -52,12 +52,12 @@ See the following table for the Networking differences between classic and VPC.
 | **Network functions and services** |Physical and virtual appliances from multiple vendors | Cloud-native network functions (VPNs, Load Balancer as a Service (LBaaS)) \n (VPC isolation, dedicated resources carved out of public cloud, with more options for VPNs, LBaaS, multiple virtual Network Interface Controller (vNIC) instances, and larger subnet sizes) |
 | **IP addresses** | IPv6 addresses supported | IPv4 addresses only |
 | **Gateway routing** | Handled natively by IBM datacenter routers or use a virtual or physical network appliance (Virtual Router Appliance, Vyatta, Juniper vSRX, Fortinet FSA) to customize and manage yourself | Traffic routing is handled by public gateway and floating IP services |
-| **Network address translation (NAT)** | Use a virtual or physical network appliance (Vyatta, Juniper vSRX, Fortinet FSA, Fortinet vFSA, and Bring Your Own Gateway Appliance (BYOGWA)) | Supported via floating IP's and public gateways functionality  |
+| **Network address translation (NAT)** | Use a virtual or physical network appliance (Vyatta, Juniper vSRX, Fortinet FSA, Fortinet vFSA, and Bring Your Own Gateway Appliance (BYOGWA)) | Supported via floating IPs and public gateways functionality  |
 | **IPsec Virtual Private Network (VPN)** | Use a virtual or physical network appliance (Vyatta, Juniper vSRX, Fortinet FSA, Fortinet vFSA and BYOGWA) | Supported by the VPN-as-a-service offering |
 |  **Elastic load balancing** | Cloud Load Balancer  | Load Balancer for VPC |
 | **Global load balancing**| Cloud Internet Services, Citrix Netscaler VPX | Cloud Internet Services |
 |**Hybrid connectivity** | Direct Link for direct private connectivity from on-premises, virtual and physical network appliances (Vyatta, Juniper vSRX, Fortinet FSA, Fortinet vFSA, and BYOGWA) for further control and observability of the hybrid connection | Direct Link 2.0, Transit Gateway and VPC VPN \n Note: You can enable your VPC to access classic infrastructure resources. |
-{: caption="Network comparison" caption-side="top"}
+{: caption="Network comparison" caption-side="bottom"}
 {: summary="This table has row and column headers. The row headers identify possible features. The column headers identify the differentiators between classic infrastructure and VPC infrastructure. To understand the differences between environments, go to the row and find the details for the feature that you're interested in."}
 
 ## Storage differentiators
@@ -68,7 +68,8 @@ See the following table for the storage differences between classic and VPC.
 |  Classic infrastructure   | VPC infrastructure |
 | ------------------------- | ------------------ |
 |Robust set of storage services, {{site.data.keyword.blockstorageshort}} (Internet Small Computer Systems Interface (iSCSI)), and {{site.data.keyword.filestorage_short}} (Network File System (NFS)-based) offerings. Server-side agent-based Backup service with dedicated vault. \n - Snapshot support for both offerings. \n - Cross-regional replication. \n - Adjustable Input/Output Operations Per Second (IOPS) and increasable capacity. \n - Encryption at rest with provider- or customer-managed encryption. \n - Volume duplication and data refresh from parent volume.| {{site.data.keyword.block_storage_is_short}} provides primary boot disks (with basic lifecycle management), and secondary data volumes. {{site.data.keyword.filestorage_vpc_short}} provides NFS-based file shares. \n - Snapshot and backup support for block volumes and file shares. \n - Zonal and cross-regional replication for file shares. \n - Adjustable IOPS and increasable capacity. \n - Encryption at rest with provider- or customer-managed encryption. \n - Optional encryption in transit for block volumes and file shares. \n - Optional cross-account authorizations for encryption keys and file share access. |
-{: caption="Storage comparison" caption-side="top"}
+{: caption="Storage comparison" caption-side="bottom"}
+{: summary="This table has column headers. The column headers identify the differentiators between classic infrastructure and VPC infrastructure storage. To understand the differences, find the feature in the classic infrastructure column and compare it with the corresponding VPC infrastructure column."}
 
 ## Security differentiators
 {: #compare-security}
@@ -78,7 +79,8 @@ See the following table for the security differences between classic and VPC.
 |  Classic infrastructure   | VPC infrastructure |
 | ---------- | ------------------------- |
 |Vyatta, Fortigate, Juniper vSRX, Security Groups for virtual servers| Security groups, Network Access Control Lists (ACLs)|
-{: caption="Security comparison" caption-side="top"}
+{: caption="Security comparison" caption-side="bottom"}
+{: summary="This table has column headers. The column headers identify the differentiators between classic infrastructure and VPC infrastructure security options. To understand the differences, find the feature in the classic infrastructure column and compare it with the corresponding VPC infrastructure column."}
 
 ## API differentiators
 {: #compare-apis}
@@ -88,7 +90,7 @@ See the following table for the API differences between classic and VPC.
 |  Classic infrastructure   | VPC infrastructure |
 | ------------------------- | ------------------ |
 |Existing {{site.data.keyword.slapi_short}} (SLAPI)| New developer-friendly, REST-based API |
-{: caption="API comparison" caption-side="top"}
+{: caption="API comparison" caption-side="bottom"}
 
 ## Next steps
 {: #compare-nextsteps}

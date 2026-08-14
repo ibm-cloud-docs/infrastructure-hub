@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2025
-lastupdated: "2025-08-06"
+  years: 2021, 2026
+lastupdated: "2026-08-14"
 
 keywords:
 
@@ -98,4 +98,4 @@ For more information, see [{{site.data.keyword.cloud_notm}} classic bare metal t
 {: #bm-is-data-migration-supported}
 {: faq}
 
-Only local storage and {{site.data.keyword.blockstorageshort}} is supported in {{site.data.keyword.cloud_notm}} classic. {{site.data.keyword.filestorage_short}} share’s data migration is not supported. To migrate data from file shares, consider the use of a third-party tool such as `rsync`. A sample script that uses `rsync` can be found [here](https://github.com/IBM-Cloud/vpc-migration-tools){: external}.
+Only local storage and {{site.data.keyword.blockstorageshort}} is supported in {{site.data.keyword.cloud_notm}} classic. {{site.data.keyword.filestorage_short}} data migration for file shares is not supported. To migrate data from file shares, use a third-party tool such as `rsync`. For detailed steps, see [Migrating data from IBM Cloud classic infrastructure to VPC](/docs/classic-to-vpc?topic=classic-to-vpc-data-migration-classic-to-vpc).

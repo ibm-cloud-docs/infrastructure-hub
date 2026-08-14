@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-08-22"
+  years:  2021, 2026
+lastupdated: "2026-08-14"
 
 keywords: migration, migrate, migrating, migrate infrastructure
 
@@ -38,7 +38,7 @@ RackWare Management Module (RMM) solution simplifies the overall migration proce
 1. Encrypted volumes are not supported.
 2. Do not modify the target. If anything is modified out of control of RMM after the first migration, it can be wiped out and the result can be unexpected.
 3. The RMM solution handles only the OS, application, and data movement, so anything else needs to be set up by you (for example, security groups, subnets, and so on).
-4. For data migration, {{site.data.keyword.filestorage_short}} is not supported. You can use third-party tools such as `rsync` for data migration on block and file.
+4. For data migration, {{site.data.keyword.filestorage_short}} is not supported. You can use third-party tools such as `rsync` for data migration on block and file storage. For detailed steps, see [Migrating data from IBM Cloud classic infrastructure to VPC](/docs/classic-to-vpc?topic=classic-to-vpc-data-migration-classic-to-vpc).
 
 ## Supported operating systems
 {: #p-p-migration-bare-metal-supported-os}

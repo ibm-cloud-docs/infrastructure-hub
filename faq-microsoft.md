@@ -45,7 +45,7 @@ You can also use Remote Desktop Services that include some user-specific options
 {: #faq-microsoft-support-ibm-cloud}
 {: faq}
 
-For Microsoft software that is purchased natively on {{site.data.keyword.cloud_notm}}, {{site.data.keyword.cloud_notm}} [support](/docs/support?topic=support-gettinghelp) is the first point of contact for any issue with a Microsoft software-related issue.
+For Microsoft software that is purchased natively on {{site.data.keyword.cloud_notm}}, {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) is the first point of contact for any issue with a Microsoft software-related issue.
 
 IBM provides a choice of support plans.
 
@@ -59,7 +59,7 @@ For more information, see [IBM support plans](/docs/support?topic=support-suppor
 {: #faq-microsoft-support-ibm-cloud-solve}
 {: faq}
 
-If Microsoft involvement is required to solve a potential issue, {{site.data.keyword.cloud_notm}} [support](/docs/support?topic=support-gettinghelp) engages Microsoft support.
+If Microsoft involvement is required to solve a potential issue, {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) engages Microsoft support.
 
 For client BYOL Microsoft software issues, you need to contact [Microsoft support](https://support.microsoft.com/en-us){: external}.
 
@@ -73,7 +73,7 @@ For client BYOL Microsoft software issues, you need to contact [Microsoft suppor
 {: #faq-microsoft-ibm-cloud-responsibilities}
 {: faq}
 
-{{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Microsoft stock images. {{site.data.keyword.cloud_notm}} [support](/docs/support?topic=support-gettinghelp) covers any issue with the cloud infrastructure and the stock images, such as driver mismatch or licensing. In addition, support is available for standard Windows Server features included in the stock image, such as roles and features like iSCSI configuration. These features are considered part of the base operating system functionality provided by Microsoft and included in the stock image.
+{{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Microsoft stock images. {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) covers any issue with the cloud infrastructure and the stock images, such as driver mismatch or licensing. In addition, support is available for standard Windows Server features included in the stock image, such as roles and features like iSCSI configuration. These features are considered part of the base operating system functionality provided by Microsoft and included in the stock image.
 
 For custom images, the client is responsible for any issues that arise from modifications made after provisioning, including changes to drivers, licensing, or additional software installations.
 

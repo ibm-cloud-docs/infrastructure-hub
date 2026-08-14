@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2025-12-03"
+  years: 2026
+lastupdated: "2026-08-14"
 
 subcollection: infrastructure-hub
 
@@ -50,7 +50,7 @@ For Red Hat software that is purchased natively on {{site.data.keyword.cloud_not
 * Advanced
 * Premium
 
-For more information, see [{{site.data.keyword.IBM_notm}} support plans](/docs/account?topic=account-support-plans).
+For more information, see [{{site.data.keyword.IBM_notm}} support plans](/docs/support?topic=support-support-plans).
 
 ## How does {{site.data.keyword.cloud_notm}} and Red Hat work together to solve issues?
 {: #faq-support-red-hat-and-ibm-cloud}

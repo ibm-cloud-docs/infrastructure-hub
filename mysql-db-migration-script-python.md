@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2022, 2024
-lastupdated: "2024-12-13"
+  years:  2022, 2026
+lastupdated: "2026-08-14"
 
 keywords:
 
@@ -95,7 +95,7 @@ Complete the following steps to mount the {{site.data.keyword.cos_short}} bucket
 
 1. Enter the {{site.data.keyword.cos_short}} bucket name; for example, `my-db-bucket`. The bucket must already be provisioned.
 2. Enter the {{site.data.keyword.cos_short}} endpoint, which is the location of the bucket; for example, `https://s3.dal.us.cloud-object-storage.appdomain.cloud`. For more information, see [Endpoints and storage locations](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints).
-3. Enter your {{site.data.keyword.cloud_notm}} API key. For more information, see [Creating an {{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey&interface=ui#create_user_key){: external}.
+3. Enter your {{site.data.keyword.cloud_notm}} API key. For more information, see [Creating an {{site.data.keyword.cloud_notm}} API key](/docs/iam?topic=iam-userapikey&interface=ui#create_user_key){: external}.
 
 ### Source server details
 {: #source-server-details}

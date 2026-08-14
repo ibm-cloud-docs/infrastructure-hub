@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-02-10"
+lastupdated: "2026-08-14"
 
 subcollection: infrastructure-hub
 
@@ -53,7 +53,7 @@ IBM provides a choice of support plans.
 * Advanced
 * Premium
 
-For more information, see [IBM support plans](/docs/account?topic=account-support-plans).
+For more information, see [IBM support plans](/docs/support?topic=support-support-plans).
 
 ## How does {{site.data.keyword.cloud_notm}} and Microsoft work together to solve issues?
 {: #faq-microsoft-support-ibm-cloud-solve}
@@ -73,7 +73,7 @@ For client BYOL Microsoft software issues, you need to contact [Microsoft suppor
 {: #faq-microsoft-ibm-cloud-responsibilities}
 {: faq}
 
-{{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Microsoft stock images. {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) covers any issue with the cloud infrastructure and the stock images, such as driver mismatch or licensing. In addition, support is available for standard Windows Server features included in the stock image, such as roles and features like iSCSI configuration. These features are considered part of the base operating system functionality provided by Microsoft and included in the stock image. 
+{{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Microsoft stock images. {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) covers any issue with the cloud infrastructure and the stock images, such as driver mismatch or licensing. In addition, support is available for standard Windows Server features included in the stock image, such as roles and features like iSCSI configuration. These features are considered part of the base operating system functionality provided by Microsoft and included in the stock image.
 
 For custom images, the client is responsible for any issues that arise from modifications made after provisioning, including changes to drivers, licensing, or additional software installations.
 

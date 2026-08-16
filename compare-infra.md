@@ -51,7 +51,7 @@ See the following table for the networking differences between classic and VPC.
 | **Location construct**    | Data centers and Points of Delivery (PODs) \n | Regional model that abstracts infrastructure so you don't need to worry about pod locations.|
 | **Network functions and services** |Physical and virtual appliances from multiple vendors | Cloud-native network functions (VPNs, Load Balancer as a Service (LBaaS)) \n VPC isolation, multiple vNIC instances, and larger subnet sizes |
 | **IP addresses** | IPv6 addresses supported | IPv4 addresses only |
-| **Gateway routing** | Handled natively by IBM data center routers or use a virtual or physical network appliance (Virtual Router Appliance, Vyatta, Juniper vSRX, Fortinet FSA) to customize and manage yourself | Traffic routing is handled by public gateway and floating IP services |
+| **Gateway routing** | Handled natively by IBM data center routers or use a virtual or physical network appliance (Virtual Router Appliance, Vyatta, Juniper vSRX, Fortinet FSA) to customize and manage yourself | Public gateway and floating IP services handle traffic routing. |
 | **Network address translation (NAT)** | Use a virtual or physical network appliance (Vyatta, Juniper vSRX, Fortinet FSA, Fortinet vFSA, and Bring Your Own Gateway Appliance (BYOGWA)) | Supported through floating IP addresses and public gateway functions  |
 | **IPsec Virtual Private Network (VPN)** | Use a virtual or physical network appliance (Vyatta, Juniper vSRX, Fortinet FSA, Fortinet vFSA, and BYOGWA) | Supported by the VPN-as-a-service offering |
 |  **Elastic load balancing** | Cloud Load Balancer  | Load Balancer for VPC |

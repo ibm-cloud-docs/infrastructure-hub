@@ -49,14 +49,14 @@ See the following table for the networking differences between classic and VPC.
 | Category   |  Classic infrastructure   | VPC infrastructure |
 | ---------- | ------------------------- | ------------------ |
 | **Location construct**    | Data centers and Points of Delivery (PODs) \n | Regional model that abstracts infrastructure so you don't need to worry about pod locations.|
-| **Network functions and services** |Physical and virtual appliances from multiple vendors | Cloud-native network functions (VPNs, Load Balancer as a Service (LBaaS)) \n VPC isolation, multiple vNIC instances, and larger subnet sizes |
+| **Network functions and services** |Physical and virtual appliances from multiple vendors | Cloud-native network functions: \n * VPNs \n * Load Balancer as a Service (LBaaS) \n * VPC isolation \n * Multiple vNIC instances \n * Larger subnet sizes |
 | **IP addresses** | IPv6 addresses supported | IPv4 addresses only |
 | **Gateway routing** | Handled natively by IBM data center routers, or use a network appliance: \n * Virtual Router Appliance \n * Vyatta \n * Juniper vSRX \n * Fortinet FSA | Public gateway and floating IP services handle traffic routing. |
 | **Network address translation (NAT)** | Use a virtual or physical network appliance: \n * Vyatta \n * Juniper vSRX \n * Fortinet FSA \n * Fortinet vFSA \n * Bring Your Own Gateway Appliance (BYOGWA) | Supported through floating IP addresses and public gateway functions |
 | **IPsec Virtual Private Network (VPN)** | Use a virtual or physical network appliance: \n * Vyatta \n * Juniper vSRX \n * Fortinet FSA \n * Fortinet vFSA \n * BYOGWA | Supported by the VPN-as-a-service offering |
 |  **Elastic load balancing** | Cloud Load Balancer  | Load Balancer for VPC |
 | **Global load balancing**| Cloud Internet Services, Citrix Netscaler VPX | Cloud Internet Services |
-|**Hybrid connectivity** | Direct Link for direct private connectivity from on-premises: \n * Virtual network appliances \n * Physical network appliances (Vyatta, Juniper vSRX, Fortinet FSA, Fortinet vFSA, and BYOGWA) | Direct Link 2.0, Transit Gateway, and VPC VPN \n Note: You can enable your VPC to access classic infrastructure resources. |
+|**Hybrid connectivity** | Direct Link for direct private connectivity from on-premises: \n * Virtual network appliances \n * Physical network appliances (Vyatta, Juniper vSRX, Fortinet FSA, Fortinet vFSA, and BYOGWA) | Connectivity options for on-premises and classic infrastructure resources: \n * Direct Link 2.0 \n * Transit Gateway \n * VPC VPN |
 {: caption="Network comparison" caption-side="bottom"}
 {: summary="This table has row and column headers. The row headers identify possible features. The column headers identify the differentiators between classic infrastructure and VPC infrastructure. To understand the differences between environments, go to the row and find the details for the feature that you're interested in."}
 

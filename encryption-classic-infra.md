@@ -11,7 +11,7 @@ subcollection: infrastructure-hub
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Understanding encryption options for {{site.data.keyword.cloud_notm}} classic infrastructure storage
+# Encryption options for {{site.data.keyword.cloud_notm}} classic infrastructure storage
 {: #encryption-classic-infrastructure}
 
 Learn about encryption options for {{site.data.keyword.cloud_notm}} classic infrastructure storage, including provider-managed and customer-managed encryption methods.

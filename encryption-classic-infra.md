@@ -1,9 +1,9 @@
 ---
 copyright:
   years: 2022, 2026
-lastupdated: "2026-08-14"
+lastupdated: "2026-09-14"
 
-keywords: encryption, storage encryption, customer managed encryption, classic infrastructure encryption
+keywords: encryption, classic infrastructure encryption, storage encryption, customer-managed encryption, provider-managed encryption, IBM Cloud encryption
 
 subcollection: infrastructure-hub
 
@@ -11,25 +11,25 @@ subcollection: infrastructure-hub
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Encryption options for {{site.data.keyword.cloud}} classic infrastructure storage
+# Understanding encryption options for {{site.data.keyword.cloud_notm}} classic infrastructure storage
 {: #encryption-classic-infrastructure}
 
-By default, {{site.data.keyword.cloud}} classic infrastructure includes provider-managed data-at-rest encryption capabilities. {{site.data.keyword.blockstoragefull}} and {{site.data.keyword.filestorage_full}} do not support native customer-managed encryption (BYOK) integration. However, you can implement customer-managed encryption through manual configuration by using LUKS encryption for {{site.data.keyword.blockstorageshort}} or file-level encryption for {{site.data.keyword.filestorage_short}}. {{site.data.keyword.cos_full_notm}} supports customer-managed encryption with {{site.data.keyword.keymanagementserviceshort}}.
+Learn about encryption options for {{site.data.keyword.cloud_notm}} classic infrastructure storage, including provider-managed and customer-managed encryption methods.
 {: shortdesc}
 
-For native BYOK support with {{site.data.keyword.blockstorageshort}} and {{site.data.keyword.filestorage_short}}, consider migrating to [VPC infrastructure](/docs/vpc?topic=vpc-block-storage-about), which provides integrated customer-managed encryption with Standard (multi-tenant) and Dedicated (single-tenant) {{site.data.keyword.keymanagementserviceshort}}.
+For native bring your own key (BYOK) support with {{site.data.keyword.blockstorageshort}} and {{site.data.keyword.filestorage_short}}, consider migrating to [VPC infrastructure](/docs/vpc?topic=vpc-block-storage-about), which provides integrated customer-managed encryption with Standard (multi-tenant) and Dedicated (single-tenant) {{site.data.keyword.keymanagementserviceshort}}.
 {: tip}
 
 ## Customer-managed encryption support summary
 {: #byok-support-summary}
 
-The following table summarizes customer-managed encryption (BYOK) support for classic infrastructure storage services:
+The following table summarizes customer-managed encryption support for classic infrastructure storage services:
 
 | Storage service | Native BYOK support | Customer-implemented encryption | Key management options |
 | --------------- | ------------------- | ------------------------------- | ---------------------- |
-| {{site.data.keyword.blockstorageshort}} | No | Yes - LUKS encryption (OS-level) | {{site.data.keyword.keymanagementserviceshort}} can store LUKS passphrases |
+| {{site.data.keyword.blockstorageshort}} | No | Yes - Linux Unified Key Setup (LUKS) encryption (OS-level) | {{site.data.keyword.keymanagementserviceshort}} can store LUKS passphrases |
 | {{site.data.keyword.filestorage_short}} | No | Yes - File-level encryption (gocryptfs, EncFS) | {{site.data.keyword.keymanagementserviceshort}} can store encryption passphrases |
-| {{site.data.keyword.cos_short}} | Yes | Yes | Standard or Dedicated {{site.data.keyword.keymanagementserviceshort}}, SSE-C |
+| {{site.data.keyword.cos_short}} | Yes | Yes | Standard or Dedicated {{site.data.keyword.keymanagementserviceshort}}, Server-Side Encryption with Customer-Provided Keys (SSE-C) |
 {: caption="Customer-managed encryption support for classic infrastructure storage" caption-side="bottom"}
 
 ## Provider-managed encryption
@@ -43,7 +43,7 @@ The following table summarizes customer-managed encryption (BYOK) support for cl
 ## Customer-managed encryption
 {: #customer-managed-encryption}
 
-Some workloads or use cases require full customer control over the encryption, including key management. You can use the following information to learn about possible methods to achieve customer-managed encryption within the standard {{site.data.keyword.cloud}} classic infrastructure feature set. You can implement any of the following options: LUKS encryption for {{site.data.keyword.blockstorageshort}}, file-level encryption options for {{site.data.keyword.filestorage_short}}, and server-side encryption for {{site.data.keyword.cos_full_notm}}. Most of these customer-managed encryption options require manual setup.
+Some workloads or use cases require full customer control over encryption, including key management. The following methods achieve customer-managed encryption within the standard {{site.data.keyword.cloud}} classic infrastructure feature set: LUKS encryption for {{site.data.keyword.blockstorageshort}}, file-level encryption for {{site.data.keyword.filestorage_short}}, and server-side encryption for {{site.data.keyword.cos_full_notm}}. Most of these options require manual setup.
 
 ### Using {{site.data.keyword.keymanagementserviceshort}} for customer-implemented encryption
 {: #key-protect}
@@ -57,8 +57,10 @@ Some workloads or use cases require full customer control over the encryption, i
 
 {{site.data.keyword.cos_full_notm}} **does support** native integration with {{site.data.keyword.keymanagementserviceshort}}. When you use {{site.data.keyword.cos_full_notm}} with {{site.data.keyword.keymanagementserviceshort}}, a root key is used to encrypt buckets. {{site.data.keyword.keymanagementserviceshort}} offers two deployment options:
 
-- **Standard (multi-tenant)**: Provides FIPS 140-2 Level 3 compliance by using shared HSM infrastructure. IBM manages the HSM master keys. Suitable for most customer-managed encryption use cases.
-- **Dedicated (single-tenant)**: Provides FIPS 140-3 Level 4 compliance (certification in progress, which is expected by the end of 2026) with dedicated HSM partitions. Customers fully own and manage their master keys, with no IBM administrator access. This option provides maximum isolation and is designed for highly regulated workloads.
+- **Standard (multi-tenant)**: Provides Federal Information Processing Standard (FIPS) 140-2 Level 3 compliance by using shared Hardware Security Module (HSM) infrastructure. IBM manages the HSM master keys. Suitable for most customer-managed encryption use cases.
+- **Dedicated (single-tenant)**: Submitted to NIST for FIPS 140-3 Level 4 certification (in progress) with dedicated HSM partitions. Customers fully own and manage their master keys, with no IBM administrator access. This option provides maximum isolation and is designed for highly regulated workloads.
+
+According to the [{{site.data.keyword.keymanagementserviceshort}} security and compliance documentation](/docs/key-protect?topic=key-protect-security-and-compliance#hipaa-ready), keys are protected by a tamper-resistant HSM that is FIPS 140-2 Level 3 certified (Standard) or FIPS 140-3 Level 4 (Dedicated).
 
 For more information, see [Server-Side Encryption with IBM Key Protect](/docs/cloud-object-storage?topic=cloud-object-storage-kp).
 
@@ -275,7 +277,7 @@ Digests:
 ### {{site.data.keyword.filestorage_short}} file-level encryption
 {: #file-storage-encryption}
 
-{{site.data.keyword.filestorage_short}} doesn't support LUKS or similar volume-level encryption. Encryption must be done on a file level. Tools that were built upon FUSE can achieve file-level encryption, like *EncFS* or *gocryptfs*. On the {{site.data.keyword.cloud}} RHEL8 image *gocryptfs* is not available, but on Ubuntu 20.04 it is. You can install *gocryptfs* by using apt.
+{{site.data.keyword.filestorage_short}} doesn't support LUKS or similar volume-level encryption. Encryption must be done on a file level. Tools that were built upon FUSE (Filesystem in Userspace) can achieve file-level encryption, like `EncFS` or `gocryptfs`. On the {{site.data.keyword.cloud}} RHEL8 image `gocryptfs` is not available, but it is available on Ubuntu 20.04 LTS (Focal Fossa), 22.04 LTS (Jammy Jellyfish), and 24.04 LTS (Noble Numbat). You can install `gocryptfs` by using apt.
 
 1. Mount a {{site.data.keyword.filestorage_short}}. In the following example, the volume is mounted on `/mnt/filestor`.
    ```sh

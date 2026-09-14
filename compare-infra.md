@@ -28,11 +28,20 @@ If you aren't familiar with the environment types, review the following descript
 
 VPC infrastructure is the recommended platform for new workloads, offering modern cloud-native capabilities across every dimension. Classic infrastructure remains the right choice for lift-and-shift migrations and workloads that depend on its existing architecture. The most significant differences are:
 
-- **Compute**: VPC provides more profile families, including AI Optimized, Confidential Compute, and Storage Optimized, along with auto scaling and instance groups that classic infrastructure does not offer.
-- **Network**: VPC replaces physical and virtual network appliances with built-in cloud-native functions that include VPN-as-a-service, Load Balancer for VPC, and built-in network isolation, simplifying network operations.
-- **Storage**: Both environments support block and file storage with encryption and snapshots, but VPC adds optional encryption in transit, cross-account key authorization, and cross-account access for file shares.
-- **Security**: VPC provides built-in security groups and network access control lists (ACLs) without requiring third-party appliances.
-- **API**: VPC uses a modern REST-based API, replacing the classic SoftLayer API (SLAPI) with a developer-friendly interface aligned with {{site.data.keyword.cloud_notm}} platform standards.
+Compute
+:   VPC provides more profile families, including AI Optimized, Confidential Compute, and Storage Optimized, along with auto scaling and instance groups that classic infrastructure does not offer.
+
+Network
+:   VPC replaces physical and virtual network appliances with built-in cloud-native functions that include VPN-as-a-service, Load Balancer for VPC, and built-in network isolation, simplifying network operations.
+
+Storage
+:   Both environments support block and file storage with encryption and snapshots, but VPC adds optional encryption in transit, cross-account key authorization, and cross-account access for file shares.
+
+Security
+:   VPC provides built-in security groups and network access control lists (ACLs) without requiring third-party appliances.
+
+API
+:   VPC uses a modern REST-based API, replacing the classic SoftLayer API (SLAPI) with a developer-friendly interface aligned with {{site.data.keyword.cloud_notm}} platform standards.
 
 ## Compute differentiators
 {: #compare-compute}
@@ -76,7 +85,7 @@ Both environments support block and file storage with encryption, snapshots, and
 
 |  Classic infrastructure   | VPC infrastructure |
 | ------------------------- | ------------------ |
-| A robust set of storage services, {{site.data.keyword.blockstorageshort}} (Internet Small Computer Systems Interface (iSCSI)), and {{site.data.keyword.filestorage_short}} (Network File System (NFS)-based) offerings. Server-side agent-based Backup service with dedicated vault. \n - Snapshot support for both offerings. \n - Cross-regional replication. \n - Adjustable input/output operations per second (IOPS) limits and increasable capacity. \n - Encryption at rest with provider- or customer-managed keys. \n - Volume duplication and data refresh from parent volume.| {{site.data.keyword.block_storage_is_short}} provides primary boot disks (with basic lifecycle management), and secondary data volumes. {{site.data.keyword.filestorage_vpc_short}} provides NFS-based file shares. \n - Snapshot and backup support for block volumes and file shares. \n - Zonal and cross-regional replication for file shares. \n - Adjustable IOPS and increasable capacity. \n - Encryption at rest with provider- or customer-managed keys. \n - Optional encryption in transit for block volumes and file shares. \n - Optional cross-account authorizations for encryption keys and file share access. |
+| A robust set of storage services, {{site.data.keyword.blockstorageshort}} (Internet Small Computer Systems Interface (iSCSI)), and {{site.data.keyword.filestorage_short}} (Network File System (NFS)-based) offerings. Server-side agent-based Backup service with dedicated vault. \n - Snapshot support for both offerings. \n - Cross-regional replication. \n - Adjustable input/output operations per second (IOPS) limits and increasable capacity. \n - Supports encryption at rest with provider- or customer-managed keys. \n - Volume duplication and data refresh from parent volume.| {{site.data.keyword.block_storage_is_short}} provides primary boot disks (with basic lifecycle management), and secondary data volumes. {{site.data.keyword.filestorage_vpc_short}} provides NFS-based file shares. \n - Snapshot and backup support for block volumes and file shares. \n - Zonal and cross-regional replication for file shares. \n - Adjustable IOPS and increasable capacity. \n - Supports encryption at rest with provider- or customer-managed keys. \n - Optional encryption in transit for block volumes and file shares. \n - Optional cross-account authorizations for encryption keys and file share access. |
 {: caption="Storage comparison" caption-side="bottom"}
 {: summary="This table has column headers. The column headers identify the differentiators between classic infrastructure and VPC infrastructure storage. To understand the differences, find the feature in the classic infrastructure column and compare it with the corresponding VPC infrastructure column."}
 

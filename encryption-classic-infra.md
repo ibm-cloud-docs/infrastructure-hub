@@ -17,7 +17,7 @@ subcollection: infrastructure-hub
 Learn about encryption options for {{site.data.keyword.cloud_notm}} classic infrastructure storage, including provider-managed and customer-managed encryption methods.
 {: shortdesc}
 
-For native bring your own key (BYOK) support with {{site.data.keyword.blockstorageshort}} and {{site.data.keyword.filestorage_short}}, consider migrating to [VPC infrastructure](/docs/vpc?topic=vpc-block-storage-about), which provides integrated customer-managed encryption with Standard (multi-tenant) and Dedicated (single-tenant) {{site.data.keyword.keymanagementserviceshort}}.
+For built-in bring your own key (BYOK) support with {{site.data.keyword.blockstorageshort}} and {{site.data.keyword.filestorage_short}}, consider migrating to [VPC infrastructure](/docs/vpc?topic=vpc-block-storage-about), which provides integrated customer-managed encryption with Standard (multi-tenant) and Dedicated (single-tenant) {{site.data.keyword.keymanagementserviceshort}}.
 {: tip}
 
 ## Customer-managed encryption support summary
@@ -25,7 +25,7 @@ For native bring your own key (BYOK) support with {{site.data.keyword.blockstora
 
 The following table summarizes customer-managed encryption support for classic infrastructure storage services:
 
-| Storage service | Native BYOK support | Customer-implemented encryption | Key management options |
+| Storage service | Built-in BYOK support | Customer-implemented encryption | Key management options |
 | --------------- | ------------------- | ------------------------------- | ---------------------- |
 | {{site.data.keyword.blockstorageshort}} | No | Yes - Linux Unified Key Setup (LUKS) encryption (OS-level) | {{site.data.keyword.keymanagementserviceshort}} can store LUKS passphrases |
 | {{site.data.keyword.filestorage_short}} | No | Yes - File-level encryption (gocryptfs, EncFS) | {{site.data.keyword.keymanagementserviceshort}} can store encryption passphrases |
@@ -50,12 +50,12 @@ Some workloads or use cases require full customer control over encryption, inclu
 
 [{{site.data.keyword.keymanagementservicefull}}](https://www.ibm.com/products/key-protect){: external} provides secure key management for {{site.data.keyword.cloud_notm}} services. For more information about {{site.data.keyword.keymanagementserviceshort}}, see [About Key Protect](/docs/key-protect?topic=key-protect-about).
 
-{{site.data.keyword.keymanagementserviceshort}} is **not natively integrated** with {{site.data.keyword.blockstorageshort}} or {{site.data.keyword.filestorage_short}} on classic infrastructure. However, you can use {{site.data.keyword.keymanagementserviceshort}} to securely store and manage encryption keys (such as LUKS passphrases) that you use for customer-implemented encryption solutions. When you implement LUKS encryption or file-level encryption, you can retrieve keys from {{site.data.keyword.keymanagementserviceshort}} programmatically instead of storing them locally.
+{{site.data.keyword.keymanagementserviceshort}} **has no built-in integration** with {{site.data.keyword.blockstorageshort}} or {{site.data.keyword.filestorage_short}} on classic infrastructure. However, you can use {{site.data.keyword.keymanagementserviceshort}} to securely store and manage encryption keys (such as LUKS passphrases) that you use for customer-implemented encryption solutions. When you implement LUKS encryption or file-level encryption, you can retrieve keys from {{site.data.keyword.keymanagementserviceshort}} programmatically instead of storing them locally.
 
 #### Key Protect with {{site.data.keyword.cos_full_notm}}
 {: #key-protect-cos}
 
-{{site.data.keyword.cos_full_notm}} **does support** native integration with {{site.data.keyword.keymanagementserviceshort}}. When you use {{site.data.keyword.cos_full_notm}} with {{site.data.keyword.keymanagementserviceshort}}, a root key is used to encrypt buckets. {{site.data.keyword.keymanagementserviceshort}} offers two deployment options:
+{{site.data.keyword.cos_full_notm}} provides built-in integration with {{site.data.keyword.keymanagementserviceshort}}. When you use {{site.data.keyword.cos_full_notm}} with {{site.data.keyword.keymanagementserviceshort}}, a root key is used to encrypt buckets. {{site.data.keyword.keymanagementserviceshort}} offers two deployment options:
 
 - **Standard (multi-tenant)**: Provides Federal Information Processing Standard (FIPS) 140-2 Level 3 compliance by using shared Hardware Security Module (HSM) infrastructure. IBM manages the HSM master keys. Suitable for most customer-managed encryption use cases.
 - **Dedicated (single-tenant)**: Submitted to NIST for FIPS 140-3 Level 4 certification (in progress) with dedicated HSM partitions. Customers fully own and manage their master keys, with no IBM administrator access. This option provides maximum isolation and is designed for highly regulated workloads.
@@ -277,7 +277,7 @@ Digests:
 ### {{site.data.keyword.filestorage_short}} file-level encryption
 {: #file-storage-encryption}
 
-{{site.data.keyword.filestorage_short}} doesn't support LUKS or similar volume-level encryption. Encryption must be done on a file level. Tools that were built upon FUSE (Filesystem in Userspace) can achieve file-level encryption, like `EncFS` or `gocryptfs`. On the {{site.data.keyword.cloud}} RHEL8 image `gocryptfs` is not available, but it is available on Ubuntu 20.04 LTS (Focal Fossa), 22.04 LTS (Jammy Jellyfish), and 24.04 LTS (Noble Numbat). You can install `gocryptfs` by using apt.
+{{site.data.keyword.filestorage_short}} doesn't support LUKS or similar volume-level encryption. Encryption must be done on a file level. Tools that were built upon Filesystem in Userspace (FUSE) can achieve file-level encryption, like `EncFS` or `gocryptfs`. On the {{site.data.keyword.cloud}} RHEL8 image `gocryptfs` is not available, but it is available on Ubuntu 20.04 LTS (Focal Fossa), 22.04 LTS (Jammy Jellyfish), and 24.04 LTS (Noble Numbat). You can install `gocryptfs` by using apt.
 
 1. Mount a {{site.data.keyword.filestorage_short}}. In the following example, the volume is mounted on `/mnt/filestor`.
    ```sh

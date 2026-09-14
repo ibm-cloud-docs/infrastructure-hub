@@ -18,7 +18,7 @@ subcollection: infrastructure-hub
 Compare the key differences between {{site.data.keyword.cloud_notm}} classic and VPC infrastructure environments to choose the best option for your workloads and applications.
 {: shortdesc}
 
-If you aren't familiar with the environment types, review the following descriptions. Watch the [Bare Metal Servers: Classic vs. VPC Infrastructure Explainer Video](https://mediacenter.ibm.com/media/IBM%20Bare%20Metal%20Servers%20-%20Classic%20vs.%20VPC%20Infrastructure%20Explainer%20Video/1_hn1d69nn){: external} to learn more about the differences between the classic and VPC infrastructures.
+If you aren't familiar with the environment types, review the following descriptions. Watch the [Bare Metal Servers: Classic versus VPC Infrastructure Explainer Video](https://mediacenter.ibm.com/media/IBM%20Bare%20Metal%20Servers%20-%20Classic%20vs.%20VPC%20Infrastructure%20Explainer%20Video/1_hn1d69nn){: external} to learn more about the differences between the classic and VPC infrastructures.
 
 * The classic infrastructure is the existing Infrastructure as a Service (IaaS) platform. This environment is best for lift and shift workloads so you can move applications quickly and keep the same architecture.
 * VPC infrastructure is the new IaaS platform, based on software-defined networking and ideal for cloud-native applications.
@@ -29,9 +29,9 @@ If you aren't familiar with the environment types, review the following descript
 VPC infrastructure is the recommended platform for new workloads, offering modern cloud-native capabilities across every dimension. Classic infrastructure remains the right choice for lift-and-shift migrations and workloads that depend on its existing architecture. The most significant differences are:
 
 - **Compute**: VPC provides more profile families, including AI Optimized, Confidential Compute, and Storage Optimized, along with auto scaling and instance groups that classic infrastructure does not offer.
-- **Network**: VPC replaces physical and virtual network appliances with built-in cloud-native functions — VPN-as-a-service, Load Balancer for VPC, and native network isolation — reducing operational overhead.
+- **Network**: VPC replaces physical and virtual network appliances with built-in cloud-native functions that include VPN-as-a-service, Load Balancer for VPC, and built-in network isolation, simplifying network operations.
 - **Storage**: Both environments support block and file storage with encryption and snapshots, but VPC adds optional encryption in transit, cross-account key authorization, and cross-account access for file shares.
-- **Security**: VPC provides native security groups and network access control lists (ACLs) without requiring third-party appliances.
+- **Security**: VPC provides built-in security groups and network access control lists (ACLs) without requiring third-party appliances.
 - **API**: VPC uses a modern REST-based API, replacing the classic SoftLayer API (SLAPI) with a developer-friendly interface aligned with {{site.data.keyword.cloud_notm}} platform standards.
 
 ## Compute differentiators
@@ -54,7 +54,7 @@ Classic infrastructure offers customizable bare metal and virtual servers, while
 ## Network differentiators
 {: #compare-network}
 
-Classic infrastructure relies on physical and virtual network appliances, while VPC infrastructure provides cloud-native network functions including built-in VPN, load balancing, and network isolation.
+Classic infrastructure relies on physical and virtual network appliances, while VPC infrastructure provides cloud-native network functions that include built-in VPN, load balancing, and network isolation.
 
 | Category   |  Classic infrastructure   | VPC infrastructure |
 | ---------- | ------------------------- | ------------------ |
@@ -83,7 +83,7 @@ Both environments support block and file storage with encryption, snapshots, and
 ## Security differentiators
 {: #compare-security}
 
-Classic infrastructure uses third-party network appliances for perimeter security, while VPC infrastructure provides native security groups and network access control lists for fine-grained traffic control.
+Classic infrastructure uses third-party network appliances for perimeter security, while VPC infrastructure provides built-in security groups and network access control lists for fine-grained traffic control.
 
 |  Classic infrastructure   | VPC infrastructure |
 | ---------- | ------------------------- |

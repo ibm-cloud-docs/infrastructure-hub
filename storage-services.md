@@ -15,8 +15,10 @@ subcollection: infrastructure-hub
 # Choosing {{site.data.keyword.cloud_notm}} storage services for your workloads
 {: #storage}
 
-Discover {{site.data.keyword.cloud_notm}} storage services that offer scalable, secure, and cost-effective data storage solutions for traditional and cloud-native workloads. Choose from block storage, file storage, and object storage options across VPC and classic infrastructure.
+Discover {{site.data.keyword.cloud_notm}} storage services that offer scalable, secure, and cost-effective data storage solutions for traditional and cloud-native workloads.
 {: shortdesc}
+
+Choose from block storage, file storage, and object storage options across VPC and classic infrastructure.
 
 ## Current infrastructure
 {: #storage-vpc}

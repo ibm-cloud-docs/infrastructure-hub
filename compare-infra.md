@@ -12,7 +12,7 @@ subcollection: infrastructure-hub
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Comparing classic and VPC infrastructure environments on {{site.data.keyword.cloud_notm}}
+# Comparing classic and VPC infrastructure on {{site.data.keyword.cloud_notm}}
 {: #compare-infrastructure}
 
 Compare the key differences between {{site.data.keyword.cloud_notm}} classic and VPC infrastructure environments to choose the best option for your workloads and applications.

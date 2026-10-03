@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2025
-lastupdated: "2025-08-22"
+  years: 2018, 2026
+lastupdated: "2026-10-03"
 
 keywords: cloud environment, virtual server, virtual machine, vm, understanding infrastructure, IaaS model, IT ops admin, on-premises, data center
 
@@ -12,7 +12,7 @@ subcollection: infrastructure-hub
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Understanding Infrastructure basics
+# Understanding IBM Cloud Infrastructure basics
 {: #getting-started-tutorial}
 
 As many organizations move to a cloud environment, either on-premises or hosted in data centers, the IT operations administrator's (IT ops admin) role is being redefined. The scope and complexity of this change increases significantly based on the type of environment that your organization wants to deploy.

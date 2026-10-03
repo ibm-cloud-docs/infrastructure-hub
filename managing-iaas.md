@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2026
-lastupdated: "2026-08-14"
+lastupdated: "2026-10-03"
 
 keywords: infrastructure
 
@@ -12,7 +12,7 @@ subcollection: infrastructure-hub
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing your infrastructure
+# Managing your IBM Cloud infrastructure
 {: #managing}
 
 After you build your infrastructure and environment, you're ready to start managing it.

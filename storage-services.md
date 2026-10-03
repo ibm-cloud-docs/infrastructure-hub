@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2026
-lastupdated: "2026-09-14"
+lastupdated: "2026-10-03"
 
 keywords: IBM Cloud storage services, virtual private cloud storage, block storage, file storage, object storage, scalable storage, data security
 
@@ -12,7 +12,7 @@ subcollection: infrastructure-hub
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Choosing {{site.data.keyword.cloud_notm}} storage services for your workloads
+# Choosing IBM Cloud storage services for your workloads
 {: #storage}
 
 Discover {{site.data.keyword.cloud_notm}} storage services that offer scalable, secure, and cost-effective data storage solutions for traditional and cloud-native workloads.

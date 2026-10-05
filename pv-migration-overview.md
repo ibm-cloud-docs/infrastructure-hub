@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-08-22"
+  years:  2021, 2026
+lastupdated: "2026-10-05"
 
 keywords: migration, migrate, migrating, migrate infrastructure
 
@@ -31,6 +31,13 @@ Before you begin migrating your physical bare metal server to a virtual server, 
    - [Direct Link](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)
    - [VPNs](/docs/vpc?topic=vpc-vpn-overview)
    - [Transit Gateway](/docs/transit-gateway?topic=transit-gateway-ordering-transit-gateway)
+
+Before you begin, complete the following tasks to inventory your classic environment and confirm account prerequisites:
+
+- [Prerequisites for migration](/docs/classic-to-vpc?topic=classic-to-vpc-key-migration-prerequisites) — VRF enablement, IBM Cloud CLI setup, and VPC quota increases
+- [Discovery of classic compute resources](/docs/classic-to-vpc?topic=classic-to-vpc-discover-classic-compute-resources) — vCPU, memory, OS, and network inventory for your classic virtual server instances
+- [Setting up your VPC environment](/docs/classic-to-vpc?topic=classic-to-vpc-vpc-creating-steps) — step-by-step provisioning of the target VPC, subnets, and security groups
+- [Migration decisions for compute](/docs/classic-to-vpc?topic=classic-to-vpc-vpc-decisions-for-compute) — profile selection and high-availability considerations for VPC virtual server instances
 
 To improve data transfer rate, adjust bandwidth allocation of RMM server. To know how to change bandwidth allocation, see [Adjusting bandwidth allocation by using the UI](/docs/vpc?topic=vpc-managing-virtual-server-instances&interface=ui#adjusting-bandwidth-allocation-ui).
 {: note}

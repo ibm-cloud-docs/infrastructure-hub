@@ -2,7 +2,7 @@
 
 copyright:
   years:  2020, 2026
-lastupdated: "2026-08-14"
+lastupdated: "2026-10-05"
 
 keywords: migration, migrate, migrating, migrate infrastructure, cloud migration
 
@@ -15,7 +15,7 @@ subcollection: infrastructure-hub
 # About migration
 {: #about-migration-infra}
 
-Your decision to migrate can be driven by many factors, such as modernization, cost savings, consolidation, or closing a data center. You can also migrate to better align applications with cloud environments or to adopt new technologies like {{site.data.keyword.vpc_full}}. No matter the reason, a migration can range from something as simple as migrating a single virtual server instance to something much more complex, such as migrating an entire application environment, pod, or full data center along with all its supporting components.
+Your decision to migrate can be driven by many factors, such as modernization, cost savings, consolidation, or closing a data center. You can also migrate to better align applications with cloud environments or to adopt new technologies like {{site.data.keyword.vpc_full}}. No matter the reason, a migration can range from something as simple as migrating a single virtual server instance to something much more complex. It can be as complex as migrating an entire application environment, pod, or even a full data center along with all its supporting components.
 {: shortdesc}
 
 ![Migration approach](images/migrate-process.svg "Diagram showing the four-step migration approach: Assess, Plan, Migrate, and Validate"){: caption="Migration approach" caption-side="bottom"}
@@ -26,9 +26,9 @@ Your decision to migrate can be driven by many factors, such as modernization, c
 | Step | Description |
 |------|-------------|
 |**Assess** | Do you need to migrate instances to a new data center due to data center closures? Do you want to migrate your entire {{site.data.keyword.cloud}} classic infrastructure to VPC? Assess your situation and identify your existing infrastructure to determine what components you have, how they are configured, and what you want to migrate. \n Not only do you need to assess your current environment, but you need to assess the target environment to understand the capabilities, support, and differences between the two environments, if applicable. In this assessment step, you can get a general idea of the complexity of the migration so that you can develop a migration strategy. |
-|**Plan** | Audit your existing infrastructure to assess which resources and components can be migrated and what dependencies exist between them. Estimate the potential impact on running services, including expected downtime and effects on connected systems, to understand the level of disruption the migration might cause. Use this information to decide whether a phased or all-at-once approach makes more sense for your team's capacity and the complexity of your environment.|
-|**Migrate** | After you assessed your existing infrastructure and planned for your migration, you can migrate your resources and components with ease and confidence. Depending on your migration needs, you can choose from tools that are available to help you with the migration process. |
-|**Validate**  | After you migrate your resources and components into your target infrastructure, and before you make your infrastructure live, validate and test your environment to make sure it is ready for production. This activity might also entail updating your DNS and global load balancers, routes, or retiring old services. |
+|**Plan** | Audit your existing infrastructure to assess which resources and components can be migrated and what dependencies exist between them. Estimate the potential impact on running services, including expected downtime and effects on connected systems, to understand the level of disruption the migration might cause. Use this information to decide whether a phased or all-at-once approach makes more sense based on your team's capacity and the complexity of your environment.|
+|**Migrate** | After you have assessed your existing infrastructure and planned your migration, you are ready to migrate your resources and components. Depending on your migration needs, you can choose from available tools to help with the migration process. |
+|**Validate**  | After you migrate your resources and components to the target infrastructure, validate and test the environment before making it available for production. You might also need to update DNS, global load balancers, or routes, or retire old services. |
 {: caption="Migration approach" caption-side="bottom"}
 
 ## Migration solutions
@@ -38,7 +38,6 @@ Review the following table to identify the migration solution that best fits you
 
 | Solution | Bare metal to bare metal | Bare metal to virtual server | Virtual server to virtual server | Block or File storage | Network |
 | ---- | --- | --- | --- | --- | --- |
-| [VPC+ Cloud Migration](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#vpc-cloud-migration) |  |  |  |  |  |
 | [RMM](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#rackware-migration) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |
 | [DIY automation](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#DIY-automation) |  |  |  | ![Checkmark icon](../icons/checkmark-icon.svg) |  |
 | [Custom image templates](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#custom-image-templates) | ![Checkmark icon](../icons/checkmark-icon.svg) |  |  |  |  |
@@ -52,7 +51,6 @@ Review the following table to identify the migration solution that best fits you
 
 | Solution | Bare metal to bare metal | Bare metal to virtual server | Virtual server to virtual server | Block or File storage | Network |
 | ---- | --- | --- | --- | --- | --- |
-| [VPC+ Cloud Migration](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#vpc-cloud-migration) |  |  | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |
 | [RMM](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#rackware-migration) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |
 | [DIY automation](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#DIY-automation) |  |  | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |  |
 | [Custom image templates](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#custom-image-templates) |  |  |  |  |  |
@@ -66,7 +64,6 @@ Review the following table to identify the migration solution that best fits you
 
 | Solution | Bare metal to bare metal | Bare metal to virtual server | Virtual server to virtual server | Block or File storage | Network |
 | ---- | --- | --- | --- | --- | --- |
-| [VPC+ Cloud Migration](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#vpc-cloud-migration) |  |  |  |  |  |
 | [RMM](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#rackware-migration) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |  |
 | [DIY automation](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#DIY-automation) |  |  | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |  |
 | [Custom image templates](/docs/infrastructure-hub?topic=infrastructure-hub-about-migration-infra#custom-image-templates) |  |  |  |  |  |
@@ -81,23 +78,15 @@ Review the following table to identify the migration solution that best fits you
 RMM supports only {{site.data.keyword.blockstorageshort}} migration and not {{site.data.keyword.filestorage_short}}.
 {: note}
 
+If you are migrating from classic infrastructure to VPC, additional third-party tools are available, including VPC+ Cloud Migration (Wanclouds) and ConvertIO (PrimaryIO). For a full comparison, see [Migration solutions](/docs/classic-to-vpc?topic=classic-to-vpc-solutions#third-party-migration-services) in the Classic to VPC documentation.
+{: tip}
+
 ## VPC+ Cloud Migration
 {: #vpc-cloud-migration}
 
 If you want to migrate your {{site.data.keyword.cloud_notm}} classic infrastructure (compute, network, and storage) to VPC, you can use {{site.data.keyword.vpc-plus-migration}}. {{site.data.keyword.vpc-plus-migration}} is a third-party, software-based migration-as-a-service solution, provided by Wanclouds, for migrating components from classic infrastructure to your VPC. With {{site.data.keyword.vpc-plus-migration}}, you can discover and choose resources for migration, create, and set up those resources in your VPC environment. You can also run and manage your VPC environment from within the tool.
 
-You can migrate the following key elements of {{site.data.keyword.cloud_notm}} classic infrastructure to VPC:
-
-* Subnets
-* Virtual server instances
-* Dedicated hosts
-* Storage volumes (primary and secondary)
-* Security groups
-* Load balancers
-* Firewall configuration - Access control list (ACL)
-* VPN configuration
-* SSH keys
-* Public gateway
+For the full list of classic infrastructure elements that {{site.data.keyword.vpc-plus-migration}} can migrate to VPC, including compute, network, and storage resources such as subnets, virtual server instances, dedicated hosts, storage volumes, security groups, load balancers, ACLs, VPN, SSH keys, and public gateways, see [VPC+ Cloud Migration](/docs/classic-to-vpc?topic=classic-to-vpc-solutions#vpc-cloud-migration) in the Classic to VPC documentation.
 
 For more information, see [Getting started with {{site.data.keyword.vpc-plus-migration}}](/docs/wanclouds-vpc-plus?topic=wanclouds-vpc-plus-getting-started-tutorial).
 
@@ -200,7 +189,7 @@ The following DIY automation scripts are available for you to use:
 |-----|-------------|
 |Virtual server preparation and validation tool |- This tool ensures that the guest server that you want to import to VPC as a custom image meets the [minimum requirements](/docs/vpc?topic=vpc-about-images#custom-image-reqs). \n - The script is available in this [public GitHub repository](https://github.com/IBM-Cloud/vpc-migration-tools/tree/main/os-precheck-scripts){: external}.  |
 |Image conversion tool   |- You can convert VMDK and VDH images to qcow2 from anywhere to VPC. \n - You can upload an image to {{site.data.keyword.cos_full_notm}} and import it to VPC as a custom image. \n - The script is available in this [public GitHub repository](https://github.com/IBM-Cloud/vpc-migration-tools/tree/main/image-conversion){: external}. \n - For a detailed step-by-step guide, see [Migrating VMDK or VHD images to VPC](/docs/infrastructure-hub?topic=infrastructure-hub-migrating-images-vpc).|
-|Data migration tool  | - You can migrate your data from anywhere to {{site.data.keyword.cloud_notm}} classic infrastructure or VPC. \n - The tool uses `rsync` to copy data from the source to the target server. \n - The script is available in this [public GitHub repository](https://github.com/IBM-Cloud/vpc-migration-tools/tree/main/data-migration){: external}. \n - For a detailed step-by-step guide, see [Migrating data from {{site.data.keyword.cloud_notm}} classic infrastructure to VPC](/docs/infrastructure-hub?topic=infrastructure-hub-data-migration-classic-to-vpc).  |
+|Data migration tool  | - You can migrate your data from anywhere to {{site.data.keyword.cloud_notm}} classic infrastructure or VPC. \n - The tool uses `rsync` to copy data from the source to the target server. \n - The script is available in this [public GitHub repository](https://github.com/IBM-Cloud/vpc-migration-tools/tree/main/data-migration){: external}. \n - For a detailed step-by-step guide, see [Migrating data from {{site.data.keyword.cloud_notm}} classic infrastructure to VPC](/docs/classic-to-vpc?topic=classic-to-vpc-data-migration-classic-to-vpc).  |
 {: caption="Available DIY automation scripts" caption-side="bottom"}
 
 ## Custom image templates
@@ -219,10 +208,38 @@ Classic bare metal to classic bare metal migration is disruptive to your workloa
 
 For more information, see [About bare metal custom image templates](/docs/bare-metal?topic=bare-metal-getting-started-bm-custom-image-templates).
 
+## Planning your Classic to VPC migration
+{: #about-migration-classic-to-vpc-planning}
+
+If you are migrating from classic infrastructure to {{site.data.keyword.vpc_short}}, use the following resources in the [Classic to VPC migration](/docs/classic-to-vpc) guide to assess your environment, meet prerequisites, and execute the migration.
+
+### Discover your classic infrastructure
+{: #about-migration-discovery}
+
+Before you plan or execute a migration, inventory your existing classic resources:
+
+- [Discovery of classic infrastructure](/docs/classic-to-vpc?topic=classic-to-vpc-discover-classic-infrastructure) — overview of the discovery process, account planning, and application grouping
+- [Discovery of classic compute resources](/docs/classic-to-vpc?topic=classic-to-vpc-discover-classic-compute-resources) — how to capture vCPU, memory, OS, storage, and network configuration for each classic virtual server instance
+- [Discovery of classic storage resources](/docs/classic-to-vpc?topic=classic-to-vpc-discover-classic-storage-resources) — how to identify and document block, file, portable, and local storage volumes
+
+### Meet prerequisites
+{: #about-migration-prerequisites}
+
+Confirm that VRF is enabled, CLI tooling is installed, and quota increases are requested before you begin:
+
+- [Prerequisites for migration](/docs/classic-to-vpc?topic=classic-to-vpc-key-migration-prerequisites) — VRF enablement, IBM Cloud CLI setup, and VPC quota increases
+
+### Set up your VPC environment and migrate
+{: #about-migration-vpc-setup}
+
+Follow the step-by-step guides to provision your target VPC environment and migrate your classic virtual server instances:
+
+- [Setting up your VPC environment](/docs/classic-to-vpc?topic=classic-to-vpc-vpc-creating-steps) — resource groups, VPC, subnets, security groups, SSH keys, and virtual server instance provisioning
+- [Migration decisions for compute](/docs/classic-to-vpc?topic=classic-to-vpc-vpc-decisions-for-compute) — profile selection, high availability, and deployable architecture considerations
+- [Migrating from Classic virtual server instance to VPC virtual server instance](/docs/classic-to-vpc?topic=classic-to-vpc-migrate-classic-to-vpc) — end-to-end migration process including post-migration optimization
+
 ## Next steps
 {: #about-migration-next-steps}
 
-If you are migrating from classic infrastructure to {{site.data.keyword.vpc_short}}, see [Classic to VPC Migration](/docs/classic-to-vpc) for a dedicated guide that covers migration decisions, solutions, prerequisites, discovery of classic resources, and step-by-step migration guidance.
-
-* Contact your {{site.data.keyword.cloud_notm}} Customer Success Manager (CSM) or {{site.data.keyword.cloud_notm}} Seller for planning, migration assistance, and other queries.
-* If you don't have an assigned CSM or {{site.data.keyword.cloud_notm}} Seller, IBM reaches out to the primary contact in the account through email.
+* Contact your {{site.data.keyword.cloud_notm}} Customer Success Manager (CSM) or {{site.data.keyword.cloud_notm}} Seller for migration planning, assistance, and other questions.
+* If you don't have an assigned CSM or {{site.data.keyword.cloud_notm}} Seller, IBM contacts the primary account contact by email.

@@ -84,7 +84,8 @@ toc:
               id: script-based-migration
               label: Script-based migration
               topics:
-              - data-migration-diy.md
+              - include: ../classic-to-vpc/storage-migrate.md
+                navtitle: Migrating data from IBM Cloud classic infrastructure to VPC
               - image-migration-diy.md
               - mysql-db-migration-script-python.md
           - topicgroup:

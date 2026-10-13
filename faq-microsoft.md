@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-08-14"
+lastupdated: "2026-10-13"
 
 subcollection: infrastructure-hub
 
@@ -76,6 +76,10 @@ For client BYOL Microsoft software issues, you need to contact [Microsoft suppor
 {{site.data.keyword.cloud_notm}} provides the cloud infrastructure and Microsoft stock images. {{site.data.keyword.cloud_notm}} [support](/docs/account?topic=account-gettinghelp) covers any issue with the cloud infrastructure and the stock images, such as driver mismatch or licensing. In addition, support is available for standard Windows Server features included in the stock image, such as roles and features like iSCSI configuration. These features are considered part of the base operating system functionality provided by Microsoft and included in the stock image.
 
 For custom images, the client is responsible for any issues that arise from modifications made after provisioning, including changes to drivers, licensing, or additional software installations.
+
+{{site.data.keyword.cloud_notm}} Support covers the core operating system installed by IBM Cloud automation. Under the shared responsibility model, issues related to Active Directory, Group Policy Object, Hyper-V, SQL, and similar components are the client's responsibility and are not covered by {{site.data.keyword.cloud_notm}} Support. Similarly, issues resulting from settings or customizations made by the client are the client's responsibility and are not covered by {{site.data.keyword.cloud_notm}} Support.
+ 
+Before opening a support case, perform an initial investigation. When opening a support case, include findings from the initial investigation along with any specific questions.
 
 ## Is the cost of the Microsoft operating system included in the on-demand {{site.data.keyword.cloud_notm}} virtual server cost?
 {: #faq-microsoft-os-cost-ibm-cloud}
